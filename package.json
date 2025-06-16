@@ -6,12 +6,14 @@
     "dev": "bun --bun run next dev",
     "build": "bun --bun run next build",
     "start": "bun --bun run next start",
-    "lint": "bun --bun run next lint"
+    "lint": "bun --bun run next lint",
+    "i18n:check": "next-intl validate --strict"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.10",
     "cobe": "^0.6.4",
     "next": "15.3.3",
+    "next-intl": "^4.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
@@ -25,5 +27,8 @@
     "postcss-import": "^16.1.0",
     "tailwindcss": "4.1.10",
     "typescript": "^5.8.3"
-  }
+  },
+  "trustedDependencies": [
+    "@tailwindcss/oxide"
+  ]
 }

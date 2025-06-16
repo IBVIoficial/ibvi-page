@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
+import {useTranslations} from 'next-intl';
 
 const HeroSection = () => {
+  const t = useTranslations('hero');
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -56,20 +58,20 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2 text-center lg:text-left">
             <h1 className="text-5xl md:text-7xl font-playfair font-semibold leading-tight text-text-primary mb-6">
-              <span className="text-primary">Transforming</span> Brazilian Real Estate
+              {t('title')} <span className="text-primary">{t('subtitle')}</span>
             </h1>
             <p className="text-xl md:text-2xl font-inter text-primary mb-8 max-w-xl mx-auto lg:mx-0 font-medium tracking-wide">
               AI & Data Intelligence for a $1.5 Trillion Market
             </p>
             <p className="text-base md:text-lg text-text-tertiary max-w-lg mx-auto lg:mx-0 mb-10 leading-relaxed">
-              IBVI is revolutionizing property valuation with advanced data intelligence, bringing transparency and precision to Brazil's luxury real estate market.
+              {t('description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a href="#solution" className="bg-primary text-text-inverse font-medium tracking-wide rounded-md px-8 py-4 hover:bg-primary-hover transition-all text-sm uppercase shadow-md">
-                Discover Our Solution
+                {t('cta_primary')}
               </a>
               <a href="#challenges" className="border-2 border-primary text-primary font-medium tracking-wide rounded-md px-8 py-3.5 hover:bg-primary hover:text-text-inverse hover:border-transparent transition-all text-sm uppercase shadow-md">
-                Market Challenges
+                {t('cta_secondary')}
               </a>
             </div>
           </div>

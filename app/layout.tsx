@@ -1,51 +1,15 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import ClientLayout from "./components/client-layout";
-import Navigation from "./components/navigation";
-import Footer from "./components/footer";
+import {ReactNode} from 'react';
 
-// Metadata can only be used in a Server Component
-export const metadata: Metadata = {
-  title: 'IBVI: Brazilian Real Estate Intelligence',
-  description: 'Transforming Brazilian Real Estate through AI and Data Intelligence.',
-  keywords: 'IBVI, real estate, Brazil, property valuation, AI, data intelligence, luxury real estate',
-  openGraph: {
-    title: 'IBVI: Brazilian Real Estate Intelligence',
-    description: 'Transforming Brazilian Real Estate through AI and Data Intelligence.',
-    images: [
-      {
-        url: '/images/ibvi-logo.png',
-        width: 800,
-        height: 600,
-        alt: 'IBVI Logo',
-      },
-    ],
-  },
-};
+// Metadata defined in app/[locale]/layout.tsx will be used.
+// If you have truly global, non-locale-specific metadata, it can be here.
+// export const metadata = {
+//   title: 'Global App Title',
+// };
 
-// Server Component for layout
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
-  return (
-    <html lang="en" className="scroll-smooth">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-        <link rel="icon" href="/images/ibvi-logo.png" />
-      </head>
-      <body className="font-inter min-h-screen overflow-x-hidden">
-        <ClientLayout>
-          <Navigation />
-          <main className="pt-20 pb-16">
-            {children}
-          </main>
-          <Footer />
-        </ClientLayout>
-      </body>
-    </html>
-  );
+  return children;
 }

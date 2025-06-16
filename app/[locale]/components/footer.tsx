@@ -1,8 +1,10 @@
 'use client';
 
 import React from 'react';
+import {useTranslations} from 'next-intl';
 
 const Footer = () => {
+  const t = useTranslations('footer');
   return (
     <footer id="contact" className="pt-16 pb-10 bg-surface-secondary border-t border-border-default transition-opacity duration-500 animate-fade-in" data-delay="700">
       <div className="container mx-auto px-6">
@@ -10,7 +12,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-playfair font-semibold text-text-primary mb-4">IBVI</h3>
             <p className="font-inter text-text-secondary leading-relaxed mb-6">
-              Transforming Brazilian real estate through artificial intelligence and data intelligence.
+              {t('description')}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-primary hover:text-link-hover transition-colors p-2 rounded-full hover:bg-primary/10">
@@ -76,7 +78,7 @@ const Footer = () => {
         
         <div className="border-t border-border-default pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="font-inter text-text-tertiary text-sm">&copy; {new Date().getFullYear()} IBVI. All rights reserved.</p>
+            <p className="font-inter text-text-tertiary text-sm">{t('copyright')}</p>
             <p className="font-inter text-text-tertiary text-sm mt-2 md:mt-0">Pioneering Luxury Real Estate Intelligence</p>
           </div>
         </div>
