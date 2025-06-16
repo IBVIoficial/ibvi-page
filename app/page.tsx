@@ -1,14 +1,12 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import Navigation from './components/navigation';
 import HeroSection from './components/hero-section';
 import OverviewSection from './components/overview-section';
 import ChallengesSection from './components/challenges-section';
 import SolutionSection from './components/solution-section';
 import InsightsSection from './components/insights-section';
 import InvestmentSection from './components/investment-section';
-import Footer from './components/footer';
 
 const IBVILandingPage = () => {
   useEffect(() => {
@@ -26,18 +24,12 @@ const IBVILandingPage = () => {
 
   return (
     <>
-      <Navigation />
-      
-      <main className="pt-20 pb-16">
-        <HeroSection />
-        <OverviewSection />
-        <ChallengesSection />
-        <SolutionSection />
-        <InsightsSection />
-        <InvestmentSection />
-      </main>
-      
-      <Footer />
+      <HeroSection />
+      <OverviewSection />
+      <ChallengesSection />
+      <SolutionSection />
+      <InsightsSection />
+      <InvestmentSection />
       
       <style jsx global>{`
         .animate-fade-in {

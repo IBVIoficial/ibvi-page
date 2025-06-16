@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ClientLayout from "./components/client-layout";
+import Navigation from "./components/navigation";
+import Footer from "./components/footer";
 
 // Metadata can only be used in a Server Component
 export const metadata: Metadata = {
@@ -36,7 +38,13 @@ export default function RootLayout({
         <link rel="icon" href="/images/ibvi-logo.png" />
       </head>
       <body className="font-inter min-h-screen overflow-x-hidden">
-        <ClientLayout>{children}</ClientLayout>
+        <ClientLayout>
+          <Navigation />
+          <main className="pt-20 pb-16">
+            {children}
+          </main>
+          <Footer />
+        </ClientLayout>
       </body>
     </html>
   );
