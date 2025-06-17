@@ -1,18 +1,20 @@
 'use client';
 
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 const InsightsSection = () => {
+  const t = useTranslations('insights');
   return (
     <section id="data-insights" className="py-16 md:py-24 bg-surface-primary luxury-shadow transition-opacity duration-500 animate-fade-in" data-delay="500">
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center">
           <div className="w-16 h-0.5 bg-primary mb-6"></div>
           <h2 className="text-3xl md:text-4xl font-playfair font-semibold text-text-primary text-center mb-6">
-            Market <span className="text-primary">Insights</span>
+            {t.rich('title', { primary: (chunks) => <span className="text-primary">{chunks}</span> })}
           </h2>
           <p className="font-inter text-text-secondary text-lg leading-relaxed max-w-3xl mx-auto text-center mb-16">
-            Comprehensive analysis of Brazil's luxury real estate market reveals significant opportunities for technological innovation and standardization.
+            {t('description')}
           </p>
         </div>
         

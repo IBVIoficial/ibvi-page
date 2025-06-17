@@ -61,7 +61,7 @@ const HeroSection = () => {
               {t('title')} <span className="text-primary">{t('subtitle')}</span>
             </h1>
             <p className="text-xl md:text-2xl font-inter text-primary mb-8 max-w-xl mx-auto lg:mx-0 font-medium tracking-wide">
-              AI & Data Intelligence for a $1.5 Trillion Market
+              {t('tagline')}
             </p>
             <p className="text-base md:text-lg text-text-tertiary max-w-lg mx-auto lg:mx-0 mb-10 leading-relaxed">
               {t('description')}

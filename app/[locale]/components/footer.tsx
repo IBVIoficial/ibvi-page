@@ -5,6 +5,7 @@ import {useTranslations} from 'next-intl';
 
 const Footer = () => {
   const t = useTranslations('footer');
+  const currentYear = new Date().getFullYear();
   return (
     <footer id="contact" className="pt-16 pb-10 bg-surface-secondary border-t border-border-default transition-opacity duration-500 animate-fade-in" data-delay="700">
       <div className="container mx-auto px-6">
@@ -34,13 +35,13 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">Contact</h3>
+            <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">{t('contact_title')}</h3>
             <p className="font-inter text-text-secondary mb-4 flex items-start">
               <svg className="h-5 w-5 mr-2 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <span>São Paulo<br/>Av. Magalhães de Castro 4.800, 23° andar<br/>Cidade Jardim - São Paulo - SP, 05676-120</span>
+              <span>{t.rich('address', { br: () => <br /> })}</span>
             </p>
             <p className="font-inter text-text-secondary mb-4 flex items-start">
               <svg className="h-5 w-5 mr-2 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -57,14 +58,14 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">Subscribe</h3>
+            <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">{t('subscribe_title')}</h3>
             <p className="font-inter text-text-secondary mb-4">
-              Stay informed about our latest developments and investment opportunities.
+              {t('subscribe_description')}
             </p>
             <div className="flex">
               <input 
                 type="email" 
-                placeholder="Your email" 
+                placeholder={t('email_placeholder')} 
                 className="px-4 py-3 w-full bg-surface-primary border border-border-medium focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all rounded-l-md" 
               />
               <button className="bg-button-primary text-text-inverse px-6 hover:bg-button-primary-hover transition-colors rounded-r-md flex items-center justify-center">
@@ -78,8 +79,8 @@ const Footer = () => {
         
         <div className="border-t border-border-default pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="font-inter text-text-tertiary text-sm">{t('copyright')}</p>
-            <p className="font-inter text-text-tertiary text-sm mt-2 md:mt-0">Pioneering Luxury Real Estate Intelligence</p>
+            <p className="font-inter text-text-tertiary text-sm">{t('copyright', { currentYear })}</p>
+            <p className="font-inter text-text-tertiary text-sm mt-2 md:mt-0">{t('tagline')}</p>
           </div>
         </div>
       </div>
