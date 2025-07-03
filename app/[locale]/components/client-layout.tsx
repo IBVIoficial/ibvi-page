@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import MetaPixel from '@/lib/meta-pixel/MetaPixel';
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState('light');
@@ -32,6 +33,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
 
   return (
     <>
+      <MetaPixel />
       {/* Theme Switch Button - Fixed Position */}
       <button 
         onClick={toggleTheme}
