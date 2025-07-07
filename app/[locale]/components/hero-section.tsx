@@ -1,13 +1,29 @@
 'use client';
 
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {useTranslations} from 'next-intl';
 
 const HeroSection = () => {
    const t = useTranslations('hero');
    const canvasRef = useRef<HTMLCanvasElement>(null);
+   const containerRef = useRef<HTMLDivElement>(null);
+   const [globeSize, setGlobeSize] = useState(0);
 
    useEffect(() => {
+      if (containerRef.current) {
+         const observer = new ResizeObserver((entries) => {
+            const entry = entries[0];
+            if (entry) {
+               setGlobeSize(entry.contentRect.width);
+            }
+         });
+         observer.observe(containerRef.current);
+         return () => observer.disconnect();
+      }
+   }, []);
+
+   useEffect(() => {
+      if (globeSize === 0) return;
       // Globe animation
       let globeInstance: any;
       import('cobe')
@@ -18,11 +34,11 @@ const HeroSection = () => {
                let phi = 0;
                globeInstance = createGlobe(canvasRef.current, {
                   devicePixelRatio: 2,
-                  width: 1000, // Render at higher res
-                  height: 1000,
+                  width: globeSize * 2,
+                  height: globeSize * 2,
                   phi: 0,
-                  theta: 0.2, // Initial rotation
-                  dark: 0, // 0 for light theme, 1 for dark
+                  theta: 0.2,
+                  dark: 0,
                   diffuse: 1.2,
                   mapSamples: 20000,
                   mapBrightness: 3,
@@ -40,8 +56,6 @@ const HeroSection = () => {
                   onRender: (state: any) => {
                      state.phi = phi;
                      phi += 0.003; // Slower rotation
-                     state.width = 1000; // Ensure size consistency
-                     state.height = 1000;
                   },
                });
             }
@@ -53,7 +67,7 @@ const HeroSection = () => {
             globeInstance.destroy();
          }
       };
-   }, []);
+   }, [globeSize]);
 
    return (
       <header className="py-20 md:py-28 bg-surface-primary luxury-shadow transition-opacity duration-500 animate-fade-in" data-delay="100">
@@ -81,7 +95,7 @@ const HeroSection = () => {
                   </div>
                </div>
                <div className="lg:w-1/2 flex justify-center items-center mt-8 lg:mt-0">
-                  <div className="relative w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] md:w-[480px] md:h-[480px]">
+                  <div ref={containerRef} className="relative w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] md:w-[480px] md:h-[480px]">
                      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/30 rounded-full blur-3xl"></div>
                      <canvas ref={canvasRef} id="cobe-canvas" style={{width: '100%', height: '100%', aspectRatio: '1 / 1'}} className="relative z-10"></canvas>
                      <div className="absolute -bottom-4 -right-4 w-32 h-32 border border-primary/30 rounded-full"></div>
