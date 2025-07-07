@@ -10,6 +10,7 @@
     "i18n:check": "next-intl validate --strict"
   },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
     "@tailwindcss/postcss": "^4.1.10",
     "cobe": "^0.6.4",
     "next": "15.3.3",
