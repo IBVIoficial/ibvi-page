@@ -10,7 +10,7 @@ const SolutionSection = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center">
           <div className="w-16 h-0.5 bg-primary mb-6"></div>
-          <h2 className="text-3xl md:text-4xl font-playfair font-semibold text-primary text-center mb-6">
+          <h2 className="text-3xl md:text-4xl font-playfair font-semibold text-zinc-800 dark:text-zinc-900 text-center mb-6">
             {t.rich("title", { primary: (chunks) => <span className="text-primary">{chunks}</span> })}
           </h2>
           <p className="font-inter text-text-secondary text-lg leading-relaxed max-w-3xl mx-auto text-center mb-16">{t("description")}</p>
@@ -75,7 +75,7 @@ const SolutionSection = () => {
 
         <div className="flex justify-center mt-16">
           <div className="bg-primary/10 border border-primary/20 px-10 py-8 max-w-3xl text-center">
-            <p className="font-playfair text-xl text-text-primary mb-0">{t("quote")}</p>
+            <p className="font-playfair text-xl text-zinc-800 dark:text-zinc-900 mb-0">{t("quote")}</p>
           </div>
         </div>
       </div>
