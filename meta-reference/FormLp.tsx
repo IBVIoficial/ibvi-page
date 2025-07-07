@@ -333,7 +333,7 @@ export default function FormLP() {
                      <button
                         type="submit"
                         disabled={isLoading}
-                        className={`w-full rounded-none bg-emerald-800 p-3 text-md font-semibold text-white shadow-sm hover:bg-emerald-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 dark:bg-green-700 ${
+                        className={`w-full rounded-none bg-emerald-800 p-3 text-md font-semibold text-white shadow-sm hover:bg-emerald-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 dark:bg-green-700 ${
                            isLoading ? 'cursor-not-allowed opacity-50' : ''
                         }`}
                         aria-label={isLoading ? 'Enviando...' : 'Receber apresentação'}
