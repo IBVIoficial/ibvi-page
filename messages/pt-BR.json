@@ -1,165 +1,165 @@
 {
-  "navigation": {
-    "overview": "Visão Geral",
-    "challenges": "Desafios",
-    "solution": "Solução",
-    "investment": "Investimento",
-    "about": "Sobre",
-    "contact": "Contato"
-  },
-  "hero": {
-    "title": "Revolucionando",
-    "subtitle": "o Mercado Imobiliário Brasileiro",
-    "description": "A IBVI introduz a primeira plataforma de avaliação imobiliária do Brasil alimentada por inteligência artificial, aproveitando análises avançadas para fornecer resultados precisos e padronizados e estabelecer um índice de referência inspirado na FIPE para imóveis de luxo.",
-    "tagline": "IA e Inteligência de Dados para um Mercado de R$ 1,5 Trilhão",
-    "cta_primary": "Descubra Nossa Solução",
-    "cta_secondary": "Fale Conosco"
-  },
-  "overview": {
-    "title": "Mercado Imobiliário Brasileiro: <primary>Uma Visão Geral</primary>",
-    "main_paragraph": "Avaliado em R$ 1,5 trilhão, o mercado imobiliário de luxo do Brasil enfrenta inconsistências significativas de avaliação. Transações de alto valor frequentemente sofrem com disputas e discrepâncias, impactando diretamente a eficiência e transparência do mercado.",
-    "market_value_stat_value": "R$1,5T",
-    "market_value_stat_label": "Valor Total do Mercado",
-    "annual_transactions_stat_value": "R$120BI",
-    "annual_transactions_stat_label": "Transações Anuais",
-    "valuation_challenges_stat_value": ">80%",
-    "valuation_challenges_stat_label": "Desafios de Avaliação",
-    "market_size": "Tamanho do Mercado",
-    "market_size_value": "R$ 1,5 Trilhão",
-    "luxury_properties": "Propriedades de Alto Padrão",
-    "luxury_properties_value": "500K+",
-    "annual_transactions": "Transações Anuais",
-    "annual_transactions_value": "2M+",
-    "avg_price_growth": "Crescimento Anual Médio",
-    "avg_price_growth_value": "8,5% ao ano"
-  },
-  "challenges": {
-    "title": "Principais Desafios do <primary>Mercado</primary>",
-    "main_paragraph": "O mercado imobiliário de luxo brasileiro enfrenta diversos desafios críticos que afetam a precisão da avaliação e a eficiência do mercado.",
-    "standardization_gaps": {
-      "title": "Lacunas na Padronização",
-      "description": "Metodologias de avaliação inconsistentes levam a discrepâncias significativas de preços, especialmente no segmento de mercado de alto padrão."
-    },
-    "buyer_hurdles": {
-      "title": "Dificuldades na Avaliação pelo Comprador",
-      "description": "Mais de 80% dos compradores de imóveis de luxo têm dificuldade em avaliar o valor justo de mercado, gerando incerteza e hesitação em transações de alto valor."
-    },
-    "outdated_methods": {
-      "title": "Métodos Desatualizados",
-      "description": "Os processos tradicionais de avaliação manual carecem da precisão, consistência e eficiência exigidas pelo sofisticado mercado atual."
-    },
-    "transaction_delays": {
-      "title": "Atrasos nas Transações",
-      "description": "Disputas de avaliação prolongam significativamente os prazos de negociação, dificultando a fluidez do mercado e aumentando os custos de oportunidade para todas as partes."
-    }
-  },
-  "solution": {
-    "title": "A Solução da IBVI <primary>Potencializada por IA</primary>",
-    "description": "A IBVI introduz a primeira plataforma de avaliação por inteligência artificial do Brasil, utilizando análises sofisticadas para resultados precisos e padronizados, e criando um índice de mercado de referência \"tipo FIPE\" para imóveis de luxo.",
-    "data_driven_valuations": {
-      "title": "Avaliações Orientadas por Dados",
-      "description": "Algoritmos proprietários de IA processam vastos conjuntos de dados para minimizar a subjetividade e fornecer avaliações precisas para propriedades de alto valor."
-    },
-    "predictive_analytics": {
-      "title": "Análise Preditiva",
-      "description": "Modelos de previsão sofisticados antecipam tendências de mercado, capacitando investidores com insights valiosos para tomada de decisões estratégicas."
-    },
-    "intelligent_search": {
-      "title": "Busca Inteligente",
-      "description": "Algoritmos de aprendizado de máquina aprimoram a correspondência de propriedades, conectando clientes exigentes a imóveis que atendem precisamente aos seus critérios exclusivos."
-    },
-    "standardized_index": {
-      "title": "Índice Padronizado",
-      "description": "Um benchmark confiável tipo FIPE para avaliações de imóveis de luxo, estabelecendo um padrão de confiança para o mercado imobiliário de alto padrão brasileiro."
-    },
-    "quote": "\"A plataforma de avaliação proprietária da IBVI representa uma mudança de paradigma na forma como os imóveis de luxo brasileiros são avaliados e transacionados.\""
-  },
-  "insights": {
-    "title": "Insights do <primary>Mercado</primary>",
-    "description": "Uma análise abrangente do mercado imobiliário de luxo do Brasil revela oportunidades significativas para inovação tecnológica e padronização.",
-    "market_growth": "Crescimento do Mercado",
-    "market_growth_value": "12,3%",
-    "luxury_segment": "Segmento de Luxo",
-    "luxury_segment_value": "R$ 450B",
-    "ai_accuracy": "Precisão da IA",
-    "ai_accuracy_value": "95,8%",
-    "time_savings": "Economia de Tempo",
-    "time_savings_value": "70%"
-  },
-  "investment": {
-    "title": "<primary>Investimento e Crescimento Futuro</primary>",
-    "vision": {
-      "title": "Visão",
-      "p1": "A IBVI está posicionada para se tornar a principal plataforma de avaliação de imóveis do Brasil, estabelecendo níveis sem precedentes de transparência, precisão e eficiência no mercado imobiliário de luxo.",
-      "p2": "Nossa tecnologia proprietária de IA estabelece um novo padrão para avaliação de imóveis, abordando desafios de longa data no setor."
-    },
-    "expansion": {
-      "title": "Expansão",
-      "p1": "Após nosso estabelecimento no Brasil, a expansão estratégica da IBVI pela América Latina promete transformar a avaliação de imóveis em toda a região, particularmente em mercados que enfrentam desafios semelhantes.",
-      "p2": "Nossa plataforma de IA escalável é projetada para acomodar as nuances de diversos mercados imobiliários, mantendo uma excelência de avaliação consistente."
-    },
-    "button_text": "Discutir Oportunidades de Investimento"
-  },
-  "about": {
-    "title": "Sobre a IBVI",
-    "subtitle": "Revolucionando o Mercado Imobiliário Brasileiro com Inteligência Artificial",
-    "description": "A IBVI está na vanguarda da transformação do mercado imobiliário brasileiro de R$ 1,5 trilhão através de inteligência artificial de ponta e análise de dados, trazendo transparência e precisão sem precedentes às avaliações imobiliárias.",
-    "mission": {
-      "title": "Nossa Missão",
-      "transparency": {
-        "title": "Transparência",
-        "description": "Trazendo avaliações claras e padronizadas para eliminar incertezas e disputas em transações imobiliárias de luxo."
+   "navigation": {
+      "overview": "Visão Geral",
+      "challenges": "Desafios",
+      "solution": "Solução",
+      "investment": "Investimento",
+      "about": "Sobre",
+      "contact": "Contato"
+   },
+   "hero": {
+      "title": "Revolucionando",
+      "subtitle": "o Mercado Imobiliário Brasileiro",
+      "description": "A IBVI introduz a primeira plataforma de avaliação imobiliária do Brasil alimentada por inteligência artificial, aproveitando análises avançadas para fornecer resultados precisos e padronizados e estabelecer um índice de referência inspirado na FIPE para imóveis de luxo.",
+      "tagline": "IA e Inteligência de Dados para um Mercado de R$ 1,5 Trilhão",
+      "cta_primary": "Descubra Nossa Solução",
+      "cta_secondary": "Fale Conosco"
+   },
+   "overview": {
+      "title": "Mercado Imobiliário Brasileiro: <primary>Uma Visão Geral</primary>",
+      "main_paragraph": "Avaliado em R$ 1,5 trilhão, o mercado imobiliário de luxo do Brasil enfrenta inconsistências significativas de avaliação. Transações de alto valor frequentemente sofrem com disputas e discrepâncias, impactando diretamente a eficiência e transparência do mercado.",
+      "market_value_stat_value": "R$1,5T",
+      "market_value_stat_label": "Valor Total do Mercado",
+      "annual_transactions_stat_value": "R$120BI",
+      "annual_transactions_stat_label": "Transações Anuais",
+      "valuation_challenges_stat_value": ">80%",
+      "valuation_challenges_stat_label": "Desafios de Avaliação",
+      "market_size": "Tamanho do Mercado",
+      "market_size_value": "R$ 1,5 Trilhão",
+      "luxury_properties": "Propriedades de Alto Padrão",
+      "luxury_properties_value": "500K+",
+      "annual_transactions": "Transações Anuais",
+      "annual_transactions_value": "2M+",
+      "avg_price_growth": "Crescimento Anual Médio",
+      "avg_price_growth_value": "8,5% ao ano"
+   },
+   "challenges": {
+      "title": "Principais Desafios do <primary>Mercado</primary>",
+      "main_paragraph": "O mercado imobiliário de luxo brasileiro enfrenta diversos desafios críticos que afetam a precisão da avaliação e a eficiência do mercado.",
+      "standardization_gaps": {
+         "title": "Lacunas na Padronização",
+         "description": "Metodologias de avaliação inconsistentes levam a discrepâncias significativas de preços, especialmente no segmento de mercado de alto padrão."
       },
-      "precision": {
-        "title": "Precisão",
-        "description": "Aproveitando IA e machine learning para entregar as avaliações imobiliárias mais precisas do mercado brasileiro."
+      "buyer_hurdles": {
+         "title": "Dificuldades na Avaliação pelo Comprador",
+         "description": "Mais de 80% dos compradores de imóveis de luxo têm dificuldade em avaliar o valor justo de mercado, gerando incerteza e hesitação em transações de alto valor."
       },
-      "innovation": {
-        "title": "Inovação",
-        "description": "Pioneirando o primeiro índice semelhante ao FIPE para propriedades de luxo, estabelecendo novos padrões da indústria."
+      "outdated_methods": {
+         "title": "Métodos Desatualizados",
+         "description": "Os processos tradicionais de avaliação manual carecem da precisão, consistência e eficiência exigidas pelo sofisticado mercado atual."
+      },
+      "transaction_delays": {
+         "title": "Atrasos nas Transações",
+         "description": "Disputas de avaliação prolongam significativamente os prazos de negociação, dificultando a fluidez do mercado e aumentando os custos de oportunidade para todas as partes."
       }
-    },
-    "technology": {
-      "title": "Nossa Tecnologia",
-      "description": "A plataforma proprietária de IA da IBVI representa anos de pesquisa e desenvolvimento, especificamente projetada para as complexidades do mercado imobiliário de alto padrão brasileiro.",
-      "machine_learning": {
-        "title": "Machine Learning Avançado",
-        "description": "Nossos algoritmos processam vastos conjuntos de dados, incluindo características das propriedades, tendências do mercado, fatores de localização e indicadores econômicos para gerar avaliações de alta precisão."
+   },
+   "solution": {
+      "title": "A Solução da IBVI <primary>Potencializada por IA</primary>",
+      "description": "A IBVI introduz a primeira plataforma de avaliação por inteligência artificial do Brasil, utilizando análises sofisticadas para resultados precisos e padronizados, e criando um índice de mercado de referência \"tipo FIPE\" para imóveis de luxo.",
+      "data_driven_valuations": {
+         "title": "Avaliações Orientadas por Dados",
+         "description": "Algoritmos proprietários de IA processam vastos conjuntos de dados para minimizar a subjetividade e fornecer avaliações precisas para propriedades de alto valor."
+      },
+      "predictive_analytics": {
+         "title": "Análise Preditiva",
+         "description": "Modelos de previsão sofisticados antecipam tendências de mercado, capacitando investidores com insights valiosos para tomada de decisões estratégicas."
       },
       "intelligent_search": {
-        "title": "Busca Inteligente",
-        "description": "Algoritmos de machine learning refinam a correspondência de propriedades, conectando perfeitamente clientes exigentes a propriedades que refletem suas preferências exatas."
+         "title": "Busca Inteligente",
+         "description": "Algoritmos de aprendizado de máquina aprimoram a correspondência de propriedades, conectando clientes exigentes a imóveis que atendem precisamente aos seus critérios exclusivos."
+      },
+      "standardized_index": {
+         "title": "Índice Padronizado",
+         "description": "Um benchmark confiável tipo FIPE para avaliações de imóveis de luxo, estabelecendo um padrão de confiança para o mercado imobiliário de alto padrão brasileiro."
+      },
+      "quote": "\"A plataforma de avaliação proprietária da IBVI representa uma mudança de paradigma na forma como os imóveis de luxo brasileiros são avaliados e transacionados.\""
+   },
+   "insights": {
+      "title": "Insights do <primary>Mercado</primary>",
+      "description": "Uma análise abrangente do mercado imobiliário de luxo do Brasil revela oportunidades significativas para inovação tecnológica e padronização.",
+      "market_growth": "Crescimento do Mercado",
+      "market_growth_value": "12,3%",
+      "luxury_segment": "Segmento de Luxo",
+      "luxury_segment_value": "R$ 450B",
+      "ai_accuracy": "Precisão da IA",
+      "ai_accuracy_value": "95,8%",
+      "time_savings": "Economia de Tempo",
+      "time_savings_value": "70%"
+   },
+   "investment": {
+      "title": "<primary>Investimento e Crescimento Futuro</primary>",
+      "vision": {
+         "title": "Visão",
+         "p1": "A IBVI está posicionada para se tornar a principal plataforma de avaliação de imóveis do Brasil, estabelecendo níveis sem precedentes de transparência, precisão e eficiência no mercado imobiliário de luxo.",
+         "p2": "Nossa tecnologia proprietária de IA estabelece um novo padrão para avaliação de imóveis, abordando desafios de longa data no setor."
+      },
+      "expansion": {
+         "title": "Expansão",
+         "p1": "Após nosso estabelecimento no Brasil, a expansão estratégica da IBVI pela América Latina promete transformar a avaliação de imóveis em toda a região, particularmente em mercados que enfrentam desafios semelhantes.",
+         "p2": "Nossa plataforma de IA escalável é projetada para acomodar as nuances de diversos mercados imobiliários, mantendo uma excelência de avaliação consistente."
+      },
+      "button_text": "Discutir Oportunidades de Investimento"
+   },
+   "about": {
+      "title": "Sobre a IBVI",
+      "subtitle": "Revolucionando o Mercado Imobiliário Brasileiro com Inteligência Artificial",
+      "description": "A IBVI está na vanguarda da transformação do mercado imobiliário brasileiro de R$ 1,5 trilhão através de inteligência artificial de ponta e análise de dados, trazendo transparência e precisão sem precedentes às avaliações imobiliárias.",
+      "mission": {
+         "title": "Nossa Missão",
+         "transparency": {
+            "title": "Transparência",
+            "description": "Trazendo avaliações claras e padronizadas para eliminar incertezas e disputas em transações imobiliárias de luxo."
+         },
+         "precision": {
+            "title": "Precisão",
+            "description": "Aproveitando IA e machine learning para entregar as avaliações imobiliárias mais precisas do mercado brasileiro."
+         },
+         "innovation": {
+            "title": "Inovação",
+            "description": "Pioneirando o primeiro índice semelhante ao FIPE para propriedades de luxo, estabelecendo novos padrões da indústria."
+         }
+      },
+      "technology": {
+         "title": "Nossa Tecnologia",
+         "description": "A plataforma proprietária de IA da IBVI representa anos de pesquisa e desenvolvimento, especificamente projetada para as complexidades do mercado imobiliário de alto padrão brasileiro.",
+         "machine_learning": {
+            "title": "Machine Learning Avançado",
+            "description": "Nossos algoritmos processam vastos conjuntos de dados, incluindo características das propriedades, tendências do mercado, fatores de localização e indicadores econômicos para gerar avaliações de alta precisão."
+         },
+         "intelligent_search": {
+            "title": "Busca Inteligente",
+            "description": "Algoritmos de machine learning refinam a correspondência de propriedades, conectando perfeitamente clientes exigentes a propriedades que refletem suas preferências exatas."
+         }
+      },
+      "expertise": {
+         "title": "Nossa Expertise",
+         "description": "A IBVI reúne especialistas em imóveis, inteligência artificial, ciência de dados e dinâmicas do mercado brasileiro para entregar insights e soluções incomparáveis.",
+         "experience_years": "15+",
+         "experience_description": "Anos de Experiência Combinada em Imóveis",
+         "data_points": "50M+",
+         "data_points_description": "Pontos de Dados Analisados",
+         "accuracy_rate": "95%",
+         "accuracy_description": "Taxa de Precisão na Avaliação"
+      },
+      "cta": {
+         "title": "Pronto para Revolucionar Sua Experiência Imobiliária?",
+         "description": "Junte-se a nós na revolução do mercado imobiliário brasileiro com tecnologia de IA de vanguarda e precisão incomparável.",
+         "explore_solution": "Explore Nossa Solução",
+         "get_in_touch": "Fale Conosco"
       }
-    },
-    "expertise": {
-      "title": "Nossa Expertise",
-      "description": "A IBVI reúne especialistas em imóveis, inteligência artificial, ciência de dados e dinâmicas do mercado brasileiro para entregar insights e soluções incomparáveis.",
-      "experience_years": "15+",
-      "experience_description": "Anos de Experiência Combinada em Imóveis",
-      "data_points": "50M+",
-      "data_points_description": "Pontos de Dados Analisados",
-      "accuracy_rate": "95%",
-      "accuracy_description": "Taxa de Precisão na Avaliação"
-    },
-    "cta": {
-      "title": "Pronto para Revolucionar Sua Experiência Imobiliária?",
-      "description": "Junte-se a nós na revolução do mercado imobiliário brasileiro com tecnologia de IA de vanguarda e precisão incomparável.",
-      "explore_solution": "Explore Nossa Solução",
-      "get_in_touch": "Fale Conosco"
-    }
-  },
-  "expansion": {
-    "title": "Expansão",
-    "description": "Após nosso estabelecimento no Brasil, a IBVI está agora se expandindo estrategicamente pela América Latina, com o objetivo de redefinir a avaliação de propriedades em mercados que compartilham desafios estruturais similares. Nossa plataforma escalável de IA é construída para se adaptar às complexidades de diversas paisagens imobiliárias, garantindo consistência, precisão e excelência na avaliação."
-  },
-  "footer": {
-    "description": "A IBVI está liderando o futuro da avaliação imobiliária no Brasil com precisão impulsionada por IA e inteligência de mercado.",
-    "contact_title": "Contato",
-    "address": "São Paulo<br/>Av. Magalhães de Castro 4.800, 23° andar<br/>Cidade Jardim - São Paulo - SP, 05676-120",
-    "subscribe_title": "Inscrever-se",
-    "subscribe_description": "Mantenha-se informado sobre nossos últimos desenvolvimentos e oportunidades de investimento.",
-    "email_placeholder": "Seu e-mail",
-    "copyright": "© {currentYear} IBVI. Todos os direitos reservados.",
-    "tagline": "Pioneirismo em Inteligência Imobiliária de Luxo"
-  }
+   },
+   "expansion": {
+      "title": "Expansão",
+      "description": "Após nosso estabelecimento no Brasil, a IBVI está agora se expandindo estrategicamente pela América Latina, com o objetivo de redefinir a avaliação de propriedades em mercados que compartilham desafios estruturais similares. Nossa plataforma escalável de IA é construída para se adaptar às complexidades de diversas paisagens imobiliárias, garantindo consistência, precisão e excelência na avaliação."
+   },
+   "footer": {
+      "description": "A IBVI está liderando o futuro da avaliação imobiliária no Brasil com precisão impulsionada por IA e inteligência de mercado.",
+      "contact_title": "Contato",
+      "address": "São Paulo<br/>Av. Magalhães de Castro 4.800, 23° andar<br/>Cidade Jardim - São Paulo - SP, 05676-120",
+      "subscribe_title": "Inscrever-se",
+      "subscribe_description": "Mantenha-se informado sobre nossos últimos desenvolvimentos e oportunidades de investimento.",
+      "email_placeholder": "Seu e-mail",
+      "copyright": "© {currentYear} IBVI. Todos os direitos reservados.",
+      "tagline": "Pioneirismo em Inteligência Imobiliária de Luxo"
+   }
 }

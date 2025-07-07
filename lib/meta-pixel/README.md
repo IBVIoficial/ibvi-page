@@ -6,6 +6,7 @@ This directory contains the Meta (Facebook) Pixel implementation for tracking us
 
 1. **Environment Variables**
    Create a `.env.local` file in the root directory with:
+
    ```
    NEXT_PUBLIC_FB_PIXEL_ID=4943944062283476
    NEXT_PUBLIC_META_ACCESS_TOKEN=your-meta-access-token-here
@@ -30,15 +31,15 @@ import * as fbq from '@/lib/meta-pixel/meta-pixel';
 
 // Track a lead event
 fbq.lead({
-  content_name: 'Newsletter Signup',
-  value: 10,
-  currency: 'BRL'
+   content_name: 'Newsletter Signup',
+   value: 10,
+   currency: 'BRL',
 });
 
 // Track a contact event
 fbq.contact({
-  content_name: 'Contact Form',
-  content_category: 'Support'
+   content_name: 'Contact Form',
+   content_category: 'Support',
 });
 ```
 
@@ -49,28 +50,28 @@ For better tracking accuracy, use both client and server-side tracking:
 ```typescript
 // Send event to Meta Conversions API
 const response = await fetch('/api/event', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({
-    event_name: 'Lead',
-    event_time: Math.floor(Date.now() / 1000),
-    action_source: 'website',
-    event_source_url: window.location.href,
-    user_data: {
-      em: email,
-      ph: phone,
-      fn: firstName,
-      ln: lastName,
-      country: 'br'
-    },
-    custom_data: {
-      value: 50,
-      currency: 'BRL'
-    },
-    event_id: 'unique_event_id' // For deduplication
-  })
+   method: 'POST',
+   headers: {
+      'Content-Type': 'application/json',
+   },
+   body: JSON.stringify({
+      event_name: 'Lead',
+      event_time: Math.floor(Date.now() / 1000),
+      action_source: 'website',
+      event_source_url: window.location.href,
+      user_data: {
+         em: email,
+         ph: phone,
+         fn: firstName,
+         ln: lastName,
+         country: 'br',
+      },
+      custom_data: {
+         value: 50,
+         currency: 'BRL',
+      },
+      event_id: 'unique_event_id', // For deduplication
+   }),
 });
 ```
 
@@ -96,6 +97,7 @@ const response = await fetch('/api/event', {
 ## Testing
 
 To verify the pixel is working:
+
 1. Install the Facebook Pixel Helper Chrome extension
 2. Visit your website
 3. Check the extension icon - it should show your pixel ID

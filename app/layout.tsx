@@ -6,10 +6,6 @@ import {ReactNode} from 'react';
 //   title: 'Global App Title',
 // };
 
-export default function RootLayout({
-  children,
-}: {
-  children: ReactNode;
-}) {
-  return children;
+export default function RootLayout({children}: {children: ReactNode}) {
+   return children;
 }
