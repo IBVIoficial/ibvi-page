@@ -5,7 +5,7 @@ import HeroSection from './components/hero-section';
 import OverviewSection from './components/overview-section';
 import ChallengesSection from './components/challenges-section';
 import SolutionSection from './components/solution-section';
-import InsightsSection from './components/insights-section';
+
 import InvestmentSection from './components/investment-section';
 
 const IBVILandingPage = () => {
@@ -28,7 +28,7 @@ const IBVILandingPage = () => {
          <OverviewSection />
          <ChallengesSection />
          <SolutionSection />
-         <InsightsSection />
+
          <InvestmentSection />
 
          <style jsx global>{`

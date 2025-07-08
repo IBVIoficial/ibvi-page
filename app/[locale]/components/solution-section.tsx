@@ -13,7 +13,7 @@ const SolutionSection = () => {
                <h2 className="text-3xl md:text-4xl font-playfair font-semibold text-zinc-800 dark:text-zinc-900 text-center mb-6">
                   {t.rich('title', {primary: (chunks) => <span className="text-primary">{chunks}</span>})}
                </h2>
-               <p className="font-inter text-text-secondary text-lg leading-relaxed max-w-3xl mx-auto text-center mb-16">{t('description')}</p>
+               <p className="font-inter text-zinc-800 dark:text-zinc-900 text-lg leading-relaxed max-w-3xl mx-auto text-center mb-16">{t('description')}</p>
             </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
