@@ -8,22 +8,22 @@
       "contact": "Contact"
    },
    "hero": {
-      "title": "Transforming",
-      "subtitle": "Brazilian Real Estate",
-      "description": "IBVI revolutionizes property valuations in Brazil through advanced AI and data analytics, bringing unprecedented transparency and precision to the luxury real estate market.",
-      "tagline": "AI & Data Intelligence for a $4 Trillion Market",
-      "cta_primary": "Discover Our Solution",
+      "title": "Revolutionizing",
+      "subtitle": "Brazil’s Real Estate Market",
+      "description": "IBVI introduces Brazil’s first artificial intelligence–powered valuation platform, leveraging advanced analytics to deliver precise, standardized results and establish a benchmark index for real estate market.",
+      "tagline": "AI & Data Intelligence for a US$4 Trillion Market",
+      "cta_primary": "Learn About Our Research",
       "cta_secondary": "Market Challenges"
    },
    "overview": {
-      "title": "Brazilian Real Estate: <primary>An Overview</primary>",
-      "main_paragraph": "Valued at $1.5 trillion, Brazil's luxury real estate market faces significant valuation inconsistencies. High-value transactions often suffer from disputes and discrepancies, directly impacting market efficiency and transparency.",
-      "market_value_stat_value": "$1.5T",
-      "market_value_stat_label": "Total Market Value",
-      "annual_transactions_stat_value": "$120B",
+      "title": "Brazilian Real Estate: <primary>Current Valuation</primary>",
+      "main_paragraph": "The Brazilian real estate market is valued at approximately USD 4 trillion in total asset stock, based on the country's Gross Domestic Product (GDP). Annual transaction volume reaches USD 100 billion, reflecting the sector’s scale and relevance.",
+      "market_value_stat_value": "$4T",
+      "market_value_stat_label": "Total Actives Market Value",
+      "annual_transactions_stat_value": "$100B",
       "annual_transactions_stat_label": "Annual Transactions",
-      "valuation_challenges_stat_value": ">80%",
-      "valuation_challenges_stat_label": "Valuation Challenges",
+      "valuation_challenges_stat_value": ">90%",
+      "valuation_challenges_stat_label": "Accuracy in Automated Valuations",
       "market_size": "Market Size",
       "market_size_value": "$1.5 Trillion",
       "luxury_properties": "Luxury Properties",
@@ -34,43 +34,43 @@
       "avg_price_growth_value": "8.5% annually"
    },
    "challenges": {
-      "title": "Key Market <primary>Challenges</primary>",
-      "main_paragraph": "The Brazilian luxury real estate market faces several critical challenges that affect valuation precision and market efficiency.",
+      "title": "IBVI’s Expertise and <primary>Sector Challenges</primary>",
+      "main_paragraph": "IBVI was created with a clear technical mission: to correct structural distortions in Brazil’s real estate appraisal sector through a robust, data-driven automation system that delivers unprecedented efficiency to the market.",
       "standardization_gaps": {
-         "title": "Standardization Gaps",
-         "description": "Inconsistent valuation methodologies lead to significant price discrepancies, particularly in the high-end market segment."
+         "title": "Standardization Through AI",
+         "description": "Over 70% of appraisers still rely on manual spreadsheets. IBVI replaces these outdated methods with AI-powered automated models, delivering standardized, auditable reports updated in real time."
       },
       "buyer_hurdles": {
-         "title": "Buyer Valuation Hurdles",
-         "description": "Over 80% of luxury property buyers struggle to assess fair market value, creating uncertainty and hesitation in high-value transactions."
+         "title": "Technical and Structured Pricing",
+         "description": "While other platforms focus on the commercial journey, IBVI operates at the core of pricing, using registry data, CRIs, FIIs, and hedonic attributes to deliver robust and defensible valuations."
       },
       "outdated_methods": {
-         "title": "Outdated Methods",
-         "description": "Traditional manual appraisal processes lack the precision, consistency, and efficiency demanded by today's sophisticated market."
+         "title": "Scalable and Cost-Effective Solution",
+         "description": "With declining AI infrastructure costs, IBVI operates at scale with greater agility than regulatory bodies, delivering advanced technology at a market-accessible cost."
       },
       "transaction_delays": {
-         "title": "Transaction Delays",
-         "description": "Valuation disputes significantly extend negotiation timelines, hindering market fluidity and increasing opportunity costs for all parties."
+         "title": "Data Traceability and Regulatory Alignment",
+         "description": "Asset managers and funds demand transparency and technical rigor. IBVI provides complete data trails, clear statistical methodology, and full compliance with legal requirements and ESG standards."
       }
    },
    "solution": {
-      "title": "IBVI's <primary>AI-Powered</primary> Solution",
-      "description": "IBVI introduces Brazil's first artificial intelligence valuation platform, utilizing sophisticated analytics for precise, standardized results and creating a benchmark \"FIPE-like\" market index for luxury properties.",
+      "title": "IBVI Platform <primary>Powered by AI</primary>",
+      "description": "IBVI aims to become the leading authority in real estate valuation in Brazil. By combining cutting-edge Artificial Intelligence, regulatory expertise, and access to data, the platform delivers a system built on transparency, precision, and trust.",
       "data_driven_valuations": {
-         "title": "Data-Driven Valuations",
-         "description": "Proprietary AI algorithms process vast datasets to minimize subjectivity and deliver precise valuations for high-value properties."
+         "title": "Unprecedented Time Reduction",
+         "description": " The IBVI platform reduces transaction times by up to 60%, automating analyses with proprietary AI and delivering accurate, traceable valuations aligned with predefined standards."
       },
       "predictive_analytics": {
-         "title": "Predictive Analytics",
-         "description": "Sophisticated forecasting models anticipate market trends, empowering investors with valuable insights for strategic decision-making."
+         "title": "Greater Operational Efficiency",
+         "description": " The system automates critical stages such as validation and pricing, reducing reliance on manual processes and speeding up compliance with CMN Resolution No. 4,951/2021."
       },
       "intelligent_search": {
-         "title": "Intelligent Search",
-         "description": "Machine learning algorithms enhance property matching, connecting discerning clients with properties that precisely meet their unique criteria."
+         "title": "Proprietary Standardized Index",
+         "description": "Inspired by the EPRA Index, IBVI introduces Brazil’s first luxury real estate index based on key variables such as area, location, amenities, and official transaction history."
       },
       "standardized_index": {
-         "title": "Standardized Index",
-         "description": "A reliable FIPE-like benchmark for luxury property valuations, establishing a trusted standard for the Brazilian high-end real estate market."
+         "title": "Authority in Property Valuation",
+         "description": " With advanced AI, robust data intelligence, and deep regulatory knowledge, IBVI positions itself as the reference in high-end property valuation, driving trust and market transparency."
       },
       "quote": "\"IBVI's proprietary valuation platform represents a paradigm shift in how Brazilian luxury real estate is evaluated and transacted.\""
    },
@@ -89,73 +89,79 @@
    "investment": {
       "title": "<primary>Investment & Future Growth</primary>",
       "vision": {
-         "title": "Vision",
-         "p1": "IBVI is positioned to become Brazil's premier property valuation platform by establishing unprecedented levels of transparency, precision, and efficiency in the luxury real estate market.",
-         "p2": "Our proprietary AI technology sets a new standard for property valuation, addressing longstanding challenges within the industry."
+         "title": "Mission",
+         "p1": "IBVI’s mission is to lead the development of the next generation of the real estate market in Brazil and, eventually, across Latin America.",
+         "p2": "With advanced technology, artificial intelligence, and regulatory validation, IBVI introduces a new valuation infrastructure: technical, scalable, and reliable."
       },
       "expansion": {
          "title": "Expansion",
-         "p1": "Following our establishment in Brazil, IBVI's strategic expansion across Latin America promises to transform property valuation across the region, particularly in markets facing similar challenges.",
-         "p2": "Our scalable AI platform is designed to accommodate the nuances of diverse real estate markets while maintaining consistent valuation excellence."
+         "p1": "With an innovative approach and proprietary technology, IBVI aims to lead the transformation of Brazil’s high-end real estate market.",
+         "p2": "The platform is preparing to expand across Latin America, offering digital solutions, reliable data, and automated valuations tailored to the new profile of today’s real estate buyer."
       },
       "button_text": "Discuss Investment Opportunities"
    },
    "about": {
-      "title": "About IBVI",
+      "title": "Discover the IBVI Platform",
       "subtitle": "Revolutionizing Brazilian Real Estate with AI Intelligence",
-      "description": "IBVI introduces Brazil's first artificial intelligence–powered valuation platform, leveraging advanced analytics to deliver precise, standardized results and establish a \"FIPE-like\" benchmark index for luxury real estate.",
+      "description": "The IBVI platform is at the forefront of transforming Brazil’s $4 trillion real estate market through cutting-edge Artificial Intelligence and data analysis, bringing unprecedented transparency and precision to property valuations.",
       "mission": {
          "title": "Our Mission",
          "transparency": {
-            "title": "Transparency",
-            "description": "Bringing clear, standardized valuations to eliminate uncertainty and disputes in luxury real estate transactions."
+            "title": "Standardization with AI",
+            "description": "We replace traditional methods with automated models that deliver technical reports in minutes, with high accuracy and controlled variance."
          },
          "precision": {
-            "title": "Precision",
-            "description": "Leveraging AI and machine learning to deliver the most accurate property valuations in the Brazilian market."
+            "title": "National Technical Benchmark",
+            "description": "With a proprietary database aligned with Brazilian regulations, IBVI provides valuations compliant with the Central Bank, financial institutions, and asset managers overseeing over USD$220 billions."
          },
          "innovation": {
-            "title": "Innovation",
-            "description": "Standardized Index: A trusted benchmark for the high-end market, this FIPE-inspired index sets a new standard for luxury property valuations in Brazil."
+            "title": "Scalable and Secure Solution",
+            "description": "Our Google Cloud infrastructure enables scalability to over 1 million valuations per day, reducing costs, ensuring security, and overcoming speed limitations."
          }
       },
       "technology": {
          "title": "Our Technology",
-         "description": "IBVI's proprietary valuation platform represents a revolution in how Brazilian luxury real estate is evaluated and transacted.",
+         "description": "IBVI’s technology combines advanced automation, regulatory intelligence, and proprietary data to deliver accurate, secure, and scalable valuations. Our platform transforms complexity into efficiency.",
          "machine_learning": {
             "title": "Advanced Machine Learning",
-            "description": "Data-Driven Valuations: Proprietary AI algorithms analyze extensive datasets to reduce subjectivity and provide accurate valuations for high-value properties."
+            "description": "Our algorithms process vast datasets including property characteristics, market trends, location factors and economic indicators to generate high-precision valuations.",
+            "feature_1": "Real-Time Processing",
+            "feature_2": "Operational Efficiency",
+            "feature_3": "Regulatory Intelligence"
          },
-         "data_intelligence": {
-            "title": "Data Intelligence Platform",
-            "description": "Our comprehensive platform integrates multiple data sources to provide a 360-degree view of property values and market dynamics."
+         "intelligent_search": {
+            "title": "Technical Differentials",
+            "description": "IBVI stands out by offering a unique technical infrastructure in Brazil, featuring a proprietary index, structured data architecture, and full integration with the new dynamics of the digital real estate market.",
+            "feature_1": "Proprietary Central Property Index",
+            "feature_2": "Technological Foundation for Expansion",
+            "feature_3": "Connection with the New Buyer Profile"
          }
       },
       "expertise": {
          "title": "Our Expertise",
-         "description": "IBVI brings together experts in real estate, artificial intelligence, data science, and Brazilian market dynamics to deliver unparalleled insights and solutions.",
+         "description": "IBVI is composed of experts in Engineering, Data Science, Economics, Communications, and Financial Markets. This technical integration ensures accurate, secure valuations that meet the standards required by institutions and investment funds.",
          "experience_years": "15+",
          "experience_description": "Years Combined Real Estate Experience",
          "data_points": "50M+",
          "data_points_description": "Data Points Analyzed",
-         "accuracy_rate": "95%",
+         "accuracy_rate": "90%",
          "accuracy_description": "Valuation Accuracy Rate"
       },
       "cta": {
-         "title": "Ready to Transform Your Real Estate Experience?",
-         "description": "Join us in revolutionizing the Brazilian real estate market with cutting-edge AI technology and unmatched precision.",
-         "explore_solution": "Explore Our Solution",
+         "title": "Stay Ahead with IBVI Innovations",
+         "description": " Join the leading Real Estate valuation platform in Brazil.",
+         "explore_solution": "Learn about the research",
          "get_in_touch": "Get in Touch"
       }
    },
    "footer": {
-      "description": "IBVI is pioneering the future of real estate valuation in Brazil with AI-driven precision and market intelligence.",
-      "contact_title": "Contact",
-      "address": "São Paulo<br/>Av. Magalhães de Castro 4.800, 23rd floor<br/>Cidade Jardim - São Paulo - SP, 05676-120",
-      "subscribe_title": "Subscribe",
-      "subscribe_description": "Stay informed about our latest developments and investment opportunities.",
+      "description": "IBVI is transforming the Brazilian real estate market with automated, accurate, and scalable valuations powered by Artificial Intelligence.",
+      "contact_title": "Contact Us",
+      "address": "Address: Corporate Center, Park Tower – Av. Magalhães de Castro, 4800 – 23rd Floor – Cidade Jardim, São Paulo – SP, 05676-120 – Brazil",
+      "subscribe_title": "Subscribe for Updates",
+      "subscribe_description": "Explore our research, latest developments, and investment opportunities.",
       "email_placeholder": "Your email",
       "copyright": "© {currentYear} IBVI. All rights reserved.",
-      "tagline": "Pioneering Luxury Real Estate Intelligence"
+      "tagline": "IBVI: The future of Real Estate Valuation starts here."
    }
 }
