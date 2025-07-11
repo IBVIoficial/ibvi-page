@@ -30,7 +30,7 @@ export default function LocaleSwitch() {
             aria-label="Change language"
          >
             {availableLocales.map((loc) => (
-               <option key={loc.code} value={loc.code}>
+               <option className='text-black' key={loc.code} value={loc.code}>
                   {loc.name}
                </option>
             ))}

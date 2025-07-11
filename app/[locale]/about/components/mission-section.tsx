@@ -1,17 +1,18 @@
 'use client';
 
 import React from 'react';
+import {useTranslations} from 'next-intl';
 
 const MissionSection = () => {
+   const t = useTranslations('about');
+
    return (
       <section className="py-16 md:py-24 bg-surface-secondary transition-opacity duration-500 animate-fade-in" data-delay="200">
          <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
                <div className="text-center mb-16">
                   <div className="w-16 h-0.5 bg-primary mb-6 mx-auto"></div>
-                  <h2 className="text-3xl md:text-4xl font-playfair font-semibold text-zinc-800 dark:text-zinc-900 mb-8">
-                     Our <span className="text-primary">Mission</span>
-                  </h2>
+                  <h2 className="text-3xl md:text-4xl font-playfair font-semibold text-zinc-800 dark:text-zinc-900 mb-8">{t('mission.title')}</h2>
                </div>
 
                <div className="grid md:grid-cols-3 gap-12">
@@ -26,10 +27,8 @@ const MissionSection = () => {
                            />
                         </svg>
                      </div>
-                     <h3 className="text-xl font-playfair font-semibold text-teal-800 dark:text-teal-900 mb-4">Transparency</h3>
-                     <p className="text-text-tertiary leading-relaxed">
-                        Bringing clear, standardized valuations to eliminate uncertainty and disputes in luxury real estate transactions.
-                     </p>
+                     <h3 className="text-xl font-playfair font-semibold text-teal-800 dark:text-teal-900 mb-4">{t('mission.transparency.title')}</h3>
+                     <p className="text-gray-950 leading-relaxed">{t('mission.transparency.description')}</p>
                   </div>
 
                   <div className="text-center">
@@ -43,10 +42,8 @@ const MissionSection = () => {
                            />
                         </svg>
                      </div>
-                     <h3 className="text-xl font-playfair font-semibold text-teal-800 dark:text-teal-900 mb-4">Precision</h3>
-                     <p className="text-text-tertiary leading-relaxed">
-                        Leveraging AI and machine learning to deliver the most accurate property valuations in the Brazilian market.
-                     </p>
+                     <h3 className="text-xl font-playfair font-semibold text-teal-800 dark:text-teal-900 mb-4">{t('mission.precision.title')}</h3>
+                     <p className="text-gray-950 leading-relaxed">{t('mission.precision.description')}</p>
                   </div>
 
                   <div className="text-center">
@@ -55,10 +52,8 @@ const MissionSection = () => {
                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                      </div>
-                     <h3 className="text-xl font-playfair font-semibold text-teal-800 dark:text-teal-900 mb-4">Innovation</h3>
-                     <p className="text-text-tertiary leading-relaxed">
-                        Pioneering the first FIPE-like index for luxury properties, setting new industry standards.
-                     </p>
+                     <h3 className="text-xl font-playfair font-semibold text-teal-800 dark:text-teal-900 mb-4">{t('mission.innovation.title')}</h3>
+                     <p className="text-gray-950 leading-relaxed">{t('mission.innovation.description')}</p>
                   </div>
                </div>
             </div>

@@ -17,7 +17,7 @@ const OverviewSection = () => {
             <div className="max-w-4xl mx-auto">
                <p className="font-inter text-text-secondary text-lg md:text-xl leading-relaxed mx-auto text-center mb-10">{t('main_paragraph')}</p>
                <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 text-center max-w-5xl mx-auto my-12">
-                  <div className="bg-surface-primary p-8 luxury-shadow border-b-2 border-primary group hover:translate-y-[-5px] transition-all duration-300">
+                  <div className="bg-surface-primary p-8 luxury-shadow ibvi-card border-b-2 border-primary group hover:translate-y-[-5px] transition-all duration-300">
                      <div className="flex justify-center mb-4">
                         <div className="w-14 h-14 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20 transition-all">
                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -33,7 +33,7 @@ const OverviewSection = () => {
                      <p className="text-3xl font-playfair font-semibold text-primary mb-2">{t('market_value_stat_value')}</p>
                      <p className="font-inter text-text-secondary text-sm font-medium">{t('market_value_stat_label')}</p>
                   </div>
-                  <div className="bg-surface-primary p-8 luxury-shadow border-b-2 border-primary group hover:translate-y-[-5px] transition-all duration-300">
+                  <div className="bg-surface-primary p-8 luxury-shadow ibvi-card border-b-2 border-primary group hover:translate-y-[-5px] transition-all duration-300">
                      <div className="flex justify-center mb-4">
                         <div className="w-14 h-14 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20 transition-all">
                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -49,7 +49,7 @@ const OverviewSection = () => {
                      <p className="text-3xl font-playfair font-semibold text-primary mb-2">{t('annual_transactions_stat_value')}</p>
                      <p className="font-inter text-text-secondary text-sm font-medium">{t('annual_transactions_stat_label')}</p>
                   </div>
-                  <div className="bg-surface-primary p-8 luxury-shadow border-b-2 border-primary group hover:translate-y-[-5px] transition-all duration-300">
+                  <div className="bg-surface-primary p-8 luxury-shadow ibvi-card border-b-2 border-primary group hover:translate-y-[-5px] transition-all duration-300">
                      <div className="flex justify-center mb-4">
                         <div className="w-14 h-14 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20 transition-all">
                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -47,10 +47,10 @@ export default async function LocaleLayout({children, params}: {children: React.
             />
             <link rel="icon" href="/images/ibvi-logo.png" />
          </head>
-         <body className="font-inter min-h-screen overflow-x-hidden">
+         <body className="font-inter">
             <NextIntlClientProvider locale={locale} messages={messages}>
+               <Navigation />
                <ClientLayout>
-                  <Navigation />
                   <main className="pt-20 pb-16">{children}</main>
                   <Footer />
                </ClientLayout>
