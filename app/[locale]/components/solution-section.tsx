@@ -16,9 +16,9 @@ const SolutionSection = () => {
                <p className="font-inter text-zinc-800 dark:text-zinc-900 text-lg leading-relaxed max-w-3xl mx-auto text-center mb-16">{t('description')}</p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-               <div className="bg-surface-primary p-8 luxury-shadow group hover:translate-y-[-5px] transition-all duration-300">
-                  <div className="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-sm mb-6 group-hover:bg-primary/20 transition-all">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-2 2xl:gap-4 xl:grid-cols-4 xl:gap-4 gap-8 max-w-9xl mx-auto">
+               <div className="bg-surface-primary px-14 xl:p-8 2xl:px-16 ibvi-card py-16 luxury-shadow group hover:translate-y-[-5px] transition-all duration-300">
+                  <div className="w-12  h-12 flex items-center justify-center bg-primary/10 text-primary rounded-sm mb-6 group-hover:bg-primary/20 transition-all">
                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path
                            strokeLinecap="round"
@@ -32,8 +32,8 @@ const SolutionSection = () => {
                   <p className="font-inter text-text-tertiary">{t('data_driven_valuations.description')}</p>
                </div>
 
-               <div className="bg-surface-primary p-8 luxury-shadow group hover:translate-y-[-5px] transition-all duration-300">
-                  <div className="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-sm mb-6 group-hover:bg-primary/20 transition-all">
+               <div className="bg-surface-primary px-14 xl:p-8 2xl:px-16 ibvi-card py-16 luxury-shadow group hover:translate-y-[-5px] transition-all duration-300">
+                  <div className="w-12  h-12 flex items-center justify-center bg-primary/10 text-primary rounded-sm mb-6 group-hover:bg-primary/20 transition-all">
                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path
                            strokeLinecap="round"
@@ -47,8 +47,8 @@ const SolutionSection = () => {
                   <p className="font-inter text-text-tertiary">{t('predictive_analytics.description')}</p>
                </div>
 
-               <div className="bg-surface-primary p-8 luxury-shadow group hover:translate-y-[-5px] transition-all duration-300">
-                  <div className="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-sm mb-6 group-hover:bg-primary/20 transition-all">
+               <div className="bg-surface-primary px-14 xl:p-8 2xl:px-16 ibvi-card py-16 luxury-shadow group hover:translate-y-[-5px] transition-all duration-300">
+                  <div className="w-12  h-12 flex items-center justify-center bg-primary/10 text-primary rounded-sm mb-6 group-hover:bg-primary/20 transition-all">
                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                      </svg>
@@ -57,8 +57,8 @@ const SolutionSection = () => {
                   <p className="font-inter text-text-tertiary">{t('intelligent_search.description')}</p>
                </div>
 
-               <div className="bg-surface-primary p-8 luxury-shadow group hover:translate-y-[-5px] transition-all duration-300">
-                  <div className="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-sm mb-6 group-hover:bg-primary/20 transition-all">
+               <div className="bg-surface-primary px-14 xl:p-8 2xl:px-16 ibvi-card py-16 luxury-shadow group hover:translate-y-[-5px] transition-all duration-300">
+                  <div className="w-12  h-12 flex items-center justify-center bg-primary/10 text-primary rounded-sm mb-6 group-hover:bg-primary/20 transition-all">
                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path
                            strokeLinecap="round"
