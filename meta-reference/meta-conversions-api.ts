@@ -116,7 +116,7 @@ function normalizeDateOfBirth(dob: string | null | undefined): string | null {
 }
 
 export async function sendServerEventMeta(eventData: EventData) {
-   const PIXEL_ID = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID;
+   const PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID || '4943944062283476';
    const ACCESS_TOKEN = process.env.NEXT_PUBLIC_META_ACCESS_TOKEN;
 
    if (!PIXEL_ID || !ACCESS_TOKEN) {
