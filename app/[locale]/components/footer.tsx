@@ -102,7 +102,7 @@ const Footer = () => {
                         </button>
                      </form>
                   )}
-                  {formState.errors && formState.errors.length > 0 && <p className="text-red-600 text-sm mt-2">{t('subscribe_error')}</p>}
+                  {formState.errors && <p className="text-red-600 text-sm mt-2">{t('subscribe_error')}</p>}
                </div>
             </div>
 
