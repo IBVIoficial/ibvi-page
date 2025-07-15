@@ -161,6 +161,8 @@
       "subscribe_title": "Suscribirse para recibir novedades",
       "subscribe_description": "Manténgase informado sobre nuestros últimos desarrollos y oportunidades de inversión.",
       "email_placeholder": "Su correo electrónico",
+      "subscribe_success": "¡Gracias! Por favor, revise su bandeja de entrada para confirmar su suscripción.",
+      "subscribe_error": "Ocurrió un error. Inténtelo de nuevo más tarde.",
       "copyright": "© {currentYear} IBVI. Todos los derechos reservados.",
       "tagline": "IBVI: El futuro de la valuación inmobiliaria comienza aquí."
    }
