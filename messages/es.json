@@ -11,13 +11,13 @@
       "title": "Revolucionando",
       "subtitle": "el Mercado Inmobiliario Brasileño",
       "description": "El IBVI propone revolucionar el mercado inmobiliario brasileño con su propio sistema de valuaciones, flujos automatizados y resultados más precisos y escalables por medio de Inteligencia Artificial.",
-      "tagline": "IA e Inteligencia de Datos para un Mercado de $4 Billones USD",
+      "tagline": "IA e Inteligencia de Datos para un Mercado de $4 Trillones USD",
       "cta_primary": "Acceda a nuestra investigación",
       "cta_secondary": "Desafíos del Mercado"
    },
    "overview": {
       "title": "Valoración actual del <primary>Mercado Inmobiliario Brasileño </primary>",
-      "main_paragraph": "El mercado inmobiliario brasileño alcanza un valor total estimado de US$4 billones en activos, cálculo basado en el PIB (Producto Interno Bruto) nacional. En cuanto al volumen de transacciones anuales, el mercado brasileño mueve alrededor de US$100 mil millones.",
+      "main_paragraph": "El mercado inmobiliario brasileño alcanza un valor total estimado de US$4 trillones en activos, cálculo basado en el PIB (Producto Interno Bruto) nacional. En cuanto al volumen de transacciones anuales, el mercado brasileño mueve alrededor de US$100 mil millones.",
       "market_value_stat_value": "$4T",
       "market_value_stat_label": "Valor Total del Mercado",
       "annual_transactions_stat_value": "$100B",
@@ -25,7 +25,7 @@
       "valuation_challenges_stat_value": ">90%",
       "valuation_challenges_stat_label": "Desafíos de Valuación",
       "market_size": "Tamaño del Mercado",
-      "market_size_value": "$1.5 Billones USD",
+      "market_size_value": "$4 Trillones USD",
       "luxury_properties": "Propiedades de Alto Lujo",
       "luxury_properties_value": "500K+",
       "annual_transactions": "Transacciones Anuales",
@@ -103,7 +103,7 @@
    "about": {
       "title": "Conosca la Plataforma IBVI",
       "subtitle": "Pioneros en la Revolución Inmobiliaria Brasileña con Inteligencia Artificial",
-      "description": "La plataforma IBVI está a la vanguardia de la transformación del mercado inmobiliario brasileño, valorado en US$ 4 billones, mediante Inteligencia Artificial de última generación y análisis de datos, aportando una transparencia y precisión sin precedentes a las valuaciones inmobiliarias.",
+      "description": "La plataforma IBVI está a la vanguardia de la transformación del mercado inmobiliario brasileño, valorado en US$ 4 trillones, mediante Inteligencia Artificial de última generación y análisis de datos, aportando una transparencia y precisión sin precedentes a las valuaciones inmobiliarias.",
       "mission": {
          "title": "Nuestra Mission",
          "transparency": {
