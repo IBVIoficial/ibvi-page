@@ -32,8 +32,8 @@ export const metadata: Metadata = {
 };
 
 // Server Component for layout
-export default async function LocaleLayout({children, params}: {children: React.ReactNode; params: {locale: string}}) {
-   const {locale} = params;
+export default async function LocaleLayout({children, params}: {children: React.ReactNode; params: Promise<{locale: string}>}) {
+   const {locale} = await params;
    const messages = await getMessages();
 
    return (
