@@ -2,9 +2,11 @@
 
 import React from 'react';
 import {useTranslations} from 'next-intl';
+import {useForm} from '@formspree/react';
 
 const Footer = () => {
    const t = useTranslations('footer');
+   const [formState, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMSPREE_ID_NEWSLETTER || '');
    const currentYear = new Date().getFullYear();
    return (
       <footer
@@ -78,18 +80,29 @@ const Footer = () => {
                <div>
                   <h3 className="text-xl font-playfair font-semibold text-teal-800 dark:text-teal-900 mb-4">{t('subscribe_title')}</h3>
                   <p className="font-inter text-zinc-800/90 dark:text-zinc-900/90 mb-4">{t('subscribe_description')}</p>
-                  <div className="flex">
-                     <input
-                        type="email"
-                        placeholder={t('email_placeholder')}
-                        className="px-4 py-3 w-full bg-surface-primary border border-border-medium focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all rounded-l-md"
-                     />
-                     <button className="bg-button-primary text-text-inverse px-6 hover:bg-button-primary-hover transition-colors rounded-r-md flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                     </button>
-                  </div>
+                  {formState.succeeded ? (
+                     <p className="font-inter text-green-600">{t('subscribe_success')}</p>
+                  ) : (
+                     <form onSubmit={handleSubmit} className="flex w-full">
+                        <input
+                           type="email"
+                           name="email"
+                           required
+                           placeholder={t('email_placeholder')}
+                           className="px-4 py-3 w-full bg-surface-primary border border-border-medium focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all rounded-l-md"
+                        />
+                        <button
+                           type="submit"
+                           disabled={formState.submitting}
+                           className="bg-button-primary text-text-inverse px-6 hover:bg-button-primary-hover transition-colors rounded-r-md flex items-center justify-center"
+                        >
+                           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                           </svg>
+                        </button>
+                     </form>
+                  )}
+                  {formState.errors && formState.errors.length > 0 && <p className="text-red-600 text-sm mt-2">{t('subscribe_error')}</p>}
                </div>
             </div>
 

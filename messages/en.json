@@ -161,6 +161,8 @@
       "subscribe_title": "Subscribe for Updates",
       "subscribe_description": "Explore our research, latest developments, and investment opportunities.",
       "email_placeholder": "Your email",
+      "subscribe_success": "Thank you! Please check your inbox to confirm your subscription.",
+      "subscribe_error": "An error occurred. Please try again later.",
       "copyright": "© {currentYear} IBVI. All rights reserved.",
       "tagline": "IBVI: The future of Real Estate Valuation starts here."
    }
