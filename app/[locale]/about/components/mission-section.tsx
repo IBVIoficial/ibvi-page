@@ -28,7 +28,7 @@ const MissionSection = () => {
                         </svg>
                      </div>
                      <h3 className="text-xl font-playfair font-semibold text-teal-800 dark:text-teal-900 mb-4">{t('mission.transparency.title')}</h3>
-                     <p className="text-text-tertiary leading-relaxed">{t('mission.transparency.description')}</p>
+                     <p className="text-gray-950 leading-relaxed">{t('mission.transparency.description')}</p>
                   </div>
 
                   <div className="text-center">
@@ -43,7 +43,7 @@ const MissionSection = () => {
                         </svg>
                      </div>
                      <h3 className="text-xl font-playfair font-semibold text-teal-800 dark:text-teal-900 mb-4">{t('mission.precision.title')}</h3>
-                     <p className="text-text-tertiary leading-relaxed">{t('mission.precision.description')}</p>
+                     <p className="text-gray-950 leading-relaxed">{t('mission.precision.description')}</p>
                   </div>
 
                   <div className="text-center">
@@ -53,7 +53,7 @@ const MissionSection = () => {
                         </svg>
                      </div>
                      <h3 className="text-xl font-playfair font-semibold text-teal-800 dark:text-teal-900 mb-4">{t('mission.innovation.title')}</h3>
-                     <p className="text-text-tertiary leading-relaxed">{t('mission.innovation.description')}</p>
+                     <p className="text-gray-950 leading-relaxed">{t('mission.innovation.description')}</p>
                   </div>
                </div>
             </div>
