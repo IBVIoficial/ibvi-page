@@ -47,7 +47,7 @@ export default async function LocaleLayout({children, params}: {children: React.
             />
             <link rel="icon" href="/images/ibvi-logo.png" />
          </head>
-         <body className="font-inter">
+         <body cz-shortcut-listen="true" className="font-inter">
             <NextIntlClientProvider locale={locale} messages={messages}>
                <Navigation />
                <ClientLayout>
