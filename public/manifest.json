@@ -1,0 +1,25 @@
+{
+  "name": "IBVI Luxury Real Estate",
+  "short_name": "IBVI",
+  "description": "A IBVI introduz a primeira plataforma de avaliação imobiliária do Brasil alimentada por inteligência artificial, trazendo precisão, transparência e um índice de referência tipo FIPE para imóveis de luxo.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000020",
+  "theme_color": "#000020",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "https://img.mbras.com.br/ibvi/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://img.mbras.com.br/ibvi/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import type {Metadata} from 'next';
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
-import './globals.css'; // Styles for this locale
+import './globals.css';
 import ClientLayout from './components/client-layout';
 import Navigation from './components/navigation';
 import Footer from './components/footer';
@@ -11,7 +11,6 @@ export function generateStaticParams() {
    return routing.locales.map((locale) => ({locale}));
 }
 
-// Metadata can only be used in a Server Component
 export const metadata: Metadata = {
    metadataBase: new URL('https://ibvi.com.br'),
    title: 'IBVI: Brazilian Real Estate Intelligence',
@@ -31,7 +30,6 @@ export const metadata: Metadata = {
    },
 };
 
-// Server Component for layout
 export default async function LocaleLayout({children, params}: {children: React.ReactNode; params: Promise<{locale: string}>}) {
    const {locale} = await params;
    const messages = await getMessages();
@@ -47,7 +45,7 @@ export default async function LocaleLayout({children, params}: {children: React.
             />
             <link rel="icon" href="/images/ibvi-logo.png" />
          </head>
-         <body className="font-inter">
+         <body cz-shortcut-listen="true" className="font-inter">
             <NextIntlClientProvider locale={locale} messages={messages}>
                <Navigation />
                <ClientLayout>

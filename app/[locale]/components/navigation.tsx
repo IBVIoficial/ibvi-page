@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import {useTranslations} from 'next-intl';
-import {Link} from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import LocaleSwitch from './locale-switch';
 import { usePathname } from 'next/navigation';
 
@@ -10,7 +10,6 @@ const Navigation = () => {
    const t = useTranslations('navigation');
    const pathname = usePathname();
    const hrefHome = pathname === '/' ? '' : '/';
-
 
    return (
       <nav
@@ -23,7 +22,7 @@ const Navigation = () => {
                   <img src="/images/ibvi-logo.png" alt="IBVI Logo" className="h-10 w-auto" width={160} height={40} />
                </Link>
                <div className="hidden md:flex space-x-10 text-sm md:space-x-0 ml-2">
-                  <Link href={`${hrefHome}#overview}`} className="text-text-primaryhover:text-link md:mt-2 md:mr-4 transition-colors font-medium">
+                  <Link href={`${hrefHome}#overview`} className="text-text-primary hover:text-link md:mt-2 md:mr-4 transition-colors font-medium">
                      {t('overview')}
                   </Link>
                   <Link href={`${hrefHome}#challenges`} className="text-text-primary md:mr-4 md:mt-2 hover:text-link transition-colors font-medium">
@@ -35,6 +34,14 @@ const Navigation = () => {
                   <Link href={`${hrefHome}#investment`} className="text-text-primary md:mr-4 md:mt-2 hover:text-link transition-colors font-medium">
                      {t('investment')}
                   </Link>
+                  <a 
+                     href={process.env.NEXT_PUBLIC_DECK_URL} 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                     className="text-text-primary md:mt-2 hover:text-link md:mr-4 transition-colors font-medium"
+                  >
+                     {t('ibviPresentation')}
+                  </a>
                   <Link href="/about" className="text-text-primary md:mt-2 hover:text-link md:mr-4 transition-colors font-medium">
                      {t('about')}
                   </Link>
