@@ -5,6 +5,7 @@ import './globals.css'; // Styles for this locale
 import ClientLayout from './components/client-layout';
 import Navigation from './components/navigation';
 import Footer from './components/footer';
+import GoogleAnalytics from './components/google-analytics';
 import {routing} from '@/i18n/routing';
 
 export function generateStaticParams() {
@@ -48,6 +49,7 @@ export default async function LocaleLayout({children, params}: {children: React.
             <link rel="icon" href="/images/ibvi-logo.png" />
          </head>
          <body className="font-inter">
+            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
             <NextIntlClientProvider locale={locale} messages={messages}>
                <Navigation />
                <ClientLayout>
