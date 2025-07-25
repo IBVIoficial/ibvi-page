@@ -121,7 +121,11 @@ export function ChatHistory({threads, onSelectThread, onNewChat, fullFill = fals
             </AnimatePresence>
 
             <Animated incorporate={false}>
-               <Button size="sm" onClick={() => setIsCollapsed(!isCollapsed)} className="rounded-4xl absolute top-4 left-4 cursor-pointer">
+               <Button
+                  size="sm"
+                  onClick={() => setIsCollapsed(!isCollapsed)}
+                  className="rounded-4xl absolute top-4 left-4 cursor-pointer bg-[rgb(72,72,72)] border border-[rgb(84,84,84)]"
+               >
                   <AnimatePresence mode="wait">
                      {isCollapsed ? (
                         <motion.div
@@ -131,7 +135,7 @@ export function ChatHistory({threads, onSelectThread, onNewChat, fullFill = fals
                            exit={{rotate: 90, opacity: 0}}
                            transition={{duration: 0.2}}
                         >
-                           <ChevronRight className="h-4 w-4 text-primary-foreground" />
+                           <ChevronRight className="h-4 w-4 text-white" />
                         </motion.div>
                      ) : (
                         <motion.div
@@ -141,7 +145,7 @@ export function ChatHistory({threads, onSelectThread, onNewChat, fullFill = fals
                            exit={{rotate: -90, opacity: 0}}
                            transition={{duration: 0.2}}
                         >
-                           <ChevronLeft className="h-4 w-4 text-primary-foreground" />
+                           <ChevronLeft className="h-4 w-4 text-white" />
                         </motion.div>
                      )}
                   </AnimatePresence>
