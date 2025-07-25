@@ -26,9 +26,9 @@ export function useUserId(): {userId: string | undefined; setUserId: any} {
 
       if (localUser && existingId && existingId !== localUser?.id) {
          try {
-            await gptApi.post('/chat/change-id', {
-               user_identifier: existingId,
-            });
+            // await gptApi.post('/chat/change-id', {
+            //    user_identifier: existingId,
+            // });
          } catch (error: any) {
             if (error.response && error.response.status === 409) {
                const newId = renewUserIdentifier();

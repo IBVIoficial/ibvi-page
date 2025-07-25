@@ -98,7 +98,7 @@ export function CompactPropertyCard({property, onClick}: PropertyCardProps) {
                      <TooltipTrigger asChild>
                         <Button
                            size="sm"
-                           className="cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300 text-white border-white/20 hover:bg-white/10 text-xs group/button"
+                           className="cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300 text-white bg-[rgb(41,41,41)] border-white/20 hover:bg-white/10 text-xs group/button"
                            onClick={handleTransactionsClick}
                         >
                            <Clock className="h-3 w-3" />

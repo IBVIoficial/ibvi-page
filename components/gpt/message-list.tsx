@@ -244,9 +244,12 @@ export function MessageList({
                               </p>
                            </div>
                            <div className="flex flex-col items-end text-sm text-white/80">
-                              <span>{message.content?.hits_real_count || message.properties?.length || 0} imóveis encontrados</span>
                               <span>
-                                 Página {message.content?.params?.page || 1} de {message.content?.pages_count || 1}
+                                 {Number(message.content?.hits_real_count || message.properties?.length || 0).toLocaleString('pt-br')} imóveis encontrados
+                              </span>
+                              <span>
+                                 Página {Number(message.content?.params?.page || 1).toLocaleString('pt-br')} de{' '}
+                                 {Number(message.content?.pages_count || 1).toLocaleString('pt-br')}
                               </span>
                            </div>
                         </Animated>
