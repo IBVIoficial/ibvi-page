@@ -2,7 +2,7 @@
 
 import {useEffect} from 'react';
 import {Property} from '@/types/property';
-import {EventData} from '@/interface/meta';
+// import {EventData} from '@/interface/meta';
 import {getFbcFbp, event as trackPixelEvent} from './meta-pixel';
 import {getFBP, generateFBC} from './meta-utils';
 
@@ -56,7 +56,7 @@ export async function trackPropertyView({property, userAgent, referrer}: Propert
          });
       }
 
-      const eventData: EventData = {
+      const eventData: any = {
          event_name: 'ViewContent',
          event_time: Math.floor(Date.now() / 1000),
          action_source: 'website',

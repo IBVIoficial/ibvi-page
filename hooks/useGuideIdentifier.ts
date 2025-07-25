@@ -1,7 +1,6 @@
 'use client';
 
 // import {useAuth} from '@/auth/AuthProvider';
-import {supabase} from '@/lib/supabase/client';
 import gptApi from '@/services/gpt-api.service';
 import {useState, useEffect, useCallback, useRef, useMemo} from 'react';
 import {v4 as uuidv4} from 'uuid';
@@ -22,9 +21,7 @@ export function useUserId(): {userId: string | undefined; setUserId: any} {
    }, []);
 
    const setup = useCallback(async () => {
-      const {
-         data: {user: localUser},
-      } = await supabase.auth.getUser();
+      const localUser = {} as any;
       let existingId = localStorage.getItem('mbras_user_id');
 
       if (localUser && existingId && existingId !== localUser?.id) {

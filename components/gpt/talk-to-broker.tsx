@@ -4,7 +4,7 @@ import {NeonGradientCard} from '@/components/magicui/neon-gradient-card';
 import {CompactPropertyCard} from '@/components/property/compact-property-card';
 import {Button} from '@/components/ui/button';
 import {MessageCircle} from 'lucide-react';
-import {ExtendedProperty} from '@/types/guide/extended-property';
+import {ExtendedProperty} from '@/types/gpt/extended-property';
 import {fetchPhotoIds, fetchProperty} from '@/lib/property';
 import {toast} from 'sonner';
 

@@ -8,8 +8,8 @@ import {cn} from '@/lib/utils';
 import {motion, AnimatePresence} from 'framer-motion';
 import {easeTransition} from '@/lib/animations';
 import {Button} from '../ui/button';
-import {ExtendedProperty} from '@/types/guide/extended-property';
-import Animated from '../Animated';
+import {ExtendedProperty} from '@/types/gpt/extended-property';
+import Animated from '@/components/animated';
 import {formatCurrency} from '@/utils/format-currency';
 
 interface PropertyHistoryProps {
@@ -55,7 +55,7 @@ export function PropertyHistory({recentProperties, onSelectProperty, fullFill = 
          variants={sidebarVariants}
          initial={false}
          animate={isCollapsed ? 'collapsed' : 'expanded'}
-         transition={easeTransition}
+         transition={easeTransition as any}
       >
          <div className="h-20 flex items-center justify-between p-4">
             <AnimatePresence mode="wait">
@@ -67,7 +67,7 @@ export function PropertyHistory({recentProperties, onSelectProperty, fullFill = 
                      initial="collapsed"
                      animate="expanded"
                      exit="collapsed"
-                     transition={easeTransition}
+                     transition={easeTransition as any}
                   >
                      <Clock className="h-4 w-4 text-emerald-500" />
                      Recentes
@@ -110,7 +110,7 @@ export function PropertyHistory({recentProperties, onSelectProperty, fullFill = 
                   <motion.div
                      key={property.id}
                      custom={index}
-                     variants={itemVariants}
+                     variants={itemVariants as any}
                      initial="collapsed"
                      animate="expanded"
                      exit="exit"

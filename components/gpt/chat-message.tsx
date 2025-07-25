@@ -22,7 +22,7 @@ export function ChatMessage({
             className="bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 text-gray-700 dark:text-gray-200 p-4 rounded-4xl inline-block max-w-[80%] shadow-sm"
             initial={{opacity: 0, scale: 0.8, x: -20}}
             animate={{opacity: 1, scale: 1, x: 0}}
-            transition={springTransition}
+            transition={springTransition as any}
          >
             <ReactMarkdown>{content}</ReactMarkdown>
          </motion.div>
@@ -36,7 +36,7 @@ export function ChatMessage({
                className="bg-primary-light text-white p-4 rounded-4xl inline-block max-w-[80%] shadow-md"
                initial={{opacity: 0, scale: 0.8, x: 20}}
                animate={{opacity: 1, scale: 1, x: 0}}
-               transition={springTransition}
+               transition={springTransition as any}
             >
                {content}
             </motion.div>

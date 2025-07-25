@@ -95,7 +95,7 @@ export function ChatHistory({threads, onSelectThread, onNewChat, fullFill = fals
          variants={sidebarVariants}
          initial={false}
          animate={isCollapsed ? 'collapsed' : 'expanded'}
-         transition={easeTransition}
+         transition={easeTransition as any}
       >
          <div className="h-16 flex items-center justify-between p-4 z-[99999]">
             <AnimatePresence mode="wait">
@@ -107,7 +107,7 @@ export function ChatHistory({threads, onSelectThread, onNewChat, fullFill = fals
                      initial="collapsed"
                      animate="expanded"
                      exit="collapsed"
-                     transition={easeTransition}
+                     transition={easeTransition as any}
                   >
                      <h2 className="font-semibold text-white flex items-center gap-2 font-inter">
                         <MessageSquare className="h-4 w-4 text-primary-light" />
@@ -155,7 +155,7 @@ export function ChatHistory({threads, onSelectThread, onNewChat, fullFill = fals
                   <motion.div
                      key={thread.thread_id}
                      custom={index}
-                     variants={itemVariants}
+                     variants={itemVariants as any}
                      initial="collapsed"
                      animate="expanded"
                      exit="exit"

@@ -1,7 +1,7 @@
 import goApi from '@/services/go-api.service';
 import {PhotoIdsResponse} from '@/types/photo';
 
-export const fetchPhotoIds = async (ref) => {
+export const fetchPhotoIds = async (ref: any) => {
    try {
       const response = await goApi.get(`/api/photos-all/${ref}`);
       const data: PhotoIdsResponse = response.data;

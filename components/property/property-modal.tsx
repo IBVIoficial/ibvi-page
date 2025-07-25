@@ -68,10 +68,7 @@ export function PropertyModal({ref, isOpen, onClose}: PropertyModalProps) {
             onClose();
          }}
       >
-         <DialogContent
-            closeButton={false}
-            className="max-w-4xl h-[calc(100dvh-var(--navbar-height))] md:h-10/12 mt-10 md:mt-8 flex flex-col p-0 gap-0 bg-[rgb(48,48,48)] border border-[rgb(81,81,81)] z-[99999]"
-         >
+         <DialogContent className="max-w-4xl h-[calc(100dvh-var(--navbar-height))] md:h-10/12 mt-10 md:mt-8 flex flex-col p-0 gap-0 bg-[rgb(48,48,48)] border border-[rgb(81,81,81)] z-[99999]">
             <DialogHeader className="px-6 py-4 pr-12 border-b border-[rgb(81,81,81)] flex-shrink-0 z-[999]">
                <div className="flex items-center justify-between">
                   <DialogTitle className="text-xl text-white">{property.new_title || property.title}</DialogTitle>
@@ -92,7 +89,7 @@ export function PropertyModal({ref, isOpen, onClose}: PropertyModalProps) {
                      {property.unit_details && <PropertyFeatures features={property.unit_details.split(',')} />}
                   </div>
 
-                  <PropertyDescription description={property.description || property.promotion} />
+                  <PropertyDescription description={property.description || property.promotion || ''} />
                </motion.div>
             </div>
 
@@ -318,7 +315,7 @@ function PropertyFeatures({features}: {features: string[]}) {
    );
 }
 
-function PropertyDescription({description}) {
+function PropertyDescription({description}: {description: string}) {
    return (
       <motion.div initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} transition={{delay: 0.4, duration: 0.5}}>
          <h3 className="text-lg font-semibold text-white mb-4">Descrição</h3>
