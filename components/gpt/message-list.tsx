@@ -131,8 +131,15 @@ export function MessageList({
          property_min_value: 'Valor Mínimo',
          property_max_value: 'Valor Máximo',
          return_only_with_transactions: 'Com transações',
+         avg_square_meter_value: 'Valor m²',
       };
 
+      const extraParams = Object.entries(message?.content?.extra_data || {})
+         .filter(([key, value]) => key !== 'page' && key !== 'possible_street_names' && value !== null && value !== undefined && value !== '')
+         .map(([key, value]) => ({
+            label: paramLabels[key] || key,
+            value: value,
+         }));
       const displayParams = Object.entries(params)
          .filter(([key, value]) => key !== 'page' && key !== 'possible_street_names' && value !== null && value !== undefined && value !== '')
          .map(([key, value]) => ({
@@ -173,13 +180,20 @@ export function MessageList({
                </div>
             )}
 
-            {displayParams.length > 0 && (
+            {(displayParams.length > 0 || extraParams.length > 0) && (
                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm">
-                  {displayParams.map(({label, value}, index) =>
+                  {[...displayParams, ...extraParams].map(({label, value}, index) =>
                      value ? (
                         <div key={index} className="flex flex-col">
                            <span className="text-white/80 text-xs">{label}:</span>
-                           <span className="text-white font-medium">{String(value)}</span>
+                           <span className="text-white font-medium">
+                              {typeof value === 'number'
+                                 ? value.toLocaleString('pt-br', {
+                                      style: 'currency',
+                                      currency: 'brl',
+                                   })
+                                 : String(value)}
+                           </span>
                         </div>
                      ) : null,
                   )}
