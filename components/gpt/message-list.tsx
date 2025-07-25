@@ -273,7 +273,7 @@ export function MessageList({
                         >
                            <Table>
                               <TableHeader>
-                                 <TableRow className="bg-primary">
+                                 <TableRow className="bg-[rgb(33,33,33)]">
                                     <TableHead className="p-3 text-left text-white w-[12rem]">Nº Contribuinte</TableHead>
                                     <TableHead className="p-3 text-left text-white">Localização</TableHead>
                                     {/* <TableHead className="p-3 text-left text-white">Preço</TableHead> */}
