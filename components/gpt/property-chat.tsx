@@ -565,7 +565,7 @@ function PropertyChat({fullFill}: {fullFill?: boolean}) {
                      </div>
                   ) : (
                      <span className="flex-1 h-full flex flex-row justify-center relative">
-                        <Animated direction="left" className="flex-1 flex flex-col max-w-[52rem] max-h-[calc(100dvh-5rem)]" incorporate={false}>
+                        <Animated direction="left" className="flex-1 flex flex-col max-w-screen md:max-w-[52rem] max-h-[calc(100dvh-5rem)]" incorporate={false}>
                            <MessageList
                               messages={messages}
                               setMessages={setMessages}
