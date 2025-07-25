@@ -1,81 +1,45 @@
-export const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID || '4943944062283476';
+export const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID || '';
 
 export const pageview = () => {
-   if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'PageView');
+   if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'PageView');
    }
 };
 
-export const event = (name: string, options = {}) => {
-   if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', name, options);
+export const initWithUserData = (userData: Record<string, any>) => {
+   if (typeof window !== 'undefined' && (window as any).fbq && FB_PIXEL_ID) {
+      (window as any).fbq('init', FB_PIXEL_ID, userData);
    }
 };
 
-export const init = () => {
-   if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('init', FB_PIXEL_ID);
+export const lead = (customData: Record<string, any> = {}, options: {eventID?: string} = {}) => {
+   if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Lead', customData, {eventID: options.eventID});
    }
 };
 
-export const lead = (customData: any = {}, userData: any = {}) => {
-   if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'Lead', customData, {
-         eventID: customData.event_id || `lead_${Date.now()}`,
-      });
+export const event = (name: string, options: Record<string, any> = {}) => {
+   if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', name, options);
    }
 };
 
-export const viewContent = (customData: any = {}) => {
-   if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'ViewContent', customData);
+export const getFbcFbp = (): {fbc: string | null; fbp: string | null} => {
+   if (typeof document === 'undefined') {
+      return {fbc: null, fbp: null};
    }
-};
 
-export const addToCart = (customData: any = {}) => {
-   if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'AddToCart', customData);
-   }
-};
+   const getCookie = (name: string): string | null => {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) {
+         return parts.pop()?.split(';').shift() || null;
+      }
+      return null;
+   };
 
-export const initiateCheckout = (customData: any = {}) => {
-   if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'InitiateCheckout', customData);
-   }
-};
+   const fbc = getCookie('_fbc');
+   const fbp = getCookie('_fbp');
 
-export const purchase = (customData: any = {}) => {
-   if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'Purchase', customData);
-   }
-};
-
-export const completeRegistration = (customData: any = {}) => {
-   if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'CompleteRegistration', customData);
-   }
-};
-
-export const contact = (customData: any = {}) => {
-   if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'Contact', customData);
-   }
-};
-
-export const schedule = (customData: any = {}) => {
-   if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'Schedule', customData);
-   }
-};
-
-export const submitApplication = (customData: any = {}) => {
-   if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'SubmitApplication', customData);
-   }
-};
-
-export const search = (customData: any = {}) => {
-   if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'Search', customData);
-   }
+   return {fbc, fbp};
 };

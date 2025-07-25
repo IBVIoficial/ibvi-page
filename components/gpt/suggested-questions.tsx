@@ -35,7 +35,7 @@ export function SuggestedQuestions({questions, onSelectQuestion}: SuggestedQuest
                   key={index}
                   className="text-muted-foreground text-xs px-2.5 py-1 rounded-full transition-colors border-[0.5px] border-emerald-200/50 dark:border-emerald-800/50 shadow-sm"
                   onClick={() => onSelectQuestion(question)}
-                  variants={itemVariants}
+                  variants={itemVariants as any}
                   whileHover={{
                      scale: 1.05,
                      backgroundColor: 'rgb(209 250 229)',

@@ -144,7 +144,7 @@ export default function FormLP() {
 
          // Enviar evento para Meta Pixel (client-side)
          try {
-            fbq.lead(fbqCustomData, fbqUserData);
+            // fbq.lead(fbqCustomData, fbqUserData);
             console.log('fbq.lead called for Form LP');
          } catch (pixelError) {
             console.error('Error calling fbq.lead:', pixelError);

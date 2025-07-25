@@ -1,45 +1,5 @@
 import crypto from 'crypto';
-
-interface UserData {
-   em?: string | null;
-   ph?: string | null;
-   fn?: string | null;
-   ln?: string | null;
-   db?: string | null;
-   ge?: string | null;
-   ct?: string | null;
-   st?: string | null;
-   zp?: string | null;
-   country?: string | null;
-   external_id?: string | null;
-   client_ip_address?: string | null;
-   client_user_agent?: string | null;
-   fbp?: string | null;
-   fbc?: string | null;
-   subscription_id?: string | null;
-   fb_login_id?: number | null;
-   lead_id?: number | null;
-   anon_id?: string | null;
-   madid?: string | null;
-   page_id?: string | null;
-   page_scoped_user_id?: string | null;
-   ctwa_clid?: string | null;
-   ig_account_id?: string | null;
-   ig_sid?: string | null;
-}
-
-interface EventData {
-   event_name: string;
-   event_time: number;
-   action_source: string;
-   event_source_url?: string;
-   user_data: UserData;
-   custom_data?: Record<string, any>;
-   event_id?: string;
-   data_processing_options?: string[];
-   data_processing_options_country?: number;
-   data_processing_options_state?: number;
-}
+// import {EventData, UserData} from '@/interface/meta';
 
 function hashDataMeta(data: string | null | undefined): string | null {
    if (!data) return null;
@@ -107,18 +67,23 @@ function normalizeDateOfBirth(dob: string | null | undefined): string | null {
    return cleaned;
 }
 
-export async function sendServerEventMeta(eventData: EventData) {
-   const PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID || '4943944062283476';
-   const ACCESS_TOKEN = process.env.NEXT_PUBLIC_META_ACCESS_TOKEN;
+export async function sendServerEventMeta(eventData: any) {
+   const PIXEL_ID = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID;
+   const ACCESS_TOKEN = process.env.NEXT_PUBLIC_META_CONVERSION_API_ACCESS_TOKEN;
+   const TEST_EVENT_CODE = process.env.NEXT_PUBLIC_META_TEST_EVENT_CODE;
 
    if (!PIXEL_ID || !ACCESS_TOKEN) {
       console.error('Meta Pixel ID or Access Token is not configured for Server-Side API.');
       return {success: false, error: 'Missing Pixel ID or Access Token configuration.'};
    }
 
-   const url = `https://graph.facebook.com/v19.0/${PIXEL_ID}/events?access_token=${ACCESS_TOKEN}`;
+   const url = new URL(`https://graph.facebook.com/v19.0/${PIXEL_ID}/events`);
+   url.searchParams.set('access_token', ACCESS_TOKEN);
+   if (TEST_EVENT_CODE) {
+      url.searchParams.set('test_event_code', TEST_EVENT_CODE);
+   }
 
-   const normalizedUserData: UserData = {
+   const normalizedUserData: any = {
       em: hashDataMeta(normalizeEmail(eventData.user_data.em)),
       ph: hashDataMeta(normalizePhone(eventData.user_data.ph)),
       fn: hashDataMeta(normalizeName(eventData.user_data.fn)),
@@ -129,6 +94,7 @@ export async function sendServerEventMeta(eventData: EventData) {
       st: hashDataMeta(normalizeState(eventData.user_data.st)),
       zp: hashDataMeta(normalizeZipCode(eventData.user_data.zp)),
       country: hashDataMeta(normalizeCountry(eventData.user_data.country)),
+
       external_id: eventData.user_data.external_id || null,
       client_ip_address: eventData.user_data.client_ip_address || null,
       client_user_agent: eventData.user_data.client_user_agent || null,
@@ -147,8 +113,8 @@ export async function sendServerEventMeta(eventData: EventData) {
    };
 
    Object.keys(normalizedUserData).forEach((key) => {
-      if (normalizedUserData[key as keyof UserData] === null || normalizedUserData[key as keyof UserData] === undefined) {
-         delete normalizedUserData[key as keyof UserData];
+      if (normalizedUserData[key as keyof any] === null || normalizedUserData[key as keyof any] === undefined) {
+         delete normalizedUserData[key as keyof any];
       }
    });
 
@@ -184,12 +150,6 @@ export async function sendServerEventMeta(eventData: EventData) {
          console.error('Error sending event to Meta Conversions API:', responseData);
          return {success: false, error: responseData.error?.message || 'API Error', details: responseData};
       }
-
-      console.log('Successfully sent event to Meta Conversions API:', {
-         event_name: eventData.event_name,
-         event_id: eventData.event_id,
-         response: responseData,
-      });
 
       return {success: true, data: responseData};
    } catch (error) {

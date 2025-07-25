@@ -497,7 +497,7 @@ function PropertyChat({fullFill}: {fullFill?: boolean}) {
 
    useEffect(() => {
       if ((chatState === 'minimized' || chatState === 'fully-minimized') && typeof targetUrl === 'string' && targetUrl !== '') {
-         router.push(targetUrl);
+         router.push(targetUrl as any);
       }
    }, [chatState, targetUrl, router]);
 

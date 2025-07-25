@@ -1,11 +1,11 @@
 import * as z from 'zod';
 import * as fbq from '@/lib/meta-pixel/meta-pixel';
-import {getFbcFbp} from '@/lib/meta-pixel/meta-pixel';
+// import {getFbcFbp} from '@/lib/meta-pixel/meta-pixel';
 
 import {useState, useEffect} from 'react';
 import useUserLocation from '@/hooks/useUserLocation';
 import {toast} from 'sonner';
-import {EventData} from '@/interface/meta';
+// import {EventData} from '@/interface/meta';
 import {useForm} from 'react-hook-form';
 import {zodResolver} from '@hookform/resolvers/zod';
 import {sendServerEventMeta} from '@/lib/meta-pixel/meta-conversions-api';
@@ -61,7 +61,8 @@ export function useFormContatoLogic(options?: useFormLogicOptions) {
       const eventId = `evt_contato_${Date.now()}`;
       const cleanedPhoneNumber = values.telefone.replace(/\D/g, '');
       const eventTime = Math.floor(Date.now() / 1000);
-      const {fbc, fbp} = getFbcFbp();
+      const {fbc, fbp} = {fbc: null, fbp: null};
+      // const {fbc, fbp} = getFbcFbp();
 
       const fbqCustomData = {
          content_name: `Advertise Form: ${pageTitle}`,
@@ -136,7 +137,7 @@ export function useFormContatoLogic(options?: useFormLogicOptions) {
       }
 
       try {
-         fbq.initWithUserData(fbqUserData);
+         // fbq.initWithUserData(fbqUserData);
          fbq.lead(fbqCustomData, {eventID: eventId});
       } catch (pixelError) {
          console.error('Error calling fbq.lead for Advertise Form:', pixelError);
@@ -158,7 +159,7 @@ export function useFormContatoLogic(options?: useFormLogicOptions) {
          console.error('Error pushing to GTM dataLayer:', gtmError);
       }
 
-      const serverEventData: EventData = {
+      const serverEventData: any = {
          event_name: 'Lead',
          event_time: eventTime,
          action_source: 'website',

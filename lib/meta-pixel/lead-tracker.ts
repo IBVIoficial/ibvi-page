@@ -1,4 +1,4 @@
-import {EventData} from '@/interface/meta';
+// import {EventData} from '@/interface/meta';
 import {getFbcFbp, lead as trackPixelLead, initWithUserData} from './meta-pixel';
 import {getFBP, generateFBC} from './meta-utils';
 import {parsePhoneNumber} from 'libphonenumber-js';
@@ -202,7 +202,7 @@ export async function trackLead(data: LeadData): Promise<LeadTrackingResult> {
          }
       }
 
-      const serverEventData: EventData = {
+      const serverEventData: any = {
          event_name: 'Lead',
          event_time: eventTime,
          action_source: 'website',

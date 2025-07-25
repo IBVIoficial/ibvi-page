@@ -1,6 +1,6 @@
 import React from 'react';
 import {AnimatePresence, motion} from 'framer-motion';
-import MbrasAI from '@/components/ai-icon';
+import MbrasAI from '@/components/gpt/ai-icon';
 import {AnimatedGradientText} from '../magicui/animated-gradient-text';
 
 interface MinimizedChatProps {
@@ -56,7 +56,7 @@ const MinimizedChat: React.FC<MinimizedChatProps> = ({onRestore}) => {
             type="button"
             aria-label="Restore Chat"
             onClick={onRestore}
-            variants={buttonVariants}
+            variants={buttonVariants as any}
             initial="collapsed"
             animate={hovered ? 'expanded' : 'collapsed'}
             whileHover="expanded"

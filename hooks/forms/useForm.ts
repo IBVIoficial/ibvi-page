@@ -1,6 +1,6 @@
 import * as z from 'zod';
 import * as fbq from '@/lib/meta-pixel/meta-pixel';
-import {getFbcFbp} from '@/lib/meta-pixel/meta-pixel';
+// import {getFbcFbp} from '@/lib/meta-pixel/meta-pixel';
 
 import {useState, useEffect} from 'react';
 import {toast} from 'sonner';
@@ -73,7 +73,8 @@ export function useFormLogic(options?: useFormLogicOptions) {
       const eventId = `evt_advertise_${Date.now()}`;
       const cleanedPhoneNumber = values.whatsapp.replace(/\D/g, '');
       const eventTime = Math.floor(Date.now() / 1000);
-      const {fbc, fbp} = getFbcFbp();
+      // const {fbc, fbp} = getFbcFbp();
+      const {fbc, fbp} = {fbc: null, fbp: null};
 
       const fbqCustomData = {
          content_name: `Advertise Form: ${pageTitle}`,
@@ -155,7 +156,7 @@ export function useFormLogic(options?: useFormLogicOptions) {
       }
 
       try {
-         fbq.initWithUserData(fbqUserData);
+         // fbq.initWithUserData(fbqUserData);
          fbq.lead(fbqCustomData, {eventID: eventId});
       } catch (pixelError) {
          console.error('Error calling fbq.lead for Advertise Form:', pixelError);
@@ -177,7 +178,7 @@ export function useFormLogic(options?: useFormLogicOptions) {
          console.error('Error pushing to GTM dataLayer:', gtmError);
       }
 
-      const serverEventData: EventData = {
+      const serverEventData: any = {
          event_name: 'Lead',
          event_time: eventTime,
          action_source: 'website',

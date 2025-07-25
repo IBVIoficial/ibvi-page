@@ -1,4 +1,3 @@
-import {getSession} from '@/lib/supabase/actions';
 import axios from 'axios';
 
 const gptApi = axios.create({
@@ -6,11 +5,11 @@ const gptApi = axios.create({
 });
 
 gptApi.interceptors.request.use(async (config) => {
-   const session = await getSession();
+   // const session = await getSession();
 
-   if (session?.user) {
-      config.headers.Authorization = `Bearer ${session.access_token}`;
-   }
+   // if (session?.user) {
+   //    config.headers.Authorization = `Bearer ${session.access_token}`;
+   // }
    return config;
 });
 
