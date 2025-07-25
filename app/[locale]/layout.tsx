@@ -7,6 +7,9 @@ import Navigation from './components/navigation';
 import Footer from './components/footer';
 import GoogleAnalytics from './components/google-analytics';
 import {routing} from '@/i18n/routing';
+import {ChatStateProvider} from '@/contexts/ChatStateContext';
+
+import {Montserrat, Quicksand, Anek_Bangla} from 'next/font/google';
 
 export function generateStaticParams() {
    return routing.locales.map((locale) => ({locale}));
@@ -32,6 +35,24 @@ export const metadata: Metadata = {
    },
 };
 
+const quicksand = Quicksand({
+   subsets: ['latin'],
+   variable: '--font-questrial',
+   display: 'swap',
+});
+
+const anekbangla = Anek_Bangla({
+   subsets: ['latin'],
+   variable: '--font-anekbangla',
+   display: 'swap',
+});
+
+const montserrat = Montserrat({
+   subsets: ['latin'],
+   variable: '--font-montserrat',
+   display: 'swap',
+});
+
 // Server Component for layout
 export default async function LocaleLayout({children, params}: {children: React.ReactNode; params: Promise<{locale: string}>}) {
    const {locale} = await params;
@@ -48,15 +69,20 @@ export default async function LocaleLayout({children, params}: {children: React.
             />
             <link rel="icon" href="/images/ibvi-logo.png" />
          </head>
-         <body className="font-inter">
-            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
-            <NextIntlClientProvider locale={locale} messages={messages}>
-               <Navigation />
-               <ClientLayout>
-                  <main className="pt-20 pb-16">{children}</main>
-                  <Footer />
-               </ClientLayout>
-            </NextIntlClientProvider>
+         <body
+            className={`font-inter ${quicksand.variable}
+     ${anekbangla.variable} ${montserrat.variable} bg-background text-bw font-montserrat`}
+         >
+            <ChatStateProvider>
+               <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
+               <NextIntlClientProvider locale={locale} messages={messages}>
+                  <Navigation />
+                  <ClientLayout>
+                     <main>{children}</main>
+                     <Footer />
+                  </ClientLayout>
+               </NextIntlClientProvider>
+            </ChatStateProvider>
          </body>
       </html>
    );

@@ -3,11 +3,19 @@
 import React from 'react';
 import {useTranslations} from 'next-intl';
 import {useForm} from '@formspree/react';
+import {usePathname} from 'next/navigation';
 
 const Footer = () => {
    const t = useTranslations('footer');
    const [formState, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMSPREE_ID_NEWSLETTER || '');
    const currentYear = new Date().getFullYear();
+
+   const pathname = usePathname();
+
+   if (pathname === '/gpt') {
+      return null;
+   }
+
    return (
       <footer
          id="contact"

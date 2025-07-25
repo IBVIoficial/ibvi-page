@@ -4,13 +4,14 @@ import React from 'react';
 import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/navigation';
 import LocaleSwitch from './locale-switch';
-import { usePathname } from 'next/navigation';
+import {usePathname} from 'next/navigation';
 
 const Navigation = () => {
    const t = useTranslations('navigation');
    const pathname = usePathname();
    const hrefHome = pathname === '/' ? '' : '/';
 
+   if (pathname === '/gpt') return null;
 
    return (
       <nav
