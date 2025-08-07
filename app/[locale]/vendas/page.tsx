@@ -149,7 +149,7 @@ const VendasPage = () => {
                         <ul className="space-y-3 text-text-secondary">
                            <li className="flex items-start">
                               <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                              Geração imediata de listas de vizinhos com alto potencial de interesse
+                              Geração de listas de vizinhos com alto potencial de interesse
                            </li>
                            <li className="flex items-start">
                               <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -227,42 +227,52 @@ const VendasPage = () => {
             </div>
          </section>
 
-         {/* Conclusão */}
+         {/* O Futuro do Mercado Imobiliário */}
          <section className="py-16 bg-surface-primary">
             <div className="container mx-auto px-6">
                <div className="max-w-4xl mx-auto">
                   <h2 className="text-3xl md:text-4xl font-playfair font-semibold text-text-primary mb-8 text-center">
-                     <span className="text-primary">Conclusão</span>
+                     O Futuro do Mercado Imobiliário é <span className="text-primary">Geointeligente</span>
                   </h2>
                   
                   <div className="bg-surface-secondary rounded-lg p-8 luxury-shadow">
                      <p className="text-lg text-text-secondary mb-6 leading-relaxed">
-                        O IBVI redefine a inteligência de mercado imobiliário com uma abordagem centrada na geografia como vetor de decisão. Para equipes que buscam:
+                        Enquanto o mercado tradicional ainda opera com intuição e conexões fragmentadas, as equipes que adotam o IBVI já colhem resultados concretos:
                      </p>
                      
                      <ul className="space-y-3 text-text-secondary mb-6">
-                        <li className="flex items-center">
-                           <span className="w-3 h-3 bg-primary rounded-full mr-3"></span>
-                           <span className="font-medium">assertividade em campanhas,</span>
+                        <li className="flex items-start">
+                           <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                           <span>Campanhas atingem os vizinhos certos com precisão cirúrgica</span>
                         </li>
-                        <li className="flex items-center">
-                           <span className="w-3 h-3 bg-primary rounded-full mr-3"></span>
-                           <span className="font-medium">velocidade na conversão,</span>
+                        <li className="flex items-start">
+                           <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                           <span>Precificação dinâmica baseada em dados reais do micromercado</span>
                         </li>
-                        <li className="flex items-center">
-                           <span className="w-3 h-3 bg-primary rounded-full mr-3"></span>
-                           <span className="font-medium">e inteligência na precificação,</span>
+                        <li className="flex items-start">
+                           <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                           <span>Decisões de alta precisão, com menos esforço e mais conversões</span>
                         </li>
                      </ul>
                      
                      <p className="text-lg text-text-secondary mb-6 leading-relaxed">
-                        o IBVI oferece uma vantagem estrutural com capacidade de escala e foco cirúrgico.
+                        A pergunta não é mais "se" você vai adotar inteligência geográfica — mas <strong>"quando"</strong>. E se será antes ou depois dos seus concorrentes.
                      </p>
                      
-                     <div className="text-center">
+                     <div className="text-center mb-6">
                         <blockquote className="text-2xl md:text-3xl font-playfair font-semibold text-primary italic">
-                           "No mercado imobiliário, a geografia é destino. Com o IBVI, sua equipe controla o mapa."
+                           "Dados transformam geografia em estratégia.<br/>
+                           O IBVI transforma estratégia em resultado."
                         </blockquote>
+                     </div>
+                     
+                     <div className="text-center">
+                        <a
+                           href="mailto:contato@ibvi.com.br"
+                           className="inline-block bg-primary text-white font-medium tracking-wide rounded-md px-8 py-4 hover:bg-primary-hover transition-all text-sm uppercase shadow-md"
+                        >
+                           Comece sua transformação agora
+                        </a>
                      </div>
                   </div>
                </div>
