@@ -33,9 +33,9 @@ export default function ClientLayout({children}: {children: React.ReactNode}) {
 
    return (
       <>
-         {/* <MetaPixel /> */}
+         {/*<MetaPixel /> */}
          {/* Theme Switch Button - Fixed Position */}
-         {/* <button
+         <button
             onClick={toggleTheme}
             className="fixed bottom-4 right-4 z-50 p-3 rounded-full shadow-lg transition-all duration-300 bg-surface-primary dark:bg-primary text-primary dark:text-text-inverse hover:bg-surface-secondary dark:hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
             aria-label={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
@@ -59,7 +59,7 @@ export default function ClientLayout({children}: {children: React.ReactNode}) {
                   />
                </svg>
             )}
-         </button> */}
+         </button>
 
          <div className="texture-overlay"></div>
          <div className="animate-page-load">{children}</div>
