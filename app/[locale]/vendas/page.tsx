@@ -173,7 +173,7 @@ const VendasPage = () => {
                            </li>
                            <li className="flex items-start">
                               <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                              Captação de embaixadores locais e ativação antecipada do mercado primário
+                              Identificação dos moradores e investidores do entorno com maior potencial de conversão
                            </li>
                            <li className="flex items-start">
                               <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
