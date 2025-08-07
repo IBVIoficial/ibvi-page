@@ -88,7 +88,7 @@ const HeroSection = () => {
                      </a>
                      <a
                         href="#challenges"
-                        className="border-2 border-primary text-primary font-medium tracking-wide rounded-md px-8 py-3.5 hover:bg-primary hover:text-text-inverse hover:border-transparent transition-all text-sm uppercase shadow-md"
+                        className="border-2 border-primary text-primary font-medium tracking-wide rounded-md px-8 py-3.5 hover:bg-primary hover:text-secondary hover:border-transparent transition-all text-sm uppercase shadow-md"
                      >
                         {t('cta_secondary')}
                      </a>
