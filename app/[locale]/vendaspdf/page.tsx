@@ -24,8 +24,15 @@ const VendasPdfPage = () => {
          <section className="py-20 md:py-28 bg-surface-primary luxury-shadow">
             <div className="container mx-auto px-6">
                <div className="text-center max-w-4xl mx-auto">
+               <div className="mb-8">
+  <img 
+    src="/images/ibvi-logo.png" 
+    alt="IBVI Logo" 
+    className="mx-auto h-16 w-auto"
+  />
+</div>
                   <h1 className="text-5xl md:text-7xl font-playfair font-semibold leading-tight text-text-primary mb-6">
-                     IBVI — <span className="text-primary">Inteligência Geográfica</span> que Converte
+                     <span className="text-primary">Inteligência Geográfica</span> <br></br>que Converte
                   </h1>
                   <p className="text-xl md:text-2xl font-inter text-primary mb-8 font-medium tracking-wide">
                      Otimizando a Prospecção, Conversão e Precificação no Mercado Imobiliário
@@ -279,12 +286,6 @@ const VendasPdfPage = () => {
                            "Dados transformam geografia em estratégia.<br/>
                            O IBVI transforma estratégia em resultado."
                         </blockquote>
-                     </div>
-                     
-                     <div className="text-center">
-                        <div className="inline-block bg-primary text-white font-medium tracking-wide rounded-md px-8 py-4 text-sm uppercase shadow-md">
-                           Comece sua transformação agora
-                        </div>
                      </div>
                   </div>
                </div>
