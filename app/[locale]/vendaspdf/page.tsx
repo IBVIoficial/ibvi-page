@@ -80,7 +80,7 @@ const VendasPdfPage = () => {
                      <ul className="space-y-3 text-text-secondary">
                         <li className="flex items-start">
                            <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                           Geração instantânea de mapeamento completo em raio configurável
+                           Geração de mapeamento completo em raio configurável
                         </li>
                         <li className="flex items-start">
                            <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
