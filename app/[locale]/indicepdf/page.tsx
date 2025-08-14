@@ -1,45 +1,97 @@
 'use client';
 
 import React, { useEffect, useState } from 'react'
-import html2pdf from 'html2pdf.js'
 
 const IndicePdfPage: React.FC = () => {
   const [activeSlide, setActiveSlide] = useState(1)
-  const totalSlides = 15
+  const totalSlides = 8
 
   const exportToPDF = () => {
-    const element = document.body
-    const opt = {
-      margin: [0.5, 0.5, 0.5, 0.5],
-      filename: 'IBVI-Indice-Imoveis-Alto-Padrao.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: { 
-        scale: 2,
-        useCORS: true,
-        letterRendering: true,
-        allowTaint: false
-      },
-      jsPDF: { 
-        unit: 'in', 
-        format: 'a4', 
-        orientation: 'portrait',
-        compress: true
-      },
-      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+    // Hide screen-only elements for printing
+    const screenOnlyElements = document.querySelectorAll('.screen-only')
+    screenOnlyElements.forEach(el => {
+      (el as HTMLElement).style.display = 'none'
+    })
+
+    // Add print-specific styles
+    const printStyle = document.createElement('style')
+    printStyle.id = 'print-styles'
+    printStyle.textContent = `
+      @media print {
+        @page {
+          size: A4;
+          margin: 15mm;
+        }
+        
+        body {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+        
+        .slide {
+          page-break-after: always !important;
+          page-break-inside: avoid !important;
+          min-height: 100vh !important;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+        }
+        
+        .slide:last-child {
+          page-break-after: auto !important;
+        }
+        
+        /* Ensure animations don't interfere with printing */
+        *, *::before, *::after {
+          animation-duration: 0s !important;
+          animation-delay: 0s !important;
+          transition-duration: 0s !important;
+          transition-delay: 0s !important;
+        }
+        
+        /* Fix golden ring for print */
+        .golden-ring {
+          border: 2px solid #10B981 !important;
+          border-radius: 50% !important;
+          animation: none !important;
+        }
+        
+        /* Ensure colors print correctly */
+        .text-emerald-500 {
+          color: #10B981 !important;
+        }
+        
+        .bg-emerald-500 {
+          background-color: #10B981 !important;
+        }
+        
+        .border-emerald-500 {
+          border-color: #10B981 !important;
+        }
+      }
+    `
+    document.head.appendChild(printStyle)
+
+    // Restore elements after printing
+    const restoreElements = () => {
+      screenOnlyElements.forEach(el => {
+        (el as HTMLElement).style.display = ''
+      })
+      
+      const printStyleEl = document.getElementById('print-styles')
+      if (printStyleEl) {
+        printStyleEl.remove()
+      }
     }
 
-    // Hide navigation dots and header during PDF generation
-    const navDots = document.querySelector('.screen-only')
-    const header = document.querySelector('.fixed.top-0')
+    // Listen for print events
+    window.addEventListener('afterprint', restoreElements, { once: true })
     
-    if (navDots) (navDots as HTMLElement).style.display = 'none'
-    if (header) (header as HTMLElement).style.display = 'none'
-
-    html2pdf().set(opt).from(element).save().then(() => {
-      // Restore elements after PDF generation
-      if (navDots) (navDots as HTMLElement).style.display = ''
-      if (header) (header as HTMLElement).style.display = ''
-    })
+    // Fallback timeout in case afterprint doesn't fire
+    setTimeout(restoreElements, 3000)
+    
+    // Open print dialog
+    window.print()
   }
   
   useEffect(() => {
@@ -157,22 +209,43 @@ const IndicePdfPage: React.FC = () => {
       </div>
 
       {/* Slide 1: Hero */}
-      <section id="slide1" className="slide relative flex items-center justify-center min-h-screen bg-black">
-        <div className="container mx-auto px-6 md:px-10">
+      <section id="slide1" className="slide relative flex items-center justify-center min-h-screen bg-gradient-to-br from-black via-slate-950 to-emerald-950/20">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10"></div>
+        <div className="container mx-auto px-6 md:px-10 relative z-20">
           <div className="mx-auto max-w-5xl text-center">
-            <div className="mb-8">
-              <img src="/images/ibvi-logo.png" alt="IBVI" className="h-16 w-auto mx-auto opacity-80" />
+            <div className="mb-8 flex justify-center">
+              <div className="golden-ring w-32 h-32"></div>
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-thin tracking-tight text-white mb-6 animate-fadeIn">
-              Revolucionando o Mercado Imobiliário com
-              <span className="block text-emerald-500 font-light mt-2">Inteligência Artificial</span>
+            <h1 className="text-5xl md:text-7xl font-thin text-white mb-6 animate-fadeIn">
+              <span className="text-emerald-500">IBVI</span>: A Revolução da IA
             </h1>
-            <div className="hero-line"></div>
-            <p className="text-xl md:text-2xl font-light text-gray-400 animate-fadeIn" style={{ animationDelay: '1s' }}>
-              Avaliações precisas em minutos • Redução de 60% no tempo de transação
-            </p>
-            <div className="mt-12 text-sm text-gray-500 animate-fadeIn" style={{ animationDelay: '1.5s' }}>
-              <p>O primeiro Índice Padronizado de Imóveis de Luxo do Brasil</p>
+            <h2 className="text-xl md:text-2xl font-light text-gray-300 mb-8 animate-fadeIn" style={{animationDelay: '0.5s'}}>
+              na Precificação e Venda de Imóveis no Brasil
+            </h2>
+            <div className="border-t border-emerald-500/30 pt-8 mt-8">
+              <p className="text-lg text-gray-400 max-w-4xl mx-auto leading-relaxed animate-fadeIn" style={{animationDelay: '1s'}}>
+                Proptech brasileira pioneira em soluções de avaliação imobiliária baseadas em Inteligência Artificial, 
+                revolucionando um mercado de <span className="text-emerald-500 font-semibold">US$ 4 trilhões</span> com avaliações 
+                <span className="text-emerald-500 font-semibold">90% precisas em minutos</span>.
+              </p>
+            </div>
+            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center animate-fadeIn" style={{animationDelay: '1.5s'}}>
+              <div>
+                <div className="text-2xl md:text-3xl font-light text-emerald-500">US$ 4T</div>
+                <div className="text-xs md:text-sm text-gray-500">Mercado Nacional</div>
+              </div>
+              <div>
+                <div className="text-2xl md:text-3xl font-light text-emerald-500">90%</div>
+                <div className="text-xs md:text-sm text-gray-500">Precisão IA</div>
+              </div>
+              <div>
+                <div className="text-2xl md:text-3xl font-light text-emerald-500">60%</div>
+                <div className="text-xs md:text-sm text-gray-500">Redução Tempo</div>
+              </div>
+              <div>
+                <div className="text-2xl md:text-3xl font-light text-emerald-500">±6.2%</div>
+                <div className="text-xs md:text-sm text-gray-500">Variância Testada</div>
+              </div>
             </div>
           </div>
         </div>
@@ -181,47 +254,47 @@ const IndicePdfPage: React.FC = () => {
       {/* Slide 2: Executive Summary */}
       <section id="slide2" className="slide relative flex items-center justify-center min-h-screen bg-gradient-to-br from-black to-slate-950">
         <div className="container mx-auto px-6 md:px-10">
-            <div className="mx-auto max-w-6xl">
-              <h2 className="text-4xl md:text-5xl font-thin text-center text-white mb-8">
-                Sumário <span className="text-emerald-500">Executivo</span>
-              </h2>
-              <div className="bg-emerald-500/10 border border-emerald-500/30 p-8 rounded-lg mb-8">
-                <p className="text-lg text-gray-200 leading-relaxed text-center">
-                  O IBVI é uma proptech brasileira pioneira no desenvolvimento de soluções de avaliação imobiliária baseadas em IA, 
-                  com foco inicial no mercado de alto padrão. Em um mercado nacional avaliado em <span className="text-emerald-400 font-semibold">US$ 4 trilhões</span>, 
-                  mas estruturalmente ineficiente, o IBVI corrige distorções históricas de precificação e acelera transações.
+          <div className="mx-auto max-w-6xl">
+            <h2 className="text-4xl md:text-5xl font-thin text-center text-white mb-8">
+              Sumário <span className="text-emerald-500">Executivo</span>
+            </h2>
+            <div className="bg-emerald-500/10 border border-emerald-500/30 p-8 rounded-lg mb-8">
+              <p className="text-lg text-gray-200 leading-relaxed text-center">
+                O IBVI é uma proptech brasileira pioneira no desenvolvimento de soluções de avaliação imobiliária baseadas em IA, 
+                com foco inicial no mercado de alto padrão. Em um mercado nacional avaliado em <span className="text-emerald-400 font-semibold">US$ 4 trilhões</span>, 
+                mas estruturalmente ineficiente, o IBVI corrige distorções históricas de precificação e acelera transações.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-slate-900/50 backdrop-blur border border-slate-800 p-6 rounded-lg">
+                <h3 className="text-xl font-light text-emerald-500 mb-3">Problema</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Transações de 100-120 dias, 73% dos avaliadores usam planilhas manuais, 
+                  erro médio de ±8.16% (até 50% no luxo)
                 </p>
               </div>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-slate-900/50 backdrop-blur border border-slate-800 p-6 rounded-lg">
-                  <h3 className="text-xl font-light text-emerald-500 mb-3">Problema</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    Transações de 100-120 dias, 73% dos avaliadores usam planilhas manuais, 
-                    erro médio de ±8.16% (até 50% no luxo)
-                  </p>
-                </div>
-                <div className="bg-slate-900/50 backdrop-blur border border-slate-800 p-6 rounded-lg">
-                  <h3 className="text-xl font-light text-emerald-500 mb-3">Solução</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    AVM com IA + Google Cloud, 90% precisão em minutos, 
-                    primeiro Índice Padronizado de Luxo do Brasil
-                  </p>
-                </div>
-                <div className="bg-slate-900/50 backdrop-blur border border-slate-800 p-6 rounded-lg">
-                  <h3 className="text-xl font-light text-emerald-500 mb-3">Impacto</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    60% redução no tempo de transação, aliado estratégico 
-                    para imobiliárias maximizarem resultados de vendas
-                  </p>
-                </div>
+              <div className="bg-slate-900/50 backdrop-blur border border-slate-800 p-6 rounded-lg">
+                <h3 className="text-xl font-light text-emerald-500 mb-3">Solução</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  AVM com IA + Google Cloud, 90% precisão em minutos, 
+                  primeiro Índice Padronizado de Luxo do Brasil
+                </p>
               </div>
-              <div className="mt-8 text-center">
-                <p className="text-gray-400 text-sm">
-                  <strong>Mercado Anual:</strong> <span className="text-emerald-500">US$ 100 bilhões</span> em transações • 
-                  <strong>Segmento Premium:</strong> <span className="text-emerald-500">R$ 7.1-9.2 bilhões</span> anuais
+              <div className="bg-slate-900/50 backdrop-blur border border-slate-800 p-6 rounded-lg">
+                <h3 className="text-xl font-light text-emerald-500 mb-3">Impacto</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  60% redução no tempo de transação, aliado estratégico 
+                  para imobiliárias maximizarem resultados de vendas
                 </p>
               </div>
             </div>
+            <div className="mt-8 text-center">
+              <p className="text-gray-400 text-sm">
+                <strong>Mercado Anual:</strong> <span className="text-emerald-500">US$ 100 bilhões</span> em transações • 
+                <strong>Segmento Premium:</strong> <span className="text-emerald-500">R$ 7.1-9.2 bilhões</span> anuais
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -306,34 +379,66 @@ const IndicePdfPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Slide 4: Tecnologia */}
-      <section id="slide4" className="slide relative flex items-center justify-center min-h-screen bg-slate-950">
+      {/* Slide 5: Catalisador de Vendas */}
+      <section id="slide5" className="slide relative flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-950 to-black">
         <div className="container mx-auto px-6 md:px-10">
           <div className="mx-auto max-w-6xl">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="relative h-96 flex items-center justify-center">
-                <div className="absolute w-96 h-96 border border-emerald-500/30 rounded-full golden-ring"></div>
-                <div className="absolute w-72 h-72 border border-emerald-500/50 rounded-full golden-ring-reverse"></div>
-                <div className="absolute w-48 h-48 border border-emerald-500/70 rounded-full golden-ring-fast"></div>
+            <h2 className="text-4xl md:text-5xl font-thin text-center text-white mb-8">
+              IBVI como <span className="text-emerald-500">Catalisador de Vendas</span>
+            </h2>
+            <p className="text-center text-gray-400 mb-12 text-lg max-w-4xl mx-auto">
+              Mais que números: destravando negociações, gerando confiança e otimizando estratégias comerciais
+            </p>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-emerald-500/5 border border-emerald-500/20 p-8 rounded-lg">
+                <h3 className="text-2xl font-light text-emerald-500 mb-6">Para Imobiliárias</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2"></div>
+                    <div>
+                      <h4 className="text-white font-medium">Precificação Assertiva</h4>
+                      <p className="text-gray-400 text-sm">Valor fundamentado em dados objetivos reduz tempo de negociação</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2"></div>
+                    <div>
+                      <h4 className="text-white font-medium">Inteligência Geográfica</h4>
+                      <p className="text-gray-400 text-sm">Análise hiperlocalizada com comparáveis reais por proximidade</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2"></div>
+                    <div>
+                      <h4 className="text-white font-medium">Autoridade e Confiança</h4>
+                      <p className="text-gray-400 text-sm">Credibilidade imediata com investidores de alta renda</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div>
-                <h2 className="text-4xl md:text-5xl font-thin text-white mb-8">TECNOLOGIA</h2>
-                <div className="space-y-6">
-                  <div className="border-b border-slate-800 pb-6">
-                    <h3 className="text-xl font-light text-white mb-2">Modelos Hedônicos Avançados</h3>
-                    <p className="text-gray-400">Ponderação inteligente de variáveis como área privativa, localização privilegiada e amenidades exclusivas.</p>
+              <div className="bg-blue-500/5 border border-blue-500/20 p-8 rounded-lg">
+                <h3 className="text-2xl font-light text-blue-400 mb-6">Para Incorporadoras</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2"></div>
+                    <div>
+                      <h4 className="text-white font-medium">Análise de Viabilidade</h4>
+                      <p className="text-gray-400 text-sm">Decisões inteligentes na compra de terrenos e definição de produto</p>
+                    </div>
                   </div>
-                  <div className="border-b border-slate-800 pb-6">
-                    <h3 className="text-xl font-light text-white mb-2">Integração de Dados Oficiais</h3>
-                    <p className="text-gray-400">Conexão direta com CRIs, FIIs, cartórios e registros públicos, garantindo informações verificadas.</p>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2"></div>
+                    <div>
+                      <h4 className="text-white font-medium">Otimização do VGV</h4>
+                      <p className="text-gray-400 text-sm">Precificação granular maximiza Valor Geral de Vendas</p>
+                    </div>
                   </div>
-                  <div className="border-b border-slate-800 pb-6">
-                    <h3 className="text-xl font-light text-white mb-2">Machine Learning Proprietário</h3>
-                    <p className="text-gray-400">Algoritmos treinados em mais de 500 mil transações reais do mercado brasileiro de alto padrão.</p>
-                  </div>
-                  <div className="pb-6">
-                    <h3 className="text-xl font-light text-white mb-2">Infraestrutura Google Cloud</h3>
-                    <p className="text-gray-400">Capacidade para processar mais de 1 milhão de avaliações diárias com máxima confiabilidade.</p>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2"></div>
+                    <div>
+                      <h4 className="text-white font-medium">Velocidade de Vendas</h4>
+                      <p className="text-gray-400 text-sm">Tabelas alinhadas evitam estoque "encalhado" por sobrepreço</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -342,47 +447,119 @@ const IndicePdfPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Slide 5: Impacto */}
-      <section id="slide5" className="slide relative flex items-center justify-center min-h-screen bg-black">
+      {/* Slide 6: Vantagens Competitivas */}
+      <section id="slide6" className="slide relative flex items-center justify-center min-h-screen bg-black">
         <div className="container mx-auto px-6 md:px-10">
-          <div className="mx-auto max-w-6xl text-center">
-            <h2 className="text-4xl md:text-5xl font-thin text-white mb-12">IMPACTO</h2>
-            <div className="grid md:grid-cols-3 gap-12 mb-12">
-              <div className="relative">
-                <div className="text-5xl font-thin text-emerald-500 mb-4">9,2 bi</div>
-                <div className="text-sm text-gray-500 uppercase tracking-wider">Mercado Endereçável</div>
+          <div className="mx-auto max-w-6xl">
+            <h2 className="text-4xl md:text-5xl font-thin text-center text-white mb-12">
+              Vantagens <span className="text-emerald-500">Competitivas</span>
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="space-y-6">
+                <div className="bg-slate-900/50 border border-slate-800 p-6 rounded-lg">
+                  <h3 className="text-xl font-light text-emerald-500 mb-3">vs. Avaliadores Tradicionais</h3>
+                  <p className="text-gray-400 text-sm">Velocidade, escalabilidade e custo reduzido vs. lentidão, subjetividade e alto custo</p>
+                </div>
+                <div className="bg-slate-900/50 border border-slate-800 p-6 rounded-lg">
+                  <h3 className="text-xl font-light text-emerald-500 mb-3">vs. Plataformas (Loft, QuintoAndar)</h3>
+                  <p className="text-gray-400 text-sm">Foco técnico B2B em avaliação vs. marketplace consumer com avaliação superficial</p>
+                </div>
               </div>
-              <div className="relative border-x border-slate-800">
-                <div className="text-5xl font-thin text-emerald-500 mb-4">±6,2%</div>
-                <div className="text-sm text-gray-500 uppercase tracking-wider">Precisão Superior</div>
-              </div>
-              <div className="relative">
-                <div className="text-5xl font-thin text-emerald-500 mb-4">60%</div>
-                <div className="text-sm text-gray-500 uppercase tracking-wider">Redução de Tempo</div>
+              <div className="space-y-6">
+                <div className="bg-slate-900/50 border border-slate-800 p-6 rounded-lg">
+                  <h3 className="text-xl font-light text-emerald-500 mb-3">vs. Modelos Internacionais</h3>
+                  <p className="text-gray-400 text-sm">Adaptado às particularidades jurídicas, fiscais e cartoriais do Brasil</p>
+                </div>
+                <div className="bg-slate-900/50 border border-slate-800 p-6 rounded-lg">
+                  <h3 className="text-xl font-light text-emerald-500 mb-3">Posicionamento Único</h3>
+                  <p className="text-gray-400 text-sm">Facilitador neutro B2B - infraestrutura de precificação do mercado</p>
+                </div>
               </div>
             </div>
-            <div className="max-w-4xl mx-auto border-l-4 border-emerald-500 pl-8 text-left">
-              <p className="text-xl text-gray-300 italic font-light leading-relaxed">
-                "Mais do que um termômetro de mercado, o Índice IBVI é o instrumento definitivo para investidores, incorporadoras e fundos tomarem decisões fundamentadas no mercado de luxo."
+            <div className="bg-emerald-500/10 border border-emerald-500/30 p-8 rounded-lg text-center">
+              <h3 className="text-2xl font-light text-emerald-500 mb-4">Data Moat</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Cada cliente que usa a plataforma gera dados proprietários, criando um ciclo virtuoso de melhoria contínua 
+                e um "fosso de dados" defensável
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Slide 6: CTA */}
-      <section id="slide6" className="slide relative flex items-center justify-center min-h-screen bg-slate-950">
+      {/* Slide 7: Roadmap e Visão */}
+      <section id="slide7" className="slide relative flex items-center justify-center min-h-screen bg-gradient-to-br from-black to-slate-950">
+        <div className="container mx-auto px-6 md:px-10">
+          <div className="mx-auto max-w-6xl">
+            <h2 className="text-4xl md:text-5xl font-thin text-center text-white mb-12">
+              Roadmap e <span className="text-emerald-500">Visão</span>
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="bg-slate-900/30 border border-slate-800 p-6 rounded-lg">
+                <div className="text-emerald-500 font-semibold mb-2">2025 - Fase 1</div>
+                <h3 className="text-lg font-light text-white mb-4">Validação Intensiva</h3>
+                <ul className="text-gray-400 text-sm space-y-2">
+                  <li>• Pilotos com brokers de luxo em SP</li>
+                  <li>• Refinamento algorítmico</li>
+                  <li>• Aquisição de dados proprietários</li>
+                </ul>
+              </div>
+              <div className="bg-slate-900/30 border border-slate-800 p-6 rounded-lg">
+                <div className="text-emerald-500 font-semibold mb-2">2026 - Fase 2</div>
+                <h3 className="text-lg font-light text-white mb-4">Expansão Nacional</h3>
+                <ul className="text-gray-400 text-sm space-y-2">
+                  <li>• Grandes incorporadoras</li>
+                  <li>• Mercados Rio, Brasília, Recife</li>
+                  <li>• Integração com ERPs do setor</li>
+                </ul>
+              </div>
+              <div className="bg-slate-900/30 border border-slate-800 p-6 rounded-lg">
+                <div className="text-emerald-500 font-semibold mb-2">2027+ - Fase 3</div>
+                <h3 className="text-lg font-light text-white mb-4">América Latina</h3>
+                <ul className="text-gray-400 text-sm space-y-2">
+                  <li>• Portugal e Miami</li>
+                  <li>• Padrão regional de avaliação</li>
+                  <li>• Bloomberg do real estate LATAM</li>
+                </ul>
+              </div>
+            </div>
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-emerald-500/20 to-blue-500/20 border border-emerald-500/30 px-8 py-6 rounded-lg inline-block">
+                <h3 className="text-xl font-light text-emerald-400 mb-3">Visão de Longo Prazo</h3>
+                <p className="text-gray-300 max-w-2xl">
+                  Tornar-se a autoridade definitiva em avaliação imobiliária na América Latina, 
+                  estabelecendo o padrão global para mercados emergentes de alto valor
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Slide 8: Call to Action */}
+      <section id="slide8" className="slide relative flex items-center justify-center min-h-screen bg-slate-950">
         <div className="container mx-auto px-6 md:px-10">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-4xl md:text-5xl font-thin text-white mb-8">
-              O Futuro do <span className="text-emerald-500">Luxo</span> Começa Agora
+              O Futuro do <span className="text-emerald-500">Mercado Imobiliário</span> Começa Agora
             </h2>
-            <p className="text-xl text-gray-400 mb-12">
-              Seja pioneiro na revolução do mercado imobiliário de alto padrão no Brasil.
+            <p className="text-xl text-gray-400 mb-12 max-w-3xl mx-auto">
+              Seja pioneiro na revolução da precificação inteligente. 
+              Transforme dados em decisões, opacidade em transparência, e inefficiência em resultados excepcionais.
             </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <div className="bg-emerald-500/10 border border-emerald-500/30 p-6 rounded-lg">
+                <h3 className="text-lg font-light text-emerald-500 mb-3">Para Imobiliárias</h3>
+                <p className="text-gray-400 text-sm">Reduza ciclos de venda, aumente conversão e posicione-se como consultor técnico de referência</p>
+              </div>
+              <div className="bg-blue-500/10 border border-blue-500/30 p-6 rounded-lg">
+                <h3 className="text-lg font-light text-blue-400 mb-3">Para Incorporadoras</h3>
+                <p className="text-gray-400 text-sm">Otimize VGV, acelere vendas e tome decisões de investimento com base em dados precisos</p>
+              </div>
+            </div>
             <div className="flex flex-col md:flex-row gap-6 justify-center">
               <button className="px-8 py-4 bg-emerald-500 text-black font-medium tracking-wider uppercase hover:bg-transparent hover:text-emerald-500 border border-emerald-500 transition-all duration-300">
-                Agendar Apresentação
+                Agendar Demonstração
               </button>
               <button className="px-8 py-4 bg-transparent text-white font-medium tracking-wider uppercase hover:text-emerald-500 border border-slate-700 hover:border-emerald-500 transition-all duration-300">
                 Baixar White Paper
