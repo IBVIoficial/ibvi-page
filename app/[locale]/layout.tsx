@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       description: 'Transforming Brazilian Real Estate through AI and Data Intelligence.',
       images: [
          {
-            url: '/images/ibvi-logo.png',
+            url: '/images/icon.png',
             width: 800,
             height: 600,
             alt: 'IBVI Logo',
