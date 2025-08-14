@@ -2,8 +2,27 @@
 
 import React, { useEffect, useState } from 'react'
 
+// TypeScript interfaces
+interface SlideProps {
+  id: string;
+  children: React.ReactNode;
+  className?: string;
+  tone?: 'primary' | 'secondary';
+}
+
+interface StatCardProps {
+  value: string | number;
+  label: string;
+}
+
+interface ContentBoxProps {
+  title?: string;
+  children: React.ReactNode;
+  highlight?: boolean;
+}
+
 // Luxury design components
-const Slide = ({ id, children, className = '', tone = 'primary' }) => (
+const Slide: React.FC<SlideProps> = ({ id, children, className = '', tone = 'primary' }) => (
   <section
     id={id}
     className={`slide relative flex items-center justify-center min-h-screen ${
@@ -26,14 +45,14 @@ const Slide = ({ id, children, className = '', tone = 'primary' }) => (
   </section>
 );
 
-const StatCard = ({ value, label }) => (
+const StatCard: React.FC<StatCardProps> = ({ value, label }) => (
   <div className="p-6 bg-surface-primary/50 border border-black/10 rounded-2xl luxury-shadow transition-all duration-300 hover:scale-105">
     <div className="text-3xl lg:text-4xl font-playfair font-semibold text-primary tabular-nums">{value}</div>
     <div className="text-sm lg:text-base mt-3 text-text-secondary font-inter">{label}</div>
   </div>
 );
 
-const ContentBox = ({ title, children, highlight = false }) => (
+const ContentBox: React.FC<ContentBoxProps> = ({ title, children, highlight = false }) => (
   <div className={`${highlight ? 'bg-primary/10 border-l-4 border-primary' : 'bg-surface-primary'} p-8 md:p-10 rounded-2xl luxury-shadow border border-black/5`}>
     {title && <h3 className="text-2xl md:text-3xl font-playfair font-semibold text-text-primary mb-6">{title}</h3>}
     <div className="text-text-secondary text-lg md:text-xl leading-relaxed">
