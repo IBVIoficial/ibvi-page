@@ -18,11 +18,11 @@ export function generateStaticParams() {
 // Metadata can only be used in a Server Component
 export const metadata: Metadata = {
    metadataBase: new URL('https://ibvi.com.br'),
-   title: 'IBVI: Brazilian Real Estate Intelligence',
+   title: '',
    description: 'Transforming Brazilian Real Estate through AI and Data Intelligence.',
    keywords: 'IBVI, real estate, Brazil, property valuation, AI, data intelligence, luxury real estate',
    openGraph: {
-      title: 'IBVI: Brazilian Real Estate Intelligence',
+      title: '',
       description: 'Transforming Brazilian Real Estate through AI and Data Intelligence.',
       images: [
          {
