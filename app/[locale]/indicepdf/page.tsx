@@ -486,8 +486,8 @@ const IndicePdfPage: React.FC = () => {
           
           {/* Title - Luxury Typography */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-playfair font-semibold text-text-primary mb-6 animate-fadeIn leading-[1.1]">
-            A Revolução da <span className="text-primary">IA</span> no <br className="hidden md:block" />
-            <span className="text-primary">Mercado Imobiliário</span>
+          <span className="text-primary">IA</span> Revolucionando o <span className="text-primary"><br></br>Mercado Imobiliário</span> <br className="hidden md:block" />
+            
           </h1>
           
           {/* Subtitle */}
@@ -496,10 +496,10 @@ const IndicePdfPage: React.FC = () => {
           </p>
 
           {/* Core Proposition */}
-          <div className="max-w-4xl mx-auto mb-16 animate-fadeIn" style={{animationDelay: '0.6s'}}>
+          <div className="max-w-5xl mx-auto mb-16 animate-fadeIn" style={{animationDelay: '0.6s'}}>
             <p className="text-lg md:text-xl text-text-secondary leading-relaxed">
-              Pioneirismo em avaliação imobiliária com Inteligência Artificial. <br className="hidden md:block" />
-              Revolucionando um mercado de <span className="text-primary font-semibold">US$ 4 trilhões</span> com avaliações 
+              O IBVI é pioneiro em avaliação imobiliária com Inteligência Artificial. <br className="hidden md:block" />
+              E está revolucionando um mercado de <span className="text-primary font-semibold">US$ 4 trilhões</span> com avaliações 
               <span className="text-primary font-semibold"> 90% precisas</span>, em minutos.
             </p>
           </div>
@@ -523,7 +523,7 @@ const IndicePdfPage: React.FC = () => {
           
           <ContentBox className="print-fix-content-box">
               <p className="text-lg md:text-xl text-center">
-              O IBVI é a proptech pioneira no Brasil focada em avaliação imobiliária de alto padrão via IA. Corrigimos ineficiências estruturais em um mercado de <span className="text-primary font-semibold">US$ 4 trilhões</span>, acelerando transações e trazendo transparência inédita.
+              O IBVI é a proptech pioneira no Brasil focada em avaliação imobiliária de alto padrão através de IA. Corrigimos ineficiências estruturais em um mercado de <span className="text-primary font-semibold">US$ 4 trilhões</span>, acelerando transações e trazendo transparência inédita.
               </p>
           </ContentBox>
 
@@ -531,23 +531,23 @@ const IndicePdfPage: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-8 mt-12 print-pillars-layout">
             <div className="p-8 bg-surface-primary rounded-2xl luxury-shadow border border-black/5">
               <div className="w-12 h-1 bg-primary mb-6 rounded-full"></div>
-              <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">O Problema Crônico</h3>
+              <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">Dificuldades do Mercado</h3>
               <p className="text-text-secondary leading-relaxed">
                 Transações lentas (100+ dias), dependência de métodos manuais (73% usam planilhas) e erros drásticos de avaliação (até 50% no segmento de luxo).
               </p>
             </div>
             <div className="p-8 bg-surface-primary rounded-2xl luxury-shadow border border-black/5">
               <div className="w-12 h-1 bg-primary mb-6 rounded-full"></div>
-              <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">A Solução Tecnológica</h3>
+              <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">Nossa Solução Tecnológica</h3>
               <p className="text-text-secondary leading-relaxed">
-                AVM (Automated Valuation Model) com IA + Google Cloud. Precisão de 90% em minutos. Criação do 1º Índice Padronizado de Luxo do Brasil.
+                Utilizamos um AVM (Automated Valuation Model) com IA + Google Cloud. Precisão de 90% em minutos. Criação do 1º Índice Padronizado de Luxo do Brasil.
               </p>
             </div>
             <div className="p-8 bg-surface-primary rounded-2xl luxury-shadow border border-black/5">
               <div className="w-12 h-1 bg-primary mb-6 rounded-full"></div>
-              <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">O Impacto no Negócio</h3>
+              <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">O Impacto no Setor</h3>
               <p className="text-text-secondary leading-relaxed">
-                Redução de 60% no tempo de transação. Ferramenta estratégica para imobiliárias e incorporadoras maximizarem VGV e velocidade de vendas.
+                Redução de 60% no tempo de transação. Ferramenta estratégica para Imobiliárias e Incorporadoras maximizarem VGV e velocidade de vendas.
               </p>
             </div>
           </div>
@@ -591,7 +591,7 @@ const IndicePdfPage: React.FC = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <span className="text-xl font-playfair font-bold text-primary">02</span>
                 </div>
-                <h3 className="text-lg font-playfair font-semibold text-text-primary">Imprecisão Subjetiva</h3>
+                <h3 className="text-lg font-playfair font-semibold text-text-primary">Imprecisão Técnica</h3>
               </div>
               <p className="text-text-secondary leading-relaxed">
                 73% dos avaliadores usam planilhas manuais. Erro médio de ±8.16%. No luxo, a distorção chega a 40-50%.
@@ -603,7 +603,7 @@ const IndicePdfPage: React.FC = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <span className="text-xl font-playfair font-bold text-primary">03</span>
                 </div>
-                <h3 className="text-lg font-playfair font-semibold text-text-primary">Opacidade e Assimetria</h3>
+                <h3 className="text-lg font-playfair font-semibold text-text-primary">Lacunas nos Setor</h3>
               </div>
               <p className="text-text-secondary leading-relaxed">
                 Ausência de um índice centralizado e confiável gera insegurança jurídica e afasta investidores de alta renda.
@@ -618,7 +618,7 @@ const IndicePdfPage: React.FC = () => {
                 <h3 className="text-lg font-playfair font-semibold text-text-primary">Complexidade Regulatória</h3>
               </div>
               <p className="text-text-secondary leading-relaxed">
-                CMN nº 4.951/2021 exige rigor técnico na avaliação de garantias, mas a infraestrutura atual não suporta o cumprimento ágil.
+                O CMN nº 4.951/2021 exige rigor técnico na avaliação de garantias, mas a infraestrutura atual não suporta um cumprimento ágil.
               </p>
             </div>
           </div>
@@ -626,7 +626,7 @@ const IndicePdfPage: React.FC = () => {
           {/* Impact Statement - Luxury Style */}
          
             <p className="text-lg md:text-xl font-medium text-center">
-              <strong className="text-primary">Consequência Direta:</strong> Bilhões em perdas anuais devido a avaliações errôneas e transações fracassadas.
+              <strong className="text-primary">Consequência Direta:</strong> Bilhões em perdas anuais devido á avaliações errôneas e transações fracassadas.
             </p>
           
         </div>
@@ -636,14 +636,14 @@ const IndicePdfPage: React.FC = () => {
       <Slide id="slide4" tone="secondary">
         <div>
           <h2 className="text-4xl md:text-5xl font-playfair font-semibold text-center text-text-primary mb-6">
-            A Solução <span className="text-primary">IBVI</span>
+            Solução <span className="text-primary">IBVI</span>
           </h2>
           <p className="text-center text-text-secondary mb-12 text-lg md:text-xl font-inter">
             AVM (Automated Valuation Model) impulsionado por Inteligência Artificial
           </p>
           
-          <div className="mb-12">
-              <ContentBox title="O Motor Tecnológico Central">
+          <div className="mb-12 text-center">
+              <ContentBox title="Motor Tecnológico Central">
                   <p className="text-center">
                       Sistema proprietário de IA desenvolvido em parceria estratégica com <span className="text-primary font-semibold">Google Cloud</span>. 
                       Análise simultânea de centenas de variáveis macro e microeconômicas, garantindo <span className="text-primary font-semibold">90% de precisão</span>.
@@ -659,7 +659,7 @@ const IndicePdfPage: React.FC = () => {
                 </svg>
               </div>
               <h4 className="text-lg font-playfair font-semibold text-text-primary mb-3">Modelos Hedônicos Avançados</h4>
-              <p className="text-text-secondary text-base">Atribuição de peso real a variáveis qualitativas e quantitativas (localização, área, amenidades).</p>
+              <p className="text-text-secondary text-base">Atribuição de peso real á variáveis qualitativas e quantitativas (localização, área, amenidades).</p>
             </div>
             <div className="bg-surface-primary p-8 rounded-2xl text-center luxury-shadow border border-black/5 hover:scale-105 transition-transform duration-300">
               <div className="w-16 h-16 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center">
@@ -667,7 +667,7 @@ const IndicePdfPage: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                 </svg>
               </div>
-              <h4 className="text-lg font-playfair font-semibold text-text-primary mb-3">Dados Estruturados e Oficiais</h4>
+              <h4 className="text-lg font-playfair font-semibold text-text-primary mb-3">Dados Estruturados Oficiais</h4>
               <p className="text-text-secondary text-base">Base robusta com Cartórios, CRIs, FIIs e Open Finance (150+ milhões de transações).</p>
             </div>
             <div className="bg-surface-primary p-8 rounded-2xl text-center luxury-shadow border border-black/5 hover:scale-105 transition-transform duration-300">
@@ -713,21 +713,21 @@ const IndicePdfPage: React.FC = () => {
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary font-playfair font-bold text-base flex-shrink-0">1</div>
                   <div>
                     <h4 className="text-base font-playfair font-medium text-text-primary mb-2">Precificação Assertiva</h4>
-                    <p className="text-text-secondary text-sm leading-relaxed">Valor fundamentado em dados objetivos e metodologia científica, reduzindo tempo de negociação.</p>
+                    <p className="text-text-secondary text-sm leading-relaxed">Valor fundamentado em dados objetivos e metodologia analítica, reduzindo tempo de negociação.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-5">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary font-playfair font-bold text-base flex-shrink-0">2</div>
                   <div>
                     <h4 className="text-base font-playfair font-medium text-text-primary mb-2">Inteligência Geográfica</h4>
-                    <p className="text-text-secondary text-sm leading-relaxed">Análise detalhada com comparáveis reais e validados por proximidade.</p>
+                    <p className="text-text-secondary text-sm leading-relaxed">Análise detalhada com comparáveis reais, validados por proximidade.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-5">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary font-playfair font-bold text-base flex-shrink-0">3</div>
                   <div>
                     <h4 className="text-base font-playfair font-medium text-text-primary mb-2">Autoridade e Confiança</h4>
-                    <p className="text-text-secondary text-sm leading-relaxed">Credibilidade imediata junto a proprietários e investidores de alta renda.</p>
+                    <p className="text-text-secondary text-sm leading-relaxed">Ganho de credibilidade junto a proprietários e investidores de alta renda.</p>
                   </div>
                 </div>
               </div>
@@ -744,7 +744,7 @@ const IndicePdfPage: React.FC = () => {
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary font-playfair font-bold text-base flex-shrink-0">1</div>
                   <div>
                     <h4 className="text-base font-playfair font-medium text-text-primary mb-2">Análise de Viabilidade</h4>
-                    <p className="text-text-secondary text-sm leading-relaxed">Decisões inteligentes na aquisição de terrenos e definição do mix ideal.</p>
+                    <p className="text-text-secondary text-sm leading-relaxed">Decisões inteligentes na aquisição de terrenos e definição das características ideais.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-5">
@@ -785,7 +785,7 @@ const IndicePdfPage: React.FC = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-text-tertiary mt-1.5">•</span>
-                  <p className="text-text-tertiary text-base"><span className='font-medium'>Eles:</span> Lentidão (dias/semanas), subjetividade humana e alto custo fixo.</p>
+                  <p className="text-text-tertiary text-base"><span className='font-medium'>Mercado Atual:</span> Lentidão (dias/semanas), subjetividade humana e alto custo fixo.</p>
                 </div>
               </div>
             </div>
@@ -799,7 +799,7 @@ const IndicePdfPage: React.FC = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-text-tertiary mt-1.5">•</span>
-                  <p className="text-text-tertiary text-base"><span className='font-medium'>Eles:</span> Marketplace B2C com avaliação superficial como ferramenta de captação.</p>
+                  <p className="text-text-tertiary text-base"><span className='font-medium'>Mercado Atual:</span> Marketplace B2C com avaliação superficial como ferramenta de captação.</p>
                 </div>
               </div>
             </div>
@@ -813,7 +813,7 @@ const IndicePdfPage: React.FC = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-text-tertiary mt-1.5">•</span>
-                  <p className="text-text-tertiary text-base"><span className='font-medium'>Eles:</span> Ineficazes no Brasil devido à falta de dados padronizados.</p>
+                  <p className="text-text-tertiary text-base"><span className='font-medium'>Mercado Atual:</span> Ineficazes no Brasil devido à falta de dados padronizados.</p>
                 </div>
               </div>
             </div>
@@ -847,7 +847,7 @@ const IndicePdfPage: React.FC = () => {
               <h3 className="mb-2 font-playfair font-semibold text-primary text-base">Fase 1: Validação Intensiva</h3>
               <ul className="text-text-secondary text-xs space-y-1 list-disc list-inside text-left w-full">
                 <li>Pilotos estratégicos com top brokers de luxo em São Paulo.</li>
-                <li>Refinamento algorítmico com dados proprietários.</li>
+                <li>Refinamento do algoritmo composto de dados proprietários.</li>
                 <li>Consolidação da base de dados oficial.</li>
               </ul>
             </div>
@@ -859,8 +859,8 @@ const IndicePdfPage: React.FC = () => {
               </div>
               <h3 className="mb-2 font-playfair font-semibold text-primary text-base">Fase 2: Expansão Nacional</h3>
               <ul className="text-text-secondary text-xs space-y-1 list-disc list-inside text-left w-full">
-                <li>Entrada em grandes incorporadoras nacionais.</li>
-                <li>Expansão para mercados chave: Rio, Brasília, Recife.</li>
+                <li>Parceiria com grandes incorporadoras nacionais.</li>
+                <li>Expansão para mercados-chave: Rio, Brasília, Recife.</li>
                 <li>Integração via API com ERPs e CRMs do setor.</li>
               </ul>
             </div>
@@ -872,18 +872,18 @@ const IndicePdfPage: React.FC = () => {
               </div>
               <h3 className="mb-2 font-playfair font-semibold text-primary text-base">Fase 3: Liderança LATAM</h3>
               <ul className="text-text-secondary text-xs space-y-1 list-disc list-inside text-left w-full">
-                <li>Expansão internacional: Portugal e Miami.</li>
-                <li>Estabelecimento como padrão regional de avaliação.</li>
-                <li>Visão: Tornar-se o "Bloomberg" do real estate na América Latina.</li>
+                <li>Expansão Internacional: Portugal e Miami.</li>
+                <li>Estabelecimento como Padrão Regional de Avaliação.</li>
+                <li>Visão: Tornar-se o "Bloomberg" do Real Estate na América Latina.</li>
               </ul>
             </div>
           </div>
 
           {/* Visão de Longo Prazo - Integrada e Compacta */}
           <div className="mt-8 w-full max-w-4xl">
-              <ContentBox title="Visão de Longo Prazo" highlight={true} className="px-6 py-4">
+              <ContentBox title="Visão a Longo Prazo" highlight={true} className="px-6 py-4 text-center">
                   <p className="text-sm text-center leading-relaxed">
-                      Ser a autoridade definitiva em avaliação imobiliária na América Latina, estabelecendo o padrão global de transparência e eficiência para mercados emergentes de alto valor.
+                      Ser a autoridade definitiva em Avaliação Imobiliária na América Latina, estabelecendo um padrão global de transparência e eficiência para mercados emergentes de alto valor.
                   </p>
               </ContentBox>
           </div>
