@@ -594,7 +594,7 @@ const IndicePdfPage: React.FC = () => {
                 <h3 className="text-lg font-playfair font-semibold text-text-primary">Imprecisão Técnica</h3>
               </div>
               <p className="text-text-secondary leading-relaxed">
-                73% dos avaliadores usam planilhas manuais. Erro médio de ±8.16%. No luxo, a distorção chega a 40-50%.
+              Muitos avaliadores ainda dependem de planilhas. Em imóveis comerciais, estudos NCREIF mostram ~11% de diferença média absoluta entre avaliação e venda, maior em ativos únicos de altíssimo padrão pela escassez de comparáveis.
               </p>
             </div>
 
