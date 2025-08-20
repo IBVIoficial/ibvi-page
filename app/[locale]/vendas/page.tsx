@@ -9,8 +9,6 @@ const VendasPage = () => {
          <section className="py-20 md:py-28 bg-surface-primary luxury-shadow">
             <div className="container mx-auto px-6">
                <div className="text-center max-w-4xl mx-auto">
-
-
                   <h1 className="text-5xl md:text-7xl font-playfair font-semibold leading-tight text-text-primary mb-6">
                      IBVI — <span className="text-primary">Inteligência Geográfica</span> que Converte
                   </h1>
@@ -30,11 +28,15 @@ const VendasPage = () => {
                   </h2>
                   <div className="bg-surface-primary rounded-lg p-8 luxury-shadow">
                      <p className="text-lg text-text-secondary leading-relaxed">
-                        O IBVI é uma plataforma de inteligência comercial que integra geoprocessamento e inteligência artificial para transformar a forma como imobiliárias, corretores e incorporadoras identificam, abordam e convertem oportunidades no mercado imobiliário. Por meio de um modelo proprietário de análise geográfica, o sistema gera listas de leads altamente qualificados com base em proximidade, comportamento de valorização e contexto demográfico.
+                        O IBVI é uma plataforma de inteligência comercial que integra geoprocessamento e inteligência artificial para transformar a forma como
+                        imobiliárias, corretores e incorporadoras identificam, abordam e convertem oportunidades no mercado imobiliário. Por meio de um modelo
+                        proprietário de análise geográfica, o sistema gera listas de leads altamente qualificados com base em proximidade, comportamento de
+                        valorização e contexto demográfico.
                      </p>
                      <div className="mt-6 p-4 bg-primary/10 rounded-lg border-l-4 border-primary">
                         <p className="text-lg font-medium text-text-primary">
-                           <strong>O resultado:</strong> prospecções até <span className="text-primary font-bold">70% mais rápidas</span> e um ganho médio de <span className="text-primary font-bold">40% em conversão comercial</span>.
+                           <strong>O resultado:</strong> prospecções até <span className="text-primary font-bold">70% mais rápidas</span> e um ganho médio de{' '}
+                           <span className="text-primary font-bold">40% em conversão comercial</span>.
                         </p>
                      </div>
                   </div>
@@ -50,13 +52,13 @@ const VendasPage = () => {
                      1. A Nova Vantagem Competitiva: <span className="text-primary">Geointeligência Comercial</span>
                   </h2>
                   <p className="text-lg text-text-secondary mb-8 leading-relaxed">
-                     A inteligência geográfica aplicada à venda de imóveis não se limita à localização — ela revela padrões ocultos de comportamento, oportunidade e demanda latente. O IBVI permite que as equipes comerciais deixem de reagir e passem a antecipar o mercado, com dados estruturados em tempo real.
+                     A inteligência geográfica aplicada à venda de imóveis não se limita à localização — ela revela padrões ocultos de comportamento,
+                     oportunidade e demanda latente. O IBVI permite que as equipes comerciais deixem de reagir e passem a antecipar o mercado, com dados
+                     estruturados em tempo real.
                   </p>
-                  
+
                   <div className="bg-surface-secondary rounded-lg p-6 luxury-shadow">
-                     <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">
-                        1.1 Varredura Sistêmica por Proximidade
-                     </h3>
+                     <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">1.1 Varredura Sistêmica por Proximidade</h3>
                      <ul className="space-y-3 text-text-secondary">
                         <li className="flex items-start">
                            <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -84,14 +86,13 @@ const VendasPage = () => {
                      2. Da Análise à Ação: <span className="text-primary">Ferramentas de Venda Integradas</span>
                   </h2>
                   <p className="text-lg text-text-secondary mb-8 leading-relaxed">
-                     A plataforma IBVI transforma dados em movimento comercial através de funcionalidades projetadas para ativar os leads certos no momento certo — com mínimo atrito e máxima eficiência operacional.
+                     A plataforma IBVI transforma dados em movimento comercial através de funcionalidades projetadas para ativar os leads certos no momento
+                     certo — com mínimo atrito e máxima eficiência operacional.
                   </p>
-                  
+
                   <div className="grid md:grid-cols-2 gap-6">
                      <div className="bg-surface-primary rounded-lg p-6 luxury-shadow">
-                        <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">
-                           2.1 Disparo Inteligente de Mala Direta e Prospecção
-                        </h3>
+                        <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">2.1 Disparo Inteligente de Mala Direta e Prospecção</h3>
                         <ul className="space-y-3 text-text-secondary">
                            <li className="flex items-start">
                               <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -107,11 +108,9 @@ const VendasPage = () => {
                            </li>
                         </ul>
                      </div>
-                     
+
                      <div className="bg-surface-primary rounded-lg p-6 luxury-shadow">
-                        <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">
-                           2.2 Dashboards e Análises Comerciais em Tempo Real
-                        </h3>
+                        <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">2.2 Dashboards e Análises Comerciais em Tempo Real</h3>
                         <ul className="space-y-3 text-text-secondary">
                            <li className="flex items-start">
                               <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -140,14 +139,13 @@ const VendasPage = () => {
                      3. <span className="text-primary">Multiplicação de Resultados</span> Comerciais
                   </h2>
                   <p className="text-lg text-text-secondary mb-8 leading-relaxed">
-                     O IBVI otimiza o trabalho comercial em todas as frentes: da captação inteligente à argumentação baseada em dados, acelerando conversões com embasamento técnico e foco absoluto na assertividade.
+                     O IBVI otimiza o trabalho comercial em todas as frentes: da captação inteligente à argumentação baseada em dados, acelerando conversões com
+                     embasamento técnico e foco absoluto na assertividade.
                   </p>
-                  
+
                   <div className="grid md:grid-cols-2 gap-6">
                      <div className="bg-surface-secondary rounded-lg p-6 luxury-shadow">
-                        <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">
-                           3.1 Para Equipes Comerciais
-                        </h3>
+                        <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">3.1 Para Equipes Comerciais</h3>
                         <ul className="space-y-3 text-text-secondary">
                            <li className="flex items-start">
                               <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -155,19 +153,21 @@ const VendasPage = () => {
                            </li>
                            <li className="flex items-start">
                               <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                              <span>Redução de <strong className="text-primary">70%</strong> no tempo médio de prospecção</span>
+                              <span>
+                                 Redução de <strong className="text-primary">70%</strong> no tempo médio de prospecção
+                              </span>
                            </li>
                            <li className="flex items-start">
                               <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                              <span>Aumento de até <strong className="text-primary">40%</strong> na taxa de conversão pela qualificação cirúrgica de leads</span>
+                              <span>
+                                 Aumento de até <strong className="text-primary">40%</strong> na taxa de conversão pela qualificação de leads
+                              </span>
                            </li>
                         </ul>
                      </div>
-                     
+
                      <div className="bg-surface-secondary rounded-lg p-6 luxury-shadow">
-                        <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">
-                           3.2 Para Incorporadoras e Lançamentos
-                        </h3>
+                        <h3 className="text-xl font-playfair font-semibold text-text-primary mb-4">3.2 Para Incorporadoras e Lançamentos</h3>
                         <ul className="space-y-3 text-text-secondary">
                            <li className="flex items-start">
                               <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -198,17 +198,15 @@ const VendasPage = () => {
                   <p className="text-lg text-text-secondary mb-8 leading-relaxed">
                      O IBVI foi desenhado para usabilidade ágil e integração direta com CRMs e plataformas de marketing existentes.
                   </p>
-                  
+
                   <div className="bg-surface-primary rounded-lg p-8 luxury-shadow">
-                     <h3 className="text-xl font-playfair font-semibold text-text-primary mb-6">
-                        Etapas operacionais:
-                     </h3>
+                     <h3 className="text-xl font-playfair font-semibold text-text-primary mb-6">Etapas operacionais:</h3>
                      <div className="space-y-4">
                         {[
                            'Inserir o endereço do imóvel ou lançamento',
                            'Visualizar propriedades ao redor via mapa interativo com filtros configuráveis',
                            'Segmentar e exportar listas com base em critérios estratégicos',
-                           'Acionar campanhas diretamente a partir do CRM com mensagens personalizadas'
+                           'Acionar campanhas diretamente a partir do CRM com mensagens personalizadas',
                         ].map((step, index) => (
                            <div key={index} className="flex items-start">
                               <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">
@@ -218,10 +216,11 @@ const VendasPage = () => {
                            </div>
                         ))}
                      </div>
-                     
+
                      <div className="mt-8 p-4 bg-primary/10 rounded-lg border-l-4 border-primary">
                         <p className="text-text-secondary">
-                           <strong>Além disso,</strong> a plataforma sugere continuamente ações otimizadas via IA com base em padrões de resposta, comportamento e performance regional.
+                           <strong>Além disso,</strong> a plataforma sugere continuamente ações otimizadas via IA com base em padrões de resposta, comportamento
+                           e performance regional.
                         </p>
                      </div>
                   </div>
@@ -236,16 +235,17 @@ const VendasPage = () => {
                   <h2 className="text-3xl md:text-4xl font-playfair font-semibold text-text-primary mb-8 text-center">
                      O Futuro do Mercado Imobiliário é <span className="text-primary">Geointeligente</span>
                   </h2>
-                  
+
                   <div className="bg-surface-secondary rounded-lg p-8 luxury-shadow">
                      <p className="text-lg text-text-secondary mb-6 leading-relaxed">
-                        Enquanto o mercado tradicional ainda opera com intuição e conexões fragmentadas, as equipes que adotam o IBVI já colhem resultados concretos:
+                        Enquanto o mercado tradicional ainda opera com intuição e conexões fragmentadas, as equipes que adotam o IBVI já colhem resultados
+                        concretos:
                      </p>
-                     
+
                      <ul className="space-y-3 text-text-secondary mb-6">
                         <li className="flex items-start">
                            <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                           <span>Campanhas atingem os vizinhos certos com precisão cirúrgica</span>
+                           <span>Campanhas atingem os vizinhos certos com precisão otimizada</span>
                         </li>
                         <li className="flex items-start">
                            <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -256,18 +256,19 @@ const VendasPage = () => {
                            <span>Decisões de alta precisão, com menos esforço e mais conversões</span>
                         </li>
                      </ul>
-                     
+
                      <p className="text-lg text-text-secondary mb-6 leading-relaxed">
-                        A pergunta não é mais "se" você vai adotar inteligência geográfica — mas <strong>"quando"</strong>. E se será antes ou depois dos seus concorrentes.
+                        A pergunta não é mais "se" você vai adotar inteligência geográfica — mas <strong>"quando"</strong>. E se será antes ou depois dos seus
+                        concorrentes.
                      </p>
-                     
+
                      <div className="text-center mb-6">
                         <blockquote className="text-2xl md:text-3xl font-playfair font-semibold text-primary italic">
-                           "Dados transformam geografia em estratégia.<br/>
-                           O IBVI transforma estratégia em resultado."
+                           "Dados transformam geografia em estratégia.
+                           <br />O IBVI transforma estratégia em resultado."
                         </blockquote>
                      </div>
-                     
+
                      <div className="text-center">
                         <a
                            href="mailto:contato@ibvi.com.br"
@@ -285,12 +286,8 @@ const VendasPage = () => {
          <section className="py-16 bg-primary text-white">
             <div className="container mx-auto px-6 text-center">
                <div className="max-w-2xl mx-auto">
-                  <h2 className="text-3xl md:text-4xl font-playfair font-semibold mb-6">
-                     Pronto para Revolucionar suas Vendas?
-                  </h2>
-                  <p className="text-xl mb-8 opacity-90">
-                     Descubra como o IBVI pode transformar sua estratégia comercial no mercado imobiliário.
-                  </p>
+                  <h2 className="text-3xl md:text-4xl font-playfair font-semibold mb-6">Pronto para Revolucionar suas Vendas?</h2>
+                  <p className="text-xl mb-8 opacity-90">Descubra como o IBVI pode transformar sua estratégia comercial no mercado imobiliário.</p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                      <a
                         href="mailto:contato@ibvi.com.br"
