@@ -6,21 +6,25 @@ import {useTranslations} from 'next-intl';
 const OverviewSection = () => {
    const t = useTranslations('overview');
    return (
-      <section id="overview" className="py-16 md:py-24 transition-opacity duration-500 animate-fade-in" data-delay="200">
-         <div className="container mx-auto px-6">
-            <div className="flex flex-col items-center">
-               <div className="w-16 h-0.5 bg-primary mb-6"></div>
-               <h2 className="text-3xl md:text-4xl font-playfair font-semibold text-text-primary text-center mb-8">
-                  {t.rich('title', {primary: (chunks) => <span className="text-primary">{chunks}</span>})}
+      <section id="overview" className="py-24 md:py-32 bg-surface-secondary">
+         <div className="container mx-auto px-8 lg:px-16">
+            <div className="flex flex-col items-center mb-16">
+               <div className="w-12 h-[1px] bg-text-primary/20 mb-8"></div>
+               <h2 className="text-3xl md:text-4xl lg:text-5xl font-inter font-light text-text-primary text-center leading-tight">
+                  {t.rich('title', {primary: (chunks) => <span className="font-normal">{chunks}</span>})}
                </h2>
             </div>
-            <div className="max-w-4xl mx-auto">
-               <p className="font-inter text-text-secondary text-lg md:text-xl leading-relaxed mx-auto text-center mb-10">{t('main_paragraph')}</p>
-               <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 text-center max-w-5xl mx-auto my-12">
-                  <div className="bg-surface-primary p-8 luxury-shadow ibvi-card border-b-2 border-primary group hover:translate-y-[-5px] transition-all duration-300">
-                     <div className="flex justify-center mb-4">
-                        <div className="w-14 h-14 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20 transition-all">
-                           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+            <div className="max-w-5xl mx-auto">
+               <p className="font-inter font-light text-text-secondary text-base md:text-lg leading-relaxed text-center mb-20 max-w-4xl mx-auto">
+                  {t('main_paragraph')}
+               </p>
+
+               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                  <div className="bg-surface-primary border border-border-light p-10 text-center">
+                     <div className="flex justify-center mb-6">
+                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-surface-tertiary">
+                           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path
                                  strokeLinecap="round"
                                  strokeLinejoin="round"
@@ -30,13 +34,14 @@ const OverviewSection = () => {
                            </svg>
                         </div>
                      </div>
-                     <p className="text-3xl font-playfair font-semibold text-primary mb-2">{t('market_value_stat_value')}</p>
-                     <p className="font-inter text-text-secondary text-sm font-medium">{t('market_value_stat_label')}</p>
+                     <p className="text-3xl md:text-4xl font-inter font-normal text-text-primary mb-4">{t('market_value_stat_value')}</p>
+                     <p className="font-inter font-light text-text-tertiary text-sm tracking-wide">{t('market_value_stat_label')}</p>
                   </div>
-                  <div className="bg-surface-primary p-8 luxury-shadow ibvi-card border-b-2 border-primary group hover:translate-y-[-5px] transition-all duration-300">
-                     <div className="flex justify-center mb-4">
-                        <div className="w-14 h-14 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20 transition-all">
-                           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                  <div className="bg-surface-primary border border-border-light p-10 text-center">
+                     <div className="flex justify-center mb-6">
+                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-surface-tertiary">
+                           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path
                                  strokeLinecap="round"
                                  strokeLinejoin="round"
@@ -46,23 +51,25 @@ const OverviewSection = () => {
                            </svg>
                         </div>
                      </div>
-                     <p className="text-3xl font-playfair font-semibold text-primary mb-2">{t('annual_transactions_stat_value')}</p>
-                     <p className="font-inter text-text-secondary text-sm font-medium">{t('annual_transactions_stat_label')}</p>
+                     <p className="text-3xl md:text-4xl font-inter font-normal text-text-primary mb-4">{t('annual_transactions_stat_value')}</p>
+                     <p className="font-inter font-light text-text-tertiary text-sm tracking-wide">{t('annual_transactions_stat_label')}</p>
                   </div>
-                  <div className="bg-surface-primary p-8 luxury-shadow ibvi-card border-b-2 border-primary group hover:translate-y-[-5px] transition-all duration-300">
-                     <div className="flex justify-center mb-4">
-                        <div className="w-14 h-14 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20 transition-all">
-                           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                  <div className="bg-surface-primary border border-border-light p-10 text-center">
+                     <div className="flex justify-center mb-6">
+                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-surface-tertiary">
+                           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                            </svg>
                         </div>
                      </div>
-                     <p className="text-3xl font-playfair font-semibold text-primary mb-2">{t('valuation_challenges_stat_value')}</p>
-                     <p className="font-inter text-text-secondary text-sm font-medium">{t('valuation_challenges_stat_label')}</p>
+                     <p className="text-3xl md:text-4xl font-inter font-normal text-text-primary mb-4">{t('valuation_challenges_stat_value')}</p>
+                     <p className="font-inter font-light text-text-tertiary text-sm tracking-wide">{t('valuation_challenges_stat_label')}</p>
                   </div>
                </div>
-               <div className="flex justify-center mt-8">
-                  <div className="w-20 h-0.5 bg-primary/40"></div>
+
+               <div className="flex justify-center mt-20">
+                  <div className="w-12 h-[1px] bg-text-primary/20"></div>
                </div>
             </div>
          </div>

@@ -70,36 +70,49 @@ const HeroSection = () => {
    }, [globeSize]);
 
    return (
-      <header className="py-20 md:py-28 bg-surface-primary luxury-shadow transition-opacity duration-500 animate-fade-in" data-delay="100">
-         <div className="container mx-auto px-6">
-            <div className="flex flex-col lg:flex-row items-center gap-12">
-               <div className="lg:w-1/2 text-center lg:text-left">
-                  <h1 className="text-5xl md:text-7xl font-playfair font-semibold leading-tight text-text-primary mb-6">
-                     {t('title')} <span className="text-primary">{t('subtitle')}</span>
+      <header className="min-h-screen flex items-center bg-surface-primary">
+         <div className="container mx-auto px-8 lg:px-16 py-24">
+            <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+               {/* Left Content - Text */}
+               <div className="order-2 lg:order-1">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-inter font-light leading-[1.1] text-text-primary mb-8">
+                     {t('title')}
+                     <br />
+                     <span className="font-normal">{t('subtitle')}</span>
                   </h1>
-                  <p className="text-xl md:text-2xl font-inter text-primary mb-8 max-w-xl mx-auto lg:mx-0 font-medium tracking-wide">{t('tagline')}</p>
-                  <p className="text-base md:text-lg text-text-tertiary max-w-lg mx-auto lg:mx-0 mb-10 leading-relaxed">{t('description')}</p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+
+                  <p className="text-lg md:text-xl font-inter font-light text-text-secondary mb-6 leading-relaxed">{t('tagline')}</p>
+
+                  <p className="text-base font-inter font-light text-text-tertiary mb-12 leading-relaxed max-w-xl">{t('description')}</p>
+
+                  <div className="flex flex-col sm:flex-row gap-4">
                      <a
                         href="#solution"
-                        className="bg-primary text-text-inverse font-medium tracking-wide rounded-md px-8 py-4 hover:bg-primary-hover transition-all text-sm uppercase shadow-md"
+                        className="bg-black inline-block text-white text-surface-primary font-inter font-normal text-sm tracking-wide px-8 py-4 hover:bg-text-secondary transition-colors duration-200"
                      >
                         {t('cta_primary')}
                      </a>
                      <a
                         href="#challenges"
-                        className="border-2 border-primary text-primary font-medium tracking-wide rounded-md px-8 py-3.5 hover:bg-primary hover:text-secondary hover:border-transparent transition-all text-sm uppercase shadow-md"
+                        className="inline-block border border-text-primary text-text-primary font-inter font-normal text-sm tracking-wide px-8 py-4 hover:bg-text-primary hover:text-surface-primary transition-colors duration-200"
                      >
                         {t('cta_secondary')}
                      </a>
                   </div>
                </div>
-               <div className="lg:w-1/2 flex justify-center items-center mt-8 lg:mt-0">
-                  <div ref={containerRef} className="relative w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] md:w-[480px] md:h-[480px]">
-                     <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/30 rounded-full blur-3xl"></div>
-                     <canvas ref={canvasRef} id="cobe-canvas" style={{width: '100%', height: '100%', aspectRatio: '1 / 1'}} className="relative z-10"></canvas>
-                     <div className="absolute -bottom-4 -right-4 w-32 h-32 border border-primary/30 rounded-full"></div>
-                     <div className="absolute -top-4 -left-4 w-24 h-24 border border-primary/20 rounded-full"></div>
+
+               {/* Right Content - Globe */}
+               <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+                  <div ref={containerRef} className="relative w-[400px] h-[400px] md:w-[500px] md:h-[500px] lg:w-[550px] lg:h-[550px]">
+                     {/* Subtle glow behind globe */}
+                     <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 rounded-full blur-3xl"></div>
+
+                     {/* Globe canvas */}
+                     <canvas ref={canvasRef} id="cobe-canvas" style={{width: '100%', height: '100%', aspectRatio: '1 / 1'}} className="relative z-10" />
+
+                     {/* Minimal decorative circles */}
+                     <div className="absolute -bottom-8 -right-8 w-40 h-40 border border-primary/10 rounded-full"></div>
+                     <div className="absolute -top-8 -left-8 w-32 h-32 border border-primary/5 rounded-full"></div>
                   </div>
                </div>
             </div>

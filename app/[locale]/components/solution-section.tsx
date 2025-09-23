@@ -6,20 +6,22 @@ import {useTranslations} from 'next-intl';
 const SolutionSection = () => {
    const t = useTranslations('solution');
    return (
-      <section id="solution" className="py-16 md:py-24 bg-surface-secondary transition-opacity duration-500 animate-fade-in" data-delay="400">
-         <div className="container mx-auto px-6">
-            <div className="flex flex-col items-center">
-               <div className="w-16 h-0.5 bg-primary mb-6"></div>
-               <h2 className="text-3xl md:text-4xl font-playfair font-semibold text-center mb-6">
-                  {t.rich('title', {primary: (chunks) => <span className="text-primary">{chunks}</span>})}
+      <section id="solution" className="py-24 md:py-32 bg-surface-secondary">
+         <div className="container mx-auto px-8 lg:px-16">
+            <div className="flex flex-col items-center mb-16">
+               <div className="w-12 h-[1px] bg-text-primary/20 mb-8"></div>
+               <h2 className="text-3xl md:text-4xl lg:text-5xl font-inter font-light text-text-primary text-center leading-tight mb-8">
+                  {t.rich('title', {primary: (chunks) => <span className="font-normal">{chunks}</span>})}
                </h2>
-               <p className="font-inter text-lg leading-relaxed max-w-3xl mx-auto text-center mb-16">{t('description')}</p>
+               <p className="font-inter font-light text-text-secondary text-base md:text-lg leading-relaxed max-w-3xl mx-auto text-center">
+                  {t('description')}
+               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-2 2xl:gap-4 xl:grid-cols-4 xl:gap-4 gap-8 max-w-9xl mx-auto">
-               <div className="bg-surface-primary px-14 xl:p-8 2xl:px-16 ibvi-card py-16 luxury-shadow group hover:translate-y-[-5px] transition-all duration-300">
-                  <div className="w-12  h-12 flex items-center justify-center bg-primary/10 text-primary rounded-sm mb-6 group-hover:bg-primary/20 transition-all">
-                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-10 max-w-7xl mx-auto">
+               <div className="bg-surface-primary border border-border-light p-10">
+                  <div className="w-10 h-10 flex items-center justify-center bg-surface-tertiary rounded-full mb-8">
+                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path
                            strokeLinecap="round"
                            strokeLinejoin="round"
@@ -28,13 +30,13 @@ const SolutionSection = () => {
                         />
                      </svg>
                   </div>
-                  <h3 className="text-xl font-playfair font-semibold text-text-primary mb-3">{t('data_driven_valuations.title')}</h3>
-                  <p className="font-inter text-text-tertiary">{t('data_driven_valuations.description')}</p>
+                  <h3 className="text-lg font-inter font-normal text-text-primary mb-4">{t('data_driven_valuations.title')}</h3>
+                  <p className="font-inter font-light text-text-tertiary text-sm leading-relaxed">{t('data_driven_valuations.description')}</p>
                </div>
 
-               <div className="bg-surface-primary px-14 xl:p-8 2xl:px-16 ibvi-card py-16 luxury-shadow group hover:translate-y-[-5px] transition-all duration-300">
-                  <div className="w-12  h-12 flex items-center justify-center bg-primary/10 text-primary rounded-sm mb-6 group-hover:bg-primary/20 transition-all">
-                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <div className="bg-surface-primary border border-border-light p-10">
+                  <div className="w-10 h-10 flex items-center justify-center bg-surface-tertiary rounded-full mb-8">
+                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path
                            strokeLinecap="round"
                            strokeLinejoin="round"
@@ -43,23 +45,23 @@ const SolutionSection = () => {
                         />
                      </svg>
                   </div>
-                  <h3 className="text-xl font-playfair font-semibold text-text-primary mb-3">{t('predictive_analytics.title')}</h3>
-                  <p className="font-inter text-text-tertiary">{t('predictive_analytics.description')}</p>
+                  <h3 className="text-lg font-inter font-normal text-text-primary mb-4">{t('predictive_analytics.title')}</h3>
+                  <p className="font-inter font-light text-text-tertiary text-sm leading-relaxed">{t('predictive_analytics.description')}</p>
                </div>
 
-               <div className="bg-surface-primary px-14 xl:p-8 2xl:px-16 ibvi-card py-16 luxury-shadow group hover:translate-y-[-5px] transition-all duration-300">
-                  <div className="w-12  h-12 flex items-center justify-center bg-primary/10 text-primary rounded-sm mb-6 group-hover:bg-primary/20 transition-all">
-                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <div className="bg-surface-primary border border-border-light p-10">
+                  <div className="w-10 h-10 flex items-center justify-center bg-surface-tertiary rounded-full mb-8">
+                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                      </svg>
                   </div>
-                  <h3 className="text-xl font-playfair font-semibold text-text-primary mb-3">{t('intelligent_search.title')}</h3>
-                  <p className="font-inter text-text-tertiary">{t('intelligent_search.description')}</p>
+                  <h3 className="text-lg font-inter font-normal text-text-primary mb-4">{t('intelligent_search.title')}</h3>
+                  <p className="font-inter font-light text-text-tertiary text-sm leading-relaxed">{t('intelligent_search.description')}</p>
                </div>
 
-               <div className="bg-surface-primary px-14 xl:p-8 2xl:px-16 ibvi-card py-16 luxury-shadow group hover:translate-y-[-5px] transition-all duration-300">
-                  <div className="w-12  h-12 flex items-center justify-center bg-primary/10 text-primary rounded-sm mb-6 group-hover:bg-primary/20 transition-all">
-                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <div className="bg-surface-primary border border-border-light p-10">
+                  <div className="w-10 h-10 flex items-center justify-center bg-surface-tertiary rounded-full mb-8">
+                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path
                            strokeLinecap="round"
                            strokeLinejoin="round"
@@ -68,15 +70,21 @@ const SolutionSection = () => {
                         />
                      </svg>
                   </div>
-                  <h3 className="text-xl font-playfair font-semibold text-text-primary mb-3">{t('standardized_index.title')}</h3>
-                  <p className="font-inter text-text-tertiary">{t('standardized_index.description')}</p>
+                  <h3 className="text-lg font-inter font-normal text-text-primary mb-4">{t('standardized_index.title')}</h3>
+                  <p className="font-inter font-light text-text-tertiary text-sm leading-relaxed">{t('standardized_index.description')}</p>
                </div>
             </div>
 
-            <div className="flex justify-center mt-16">
-               <div className="bg-primary/10 border border-primary/20 px-10 py-8 max-w-3xl text-center">
-                  <p className="font-playfair text-xl mb-0">{t('quote')}</p>
+            <div className="flex justify-center mt-20">
+               <div className="max-w-4xl text-center px-8">
+                  <div className="border-l-2 border-text-primary/20 pl-8">
+                     <p className="font-inter font-light text-text-secondary text-lg md:text-xl italic leading-relaxed">{t('quote')}</p>
+                  </div>
                </div>
+            </div>
+
+            <div className="flex justify-center mt-20">
+               <div className="w-12 h-[1px] bg-text-primary/20"></div>
             </div>
          </div>
       </section>
