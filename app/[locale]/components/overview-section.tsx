@@ -21,7 +21,7 @@ const OverviewSection = () => {
                </p>
 
                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-                  <div className="bg-surface-primary p-10 text-center">
+                  <div className=" p-10 text-center">
                      <div className="flex justify-center mb-6">
                         <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#005A6B]">
                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -38,7 +38,7 @@ const OverviewSection = () => {
                      <p className="font-inter font-light text-text-tertiary text-sm tracking-wide">{t('market_value_stat_label')}</p>
                   </div>
 
-                  <div className="bg-surface-primary border border-border-light p-10 text-center">
+                  <div className="p-10 text-center">
                      <div className="flex justify-center mb-6">
                         <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#005A6B]">
                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -55,7 +55,7 @@ const OverviewSection = () => {
                      <p className="font-inter font-light text-text-tertiary text-sm tracking-wide">{t('annual_transactions_stat_label')}</p>
                   </div>
 
-                  <div className="bg-surface-primary border border-border-light p-10 text-center">
+                  <div className="p-10 text-center">
                      <div className="flex justify-center mb-6">
                         <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#005A6B]">
                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -26,8 +26,8 @@ const IBVILandingPage = () => {
       <>
          <HeroSection />
          <OverviewSection />
-         <ChallengesSection />
          <SolutionSection />
+         <ChallengesSection />
 
          <InvestmentSection />
 
