@@ -75,10 +75,10 @@ const HeroSection = () => {
             <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
                {/* Left Content - Text */}
                <div className="order-2 lg:order-1">
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-inter font-light leading-[1.1] text-text-primary mb-8">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-inter font-light leading-[1.1] text-text-primary mb-8 ">
                      {t('title')}
                      <br />
-                     <span className="font-normal">{t('subtitle')}</span>
+                     <span className="font-normal text-[#005A6B]">{t('subtitle')}</span>
                   </h1>
 
                   <p className="text-lg md:text-xl font-inter font-light text-text-secondary mb-6 leading-relaxed">{t('tagline')}</p>
@@ -88,13 +88,13 @@ const HeroSection = () => {
                   <div className="flex flex-col sm:flex-row gap-4">
                      <a
                         href="#solution"
-                        className="bg-black inline-block text-white text-surface-primary font-inter font-normal text-sm tracking-wide px-8 py-4 hover:bg-text-secondary transition-colors duration-200"
+                        className="bg-[#005A6B] rounded-full inline-block text-white text-surface-primary font-inter font-normal text-sm tracking-wide px-8 py-4 hover:bg-text-secondary transition-colors duration-200"
                      >
                         {t('cta_primary')}
                      </a>
                      <a
                         href="#challenges"
-                        className="inline-block border border-text-primary text-text-primary font-inter font-normal text-sm tracking-wide px-8 py-4 hover:bg-text-primary hover:text-surface-primary transition-colors duration-200"
+                        className="inline-block rounded-full border border-text-primary text-text-primary font-inter font-normal text-sm tracking-wide px-8 py-4 hover:bg-text-primary hover:text-surface-primary transition-colors duration-200"
                      >
                         {t('cta_secondary')}
                      </a>

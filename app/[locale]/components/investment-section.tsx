@@ -33,7 +33,7 @@ const InvestmentSection = () => {
                <div className="text-center">
                   <a
                      href="#contact"
-                     className="inline-block bg-text-primary text-surface-primary font-inter font-normal text-sm tracking-wide px-8 py-4 hover:bg-text-secondary transition-colors duration-200"
+                     className="inline-block bg-[#005A6B] rounded-full text-white font-inter font-normal text-sm tracking-wide px-8 py-4 hover:bg-text-secondary transition-colors duration-200"
                   >
                      {t('button_text')}
                   </a>

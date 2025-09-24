@@ -44,7 +44,7 @@ const Navigation = () => {
                   <LocaleSwitch />
                   <a
                      href="#contact"
-                     className="text-sm bg-primary text-text-inverse rounded-md px-6 py-2.5 hover:bg-primary-hover transition-all font-medium tracking-wide shadow-md"
+                     className="text-sm bg-[#005A6B] rounded-full text-text-inverse  px-6 py-2.5 hover:bg-primary-hover transition-all font-medium tracking-wide shadow-md"
                   >
                      {t('contact')}
                   </a>

@@ -19,8 +19,8 @@ const ChallengesSection = () => {
             <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
                <div className="group">
                   <div className="flex items-start mb-6">
-                     <div className="w-10 h-10 flex items-center justify-center rounded-full bg-surface-tertiary mr-4 flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#005A6B] mr-4 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                      </div>
@@ -31,8 +31,8 @@ const ChallengesSection = () => {
 
                <div className="group">
                   <div className="flex items-start mb-6">
-                     <div className="w-10 h-10 flex items-center justify-center rounded-full bg-surface-tertiary mr-4 flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#005A6B] mr-4 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                            <path
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -48,8 +48,8 @@ const ChallengesSection = () => {
 
                <div className="group">
                   <div className="flex items-start mb-6">
-                     <div className="w-10 h-10 flex items-center justify-center rounded-full bg-surface-tertiary mr-4 flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#005A6B] mr-4 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                      </div>
@@ -60,8 +60,8 @@ const ChallengesSection = () => {
 
                <div className="group">
                   <div className="flex items-start mb-6">
-                     <div className="w-10 h-10 flex items-center justify-center rounded-full bg-surface-tertiary mr-4 flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#005A6B] mr-4 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                            <path
                               strokeLinecap="round"
                               strokeLinejoin="round"

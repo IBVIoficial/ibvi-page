@@ -21,10 +21,10 @@ const OverviewSection = () => {
                </p>
 
                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-                  <div className="bg-surface-primary border border-border-light p-10 text-center">
+                  <div className="bg-surface-primary p-10 text-center">
                      <div className="flex justify-center mb-6">
-                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-surface-tertiary">
-                           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#005A6B]">
+                           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path
                                  strokeLinecap="round"
                                  strokeLinejoin="round"
@@ -40,8 +40,8 @@ const OverviewSection = () => {
 
                   <div className="bg-surface-primary border border-border-light p-10 text-center">
                      <div className="flex justify-center mb-6">
-                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-surface-tertiary">
-                           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#005A6B]">
+                           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path
                                  strokeLinecap="round"
                                  strokeLinejoin="round"
@@ -57,8 +57,8 @@ const OverviewSection = () => {
 
                   <div className="bg-surface-primary border border-border-light p-10 text-center">
                      <div className="flex justify-center mb-6">
-                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-surface-tertiary">
-                           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#005A6B]">
+                           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                            </svg>
                         </div>
