@@ -8,9 +8,9 @@ const SolutionSection = () => {
    const t = useTranslations('solution');
 
    return (
-      <section id="solution" className="py-20 md:py-28 bg-white relative overflow-hidden">
+      <section id="solution" className="py-20 md:py-28 bg-white dark:bg-gray-900 relative overflow-hidden">
          {/* Subtle background pattern */}
-         <div className="absolute inset-0 opacity-[0.02]">
+         <div className="absolute inset-0 opacity-[0.02] dark:opacity-[0.03]">
             <div
                className="absolute inset-0"
                style={{
@@ -25,19 +25,21 @@ const SolutionSection = () => {
             <div className="flex flex-col items-center mb-8 md:mb-10">
                <div className="inline-flex items-center gap-2 mb-6">
                   <div className="w-8 h-[1px] bg-gradient-to-r from-transparent to-[#005A6B]"></div>
-                  <span className="text-xs font-medium tracking-[0.2em] text-[#005A6B] uppercase">Tecnologia & Inovação</span>
+                  <span className="text-xs font-medium tracking-[0.2em] text-[#005A6B] dark:text-[#005A6B] uppercase">Tecnologia & Inovação</span>
                   <div className="w-8 h-[1px] bg-gradient-to-l from-transparent to-[#005A6B]"></div>
                </div>
 
-               <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-inter font-light text-text-primary text-center leading-[1.1] mb-6">
+               <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-inter font-light text-text-primary dark:text-white text-center leading-[1.1] mb-6">
                   {t.rich('title', {
                      primary: (chunks) => (
-                        <span className="font-semibold bg-gradient-to-r from-[#005A6B] to-[#007A8F] bg-clip-text text-transparent">{chunks}</span>
+                        <span className="font-semibold bg-gradient-to-r from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#007A8F] bg-clip-text text-transparent">
+                           {chunks}
+                        </span>
                      ),
                   })}
                </h2>
 
-               <p className="font-inter font-light text-text-secondary text-base md:text-lg leading-relaxed max-w-4xl mx-auto text-center">
+               <p className="font-inter font-light text-text-secondary dark:text-gray-300 text-base md:text-lg leading-relaxed max-w-4xl mx-auto text-center">
                   {t('description')}
                </p>
             </div>
@@ -56,21 +58,21 @@ const SolutionSection = () => {
                   {/* Features Grid for Mobile */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                      {/* Feature 1 */}
-                     <div className="bg-surface-primary rounded-2xl p-6 border border-border-light hover:border-[#005A6B]/20 transition-all duration-300">
-                        <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] rounded-xl mb-4">
+                     <div className="bg-surface-primary dark:bg-gray-800 rounded-2xl p-6 border border-border-light dark:border-gray-700 hover:border-[#005A6B]/20 dark:hover:border-[#005A6B]/30 transition-all duration-300">
+                        <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-xl mb-4">
                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                            </svg>
                         </div>
-                        <h3 className="text-base font-inter font-medium text-text-primary mb-2">Matching Inteligente</h3>
-                        <p className="font-inter font-light text-text-tertiary text-sm leading-relaxed">
+                        <h3 className="text-base font-inter font-medium text-text-primary dark:text-white mb-2">Matching Inteligente</h3>
+                        <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
                            Conecta compradores e imóveis com 95% de compatibilidade
                         </p>
                      </div>
 
                      {/* Feature 2 */}
-                     <div className="bg-surface-primary rounded-2xl p-6 border border-border-light hover:border-[#005A6B]/20 transition-all duration-300">
-                        <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] rounded-xl mb-4">
+                     <div className="bg-surface-primary dark:bg-gray-800 rounded-2xl p-6 border border-border-light dark:border-gray-700 hover:border-[#005A6B]/20 dark:hover:border-[#005A6B]/30 transition-all duration-300">
+                        <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-xl mb-4">
                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path
                                  strokeLinecap="round"
@@ -80,13 +82,15 @@ const SolutionSection = () => {
                               />
                            </svg>
                         </div>
-                        <h3 className="text-base font-inter font-medium text-text-primary mb-2">Eficiência Operacional</h3>
-                        <p className="font-inter font-light text-text-tertiary text-sm leading-relaxed">Automatiza validação e precificação</p>
+                        <h3 className="text-base font-inter font-medium text-text-primary dark:text-white mb-2">Eficiência Operacional</h3>
+                        <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
+                           Automatiza validação e precificação
+                        </p>
                      </div>
 
                      {/* Feature 3 */}
-                     <div className="bg-surface-primary rounded-2xl p-6 border border-border-light hover:border-[#005A6B]/20 transition-all duration-300">
-                        <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] rounded-xl mb-4">
+                     <div className="bg-surface-primary dark:bg-gray-800 rounded-2xl p-6 border border-border-light dark:border-gray-700 hover:border-[#005A6B]/20 dark:hover:border-[#005A6B]/30 transition-all duration-300">
+                        <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-xl mb-4">
                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path
                                  strokeLinecap="round"
@@ -96,13 +100,15 @@ const SolutionSection = () => {
                               />
                            </svg>
                         </div>
-                        <h3 className="text-base font-inter font-medium text-text-primary mb-2">Índice Padronizado</h3>
-                        <p className="font-inter font-light text-text-tertiary text-sm leading-relaxed">Primeiro índice de imóveis de luxo do Brasil</p>
+                        <h3 className="text-base font-inter font-medium text-text-primary dark:text-white mb-2">Índice Padronizado</h3>
+                        <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
+                           Primeiro índice de imóveis de luxo do Brasil
+                        </p>
                      </div>
 
                      {/* Feature 4 */}
-                     <div className="bg-surface-primary rounded-2xl p-6 border border-border-light hover:border-[#005A6B]/20 transition-all duration-300">
-                        <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] rounded-xl mb-4">
+                     <div className="bg-surface-primary dark:bg-gray-800 rounded-2xl p-6 border border-border-light dark:border-gray-700 hover:border-[#005A6B]/20 dark:hover:border-[#005A6B]/30 transition-all duration-300">
+                        <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-xl mb-4">
                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path
                                  strokeLinecap="round"
@@ -112,8 +118,10 @@ const SolutionSection = () => {
                               />
                            </svg>
                         </div>
-                        <h3 className="text-base font-inter font-medium text-text-primary mb-2">Predição de Tendências</h3>
-                        <p className="font-inter font-light text-text-tertiary text-sm leading-relaxed">Antecipa movimentos de mercado com 87% de precisão</p>
+                        <h3 className="text-base font-inter font-medium text-text-primary dark:text-white mb-2">Predição de Tendências</h3>
+                        <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
+                           Antecipa movimentos de mercado com 87% de precisão
+                        </p>
                      </div>
                   </div>
                </div>
@@ -126,14 +134,14 @@ const SolutionSection = () => {
                      <div className="group text-right">
                         <div className="flex items-start justify-end gap-4">
                            <div className="flex-1">
-                              <h3 className="text-lg font-inter font-medium text-text-primary mb-2 group-hover:text-[#005A6B] transition-colors">
+                              <h3 className="text-lg font-inter font-medium text-text-primary dark:text-white mb-2 group-hover:text-[#005A6B] dark:group-hover:text-[#005A6B] transition-colors">
                                  Matching Inteligente
                               </h3>
-                              <p className="font-inter font-light text-text-tertiary text-sm leading-relaxed">
+                              <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
                                  Conecta compradores e imóveis com 95% de compatibilidade
                               </p>
                            </div>
-                           <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] rounded-2xl shadow-lg shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
+                           <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-2xl shadow-lg shadow-[#005A6B]/20 dark:shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
                               <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
                               </svg>
@@ -145,12 +153,14 @@ const SolutionSection = () => {
                      <div className="group text-right">
                         <div className="flex items-start justify-end gap-4">
                            <div className="flex-1">
-                              <h3 className="text-lg font-inter font-medium text-text-primary mb-2 group-hover:text-[#005A6B] transition-colors">
+                              <h3 className="text-lg font-inter font-medium text-text-primary dark:text-white mb-2 group-hover:text-[#005A6B] dark:group-hover:text-[#005A6B] transition-colors">
                                  Eficiência Operacional
                               </h3>
-                              <p className="font-inter font-light text-text-tertiary text-sm leading-relaxed">Automatiza validação e precificação</p>
+                              <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
+                                 Automatiza validação e precificação
+                              </p>
                            </div>
-                           <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] rounded-2xl shadow-lg shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
+                           <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-2xl shadow-lg shadow-[#005A6B]/20 dark:shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
                               <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                  <path
                                     strokeLinecap="round"
@@ -166,12 +176,14 @@ const SolutionSection = () => {
                      <div className="group text-right">
                         <div className="flex items-start justify-end gap-4">
                            <div className="flex-1">
-                              <h3 className="text-lg font-inter font-medium text-text-primary mb-2 group-hover:text-[#005A6B] transition-colors">
+                              <h3 className="text-lg font-inter font-medium text-text-primary dark:text-white mb-2 group-hover:text-[#005A6B] dark:group-hover:text-[#0098b4] transition-colors">
                                  Redução de Prazo
                               </h3>
-                              <p className="font-inter font-light text-text-tertiary text-sm leading-relaxed">Acelera transações em até 60% com IA própria</p>
+                              <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
+                                 Acelera transações em até 60% com IA própria
+                              </p>
                            </div>
-                           <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] rounded-2xl shadow-lg shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
+                           <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-2xl shadow-lg shadow-[#005A6B]/20 dark:shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
                               <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
                               </svg>
@@ -193,16 +205,16 @@ const SolutionSection = () => {
                      </div>
 
                      {/* Single Additional Feature Directly Below iPhone */}
-                     <div className="mt-6 group bg-surface-primary/80 backdrop-blur-sm rounded-2xl p-5  hover:border-[#005A6B]/20 transition-all duration-300 max-w-sm">
+                     <div className="mt-6 group bg-surface-primary/80 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl p-5 hover:border-[#005A6B]/20 dark:hover:border-[#005A6B]/30 transition-all duration-300 max-w-sm">
                         <div className="flex items-center gap-4">
-                           <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] rounded-xl">
+                           <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-xl">
                               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                               </svg>
                            </div>
                            <div className="flex-1">
-                              <h4 className="font-inter font-medium text-text-primary text-lg mb-0.5">Decisões Data-Driven</h4>
-                              <p className="font-inter font-light text-text-tertiary text-sm leading-relaxed">
+                              <h4 className="font-inter font-medium text-text-primary dark:text-white text-lg mb-0.5">Decisões Data-Driven</h4>
+                              <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
                                  Recomendações baseadas em mais de 50 variáveis de mercado atualizadas em tempo real
                               </p>
                            </div>
@@ -215,7 +227,7 @@ const SolutionSection = () => {
                      {/* Feature 3 - Right Top */}
                      <div className="group">
                         <div className="flex items-start gap-4">
-                           <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] rounded-2xl shadow-lg shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
+                           <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-2xl shadow-lg shadow-[#005A6B]/20 dark:shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
                               <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                  <path
                                     strokeLinecap="round"
@@ -226,10 +238,12 @@ const SolutionSection = () => {
                               </svg>
                            </div>
                            <div className="flex-1">
-                              <h3 className="text-lg font-inter font-medium text-text-primary mb-2 group-hover:text-[#005A6B] transition-colors">
+                              <h3 className="text-lg font-inter font-medium text-text-primary dark:text-white mb-2 group-hover:text-[#005A6B] dark:group-hover:text-[#005A6B] transition-colors">
                                  Índice Padronizado
                               </h3>
-                              <p className="font-inter font-light text-text-tertiary text-sm leading-relaxed">Primeiro índice de imóveis de luxo do Brasil</p>
+                              <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
+                                 Primeiro índice de imóveis de luxo do Brasil
+                              </p>
                            </div>
                         </div>
                      </div>
@@ -237,7 +251,7 @@ const SolutionSection = () => {
                      {/* Feature 4 - Right Bottom */}
                      <div className="group mt-20">
                         <div className="flex items-start gap-4">
-                           <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] rounded-2xl shadow-lg shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
+                           <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-2xl shadow-lg shadow-[#005A6B]/20 dark:shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
                               <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                  <path
                                     strokeLinecap="round"
@@ -248,10 +262,10 @@ const SolutionSection = () => {
                               </svg>
                            </div>
                            <div className="flex-1">
-                              <h3 className="text-lg font-inter font-medium text-text-primary mb-2 group-hover:text-[#005A6B] transition-colors">
+                              <h3 className="text-lg font-inter font-medium text-text-primary dark:text-white mb-2 group-hover:text-[#005A6B] dark:group-hover:text-[#005A6B] transition-colors">
                                  Predição de Tendências
                               </h3>
-                              <p className="font-inter font-light text-text-tertiary text-sm leading-relaxed">
+                              <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
                                  Antecipa movimentos de mercado com 87% de precisão
                               </p>
                            </div>
@@ -260,7 +274,7 @@ const SolutionSection = () => {
                      {/* Feature 4 - Right Bottom */}
                      <div className="group">
                         <div className="flex items-start gap-4">
-                           <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] rounded-2xl shadow-lg shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
+                           <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-2xl shadow-lg shadow-[#005A6B]/20 dark:shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
                               <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                  <path
                                     strokeLinecap="round"
@@ -271,10 +285,12 @@ const SolutionSection = () => {
                               </svg>
                            </div>
                            <div className="flex-1">
-                              <h3 className="text-lg font-inter font-medium text-text-primary mb-2 group-hover:text-[#005A6B] transition-colors">
+                              <h3 className="text-lg font-inter font-medium text-text-primary dark:text-white mb-2 group-hover:text-[#005A6B] dark:group-hover:text-[#005A6B] transition-colors">
                                  Autoridade em Avaliações
                               </h3>
-                              <p className="font-inter font-light text-text-tertiary text-sm leading-relaxed">Referência em avaliação com IA avançada</p>
+                              <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
+                                 Referência em avaliação com IA avançada
+                              </p>
                            </div>
                         </div>
                      </div>

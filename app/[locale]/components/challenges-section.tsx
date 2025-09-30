@@ -7,51 +7,65 @@ const ChallengesSection = () => {
    const t = useTranslations('challenges');
 
    return (
-      <section id="challenges" className="py-20 md:py-28 bg-gradient-to-b from-white to-gray-50/50">
+      <section id="challenges" className="py-20 md:py-28 bg-gradient-to-b from-white to-gray-50/50 dark:from-gray-900 dark:to-gray-900">
          <div className="container mx-auto px-6 lg:px-12 max-w-7xl">
             {/* Header Section */}
             <div className="flex flex-col items-center mb-20">
                <div className="flex items-center gap-3 mb-6">
-                  <div className="h-px w-8 bg-gradient-to-r from-transparent to-gray-300"></div>
-                  <div className="w-1.5 h-1.5 rounded-full bg-gray-400"></div>
-                  <div className="h-px w-8 bg-gradient-to-l from-transparent to-gray-300"></div>
+                  <div className="h-px w-8 bg-gradient-to-r from-transparent to-gray-300 dark:to-gray-600"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-gray-400 dark:bg-gray-500"></div>
+                  <div className="h-px w-8 bg-gradient-to-l from-transparent to-gray-300 dark:to-gray-600"></div>
                </div>
 
-               <h2 className="text-3xl md:text-4xl lg:text-5xl font-inter font-light text-center mb-6">
+               <h2 className="text-3xl md:text-4xl lg:text-5xl font-inter font-light text-center mb-6 dark:text-white">
                   {t.rich('title', {
-                     primary: (chunks) => <span className="font-medium text-[#00A6AB]">{chunks}</span>,
+                     primary: (chunks) => <span className="font-medium text-[#005A6B] dark:text-[#005A6B]">{chunks}</span>,
                   })}
                </h2>
 
-               <p className="font-inter font-light text-gray-600 text-base md:text-lg max-w-3xl text-center leading-relaxed">{t('main_paragraph')}</p>
+               <p className="font-inter font-light text-gray-600 dark:text-gray-300 text-base md:text-lg max-w-3xl text-center leading-relaxed">
+                  {t('main_paragraph')}
+               </p>
             </div>
 
             {/* Cards Grid */}
             <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
                {/* Card 1 - Padronização com IA */}
-               <div className="group relative bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:border-gray-200">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-600 to-teal-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+               <div className="group relative bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-[#005A6B]/10 hover:-translate-y-1 transition-all duration-500 ease-out hover:border-[#005A6B]/20 dark:hover:border-[#005A6B]/30 transform">
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#007A8F] rounded-t-2xl opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"></div>
 
                   <div className="flex items-start gap-4 mb-4">
-                     <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br from-teal-50 to-teal-100 group-hover:from-teal-100 group-hover:to-teal-200 transition-colors duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-teal-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <div className="w-12 h-12 flex items-center justify-center rounded-2xl bg-[#005A6B] shadow-lg transition-all duration-500 ease-out group-hover:scale-110 group-hover:shadow-xl transform">
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           className="h-6 w-6 text-white group-hover:scale-110 transition-transform duration-1000 ease-out"
+                           fill="none"
+                           viewBox="0 0 24 24"
+                           stroke="currentColor"
+                        >
                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                      </div>
                      <div className="flex-1">
-                        <h3 className="text-lg font-inter font-medium text-gray-900 mb-2">{t('standardization_gaps.title')}</h3>
-                        <p className="font-inter text-sm text-gray-600 leading-relaxed">{t('standardization_gaps.description')}</p>
+                        <h3 className="text-lg font-inter font-medium text-gray-900 dark:text-white mb-2">{t('standardization_gaps.title')}</h3>
+                        <p className="font-inter text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{t('standardization_gaps.description')}</p>
                      </div>
                   </div>
                </div>
 
                {/* Card 2 - Precificação Técnica */}
-               <div className="group relative bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:border-gray-200">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-600 to-teal-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+               <div className="group relative bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-[#005A6B]/10 hover:-translate-y-1 transition-all duration-500 ease-out hover:border-[#005A6B]/20 dark:hover:border-[#005A6B]/30 transform">
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#007A8F] rounded-t-2xl opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"></div>
 
                   <div className="flex items-start gap-4 mb-4">
-                     <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br from-teal-50 to-teal-100 group-hover:from-teal-100 group-hover:to-teal-200 transition-colors duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-teal-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <div className="w-12 h-12 flex items-center justify-center rounded-2xl bg-[#005A6B] shadow-lg transition-all duration-500 ease-out group-hover:scale-110 group-hover:shadow-xl transform">
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           className="h-6 w-6 text-white group-hover:scale-110 transition-transform duration-500 ease-out"
+                           fill="none"
+                           viewBox="0 0 24 24"
+                           stroke="currentColor"
+                        >
                            <path
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -61,36 +75,48 @@ const ChallengesSection = () => {
                         </svg>
                      </div>
                      <div className="flex-1">
-                        <h3 className="text-lg font-inter font-medium text-gray-900 mb-2">{t('buyer_hurdles.title')}</h3>
-                        <p className="font-inter text-sm text-gray-600 leading-relaxed">{t('buyer_hurdles.description')}</p>
+                        <h3 className="text-lg font-inter font-medium text-gray-900 dark:text-white mb-2">{t('buyer_hurdles.title')}</h3>
+                        <p className="font-inter text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{t('buyer_hurdles.description')}</p>
                      </div>
                   </div>
                </div>
 
                {/* Card 3 - Alta Escalabilidade */}
-               <div className="group relative bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:border-gray-200">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-600 to-teal-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+               <div className="group relative bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-[#005A6B]/10 hover:-translate-y-1 transition-all duration-500 ease-out hover:border-[#005A6B]/20 dark:hover:border-[#005A6B]/30 transform">
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#007A8F] rounded-t-2xl opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"></div>
 
                   <div className="flex items-start gap-4 mb-4">
-                     <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br from-teal-50 to-teal-100 group-hover:from-teal-100 group-hover:to-teal-200 transition-colors duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-teal-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <div className="w-12 h-12 flex items-center justify-center rounded-2xl bg-[#005A6B] shadow-lg transition-all duration-500 ease-out group-hover:scale-110 group-hover:shadow-xl transform">
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           className="h-6 w-6 text-white group-hover:scale-110 transition-transform duration-500 ease-out"
+                           fill="none"
+                           viewBox="0 0 24 24"
+                           stroke="currentColor"
+                        >
                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                      </div>
                      <div className="flex-1">
-                        <h3 className="text-lg font-inter font-medium text-gray-900 mb-2">{t('outdated_methods.title')}</h3>
-                        <p className="font-inter text-sm text-gray-600 leading-relaxed">{t('outdated_methods.description')}</p>
+                        <h3 className="text-lg font-inter font-medium text-gray-900 dark:text-white mb-2">{t('outdated_methods.title')}</h3>
+                        <p className="font-inter text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{t('outdated_methods.description')}</p>
                      </div>
                   </div>
                </div>
 
                {/* Card 4 - Compliance e Rastreabilidade */}
-               <div className="group relative bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:border-gray-200">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-600 to-teal-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+               <div className="group relative bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-[#005A6B]/10 hover:-translate-y-1 transition-all duration-500 ease-out hover:border-[#005A6B]/20 dark:hover:border-[#005A6B]/30 transform">
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#007A8F] rounded-t-2xl opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"></div>
 
                   <div className="flex items-start gap-4 mb-4">
-                     <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br from-teal-50 to-teal-100 group-hover:from-teal-100 group-hover:to-teal-200 transition-colors duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-teal-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <div className="w-12 h-12 flex items-center justify-center rounded-2xl bg-[#005A6B] shadow-lg transition-all duration-500 ease-out group-hover:scale-110 group-hover:shadow-xl transform">
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           className="h-6 w-6 text-white group-hover:scale-110 transition-transform duration-500 ease-out"
+                           fill="none"
+                           viewBox="0 0 24 24"
+                           stroke="currentColor"
+                        >
                            <path
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -100,8 +126,8 @@ const ChallengesSection = () => {
                         </svg>
                      </div>
                      <div className="flex-1">
-                        <h3 className="text-lg font-inter font-medium text-gray-900 mb-2">{t('transaction_delays.title')}</h3>
-                        <p className="font-inter text-sm text-gray-600 leading-relaxed">{t('transaction_delays.description')}</p>
+                        <h3 className="text-lg font-inter font-medium text-gray-900 dark:text-white mb-2">{t('transaction_delays.title')}</h3>
+                        <p className="font-inter text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{t('transaction_delays.description')}</p>
                      </div>
                   </div>
                </div>
@@ -110,9 +136,9 @@ const ChallengesSection = () => {
             {/* Bottom Accent */}
             <div className="flex justify-center mt-16">
                <div className="flex items-center gap-3">
-                  <div className="h-px w-12 bg-gradient-to-r from-transparent to-gray-300"></div>
-                  <div className="w-2 h-2 rounded-full bg-teal-600"></div>
-                  <div className="h-px w-12 bg-gradient-to-l from-transparent to-gray-300"></div>
+                  <div className="h-px w-12 bg-gradient-to-r from-transparent to-gray-300 dark:to-gray-600"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#005A6B] dark:bg-[#005A6B]"></div>
+                  <div className="h-px w-12 bg-gradient-to-l from-transparent to-gray-300 dark:to-gray-600"></div>
                </div>
             </div>
          </div>
