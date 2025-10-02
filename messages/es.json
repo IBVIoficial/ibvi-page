@@ -56,6 +56,7 @@
    "solution": {
       "title": "La Solución de IBVI <primary>Impulsada por IA</primary>",
       "description": "El propósito del IBVI es consolidarse como la principal autoridad en valuación inmobiliaria en Brasil. Combinando el uso de Inteligencia Artificial de última generación, expertise regulatoria y acceso a datos exclusivos, la plataforma impulsa un sistema basado en la transparencia, la precisión y la confianza.",
+      "technology_innovation_badge": "Tecnología e Innovación",
       "data_driven_valuations": {
          "title": "Reducción inédita de plazos",
          "description": " La plataforma IBVI reduce hasta en un 60 % el tiempo de las transacciones, automatizando los análisis mediante una IA propia y entregando valuaciones precisas, trazables y alineadas con el estándar solicitado."
@@ -64,13 +65,17 @@
          "title": "Mayor eficiencia operativa",
          "description": " El sistema automatiza etapas críticas como la validación y la fijación de precios, reduciendo la dependencia de flujos manuales y acelerando el cumplimiento de los requisitos establecidos por la Resolución CMN Nº 4.951/2021."
       },
+      "intelligent_matching": {
+         "title": "Matching Inteligente",
+         "description": "Conecta compradores e inmuebles con 95% de compatibilidad"
+      },
       "intelligent_search": {
-         "title": "Índice estandarizado propio",
-         "description": "Inspirado en el EPRA Index, el IBVI crea el primer índice de propiedades de lujo en Brasil, basado en variables como superficie, ubicación, amenidades y el historial oficial de transacciones."
+         "title": "Índice Estandarizado",
+         "description": "Primer índice de inmuebles de lujo de Brasil"
       },
       "standardized_index": {
-         "title": "Autoridad en valuaciones",
-         "description": " Con Inteligencia Artificial avanzada, inteligencia de datos y expertise regulatoria, el IBVI se posiciona como referente en la valuación de inmuebles de alto estándar, promoviendo confianza y transparencia."
+         "title": "Predicción de Tendencias",
+         "description": "Anticipa movimientos de mercado con 87% de precisión"
       },
       "quote": "\"La plataforma de valuación propietaria de IBVI representa un cambio de paradigma en cómo se evalúan y transaccionan los bienes raíces de lujo en Brasil.\""
    },

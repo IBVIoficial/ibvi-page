@@ -56,6 +56,7 @@
    "solution": {
       "title": "IBVI Platform <primary>Powered by AI</primary>",
       "description": "IBVI aims to become the leading authority in real estate valuation in Brazil. By combining cutting-edge Artificial Intelligence, regulatory expertise, and access to data, the platform delivers a system built on transparency, precision, and trust.",
+      "technology_innovation_badge": "Technology & Innovation",
       "data_driven_valuations": {
          "title": "Unprecedented Time Reduction",
          "description": " The IBVI platform reduces transaction times by up to 60%, automating analyses with proprietary AI and delivering accurate, traceable valuations aligned with predefined standards."
@@ -64,13 +65,17 @@
          "title": "Greater Operational Efficiency",
          "description": " The system automates critical stages such as validation and pricing, reducing reliance on manual processes and speeding up compliance with CMN Resolution No. 4,951/2021."
       },
+      "intelligent_matching": {
+         "title": "Intelligent Matching",
+         "description": "Connects buyers and properties with 95% compatibility"
+      },
       "intelligent_search": {
-         "title": "Proprietary Standardized Index",
-         "description": "Inspired by the EPRA Index, IBVI introduces Brazil’s first luxury real estate index based on key variables such as area, location, amenities, and official transaction history."
+         "title": "Standardized Index",
+         "description": "Brazil's first luxury real estate index"
       },
       "standardized_index": {
-         "title": "Authority in Property Valuation",
-         "description": " With advanced AI, robust data intelligence, and deep regulatory knowledge, IBVI positions itself as the reference in high-end property valuation, driving trust and market transparency."
+         "title": "Trend Prediction",
+         "description": "Anticipates market movements with 87% accuracy"
       },
       "quote": "\"IBVI's proprietary valuation platform represents a paradigm shift in how Brazilian luxury real estate is evaluated and transacted.\""
    },

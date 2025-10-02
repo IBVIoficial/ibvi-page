@@ -19,7 +19,7 @@ const Navigation = () => {
 
    return (
       <nav
-         className="fixed top-0 w-full bg-white z-50 transition-all duration-300 animate-fade-in border-b border-border-default luxury-shadow overflow-hidden"
+         className="fixed top-0 w-full bg-white dark:bg-white z-50 transition-all duration-300 animate-fade-in border-b border-border-default luxury-shadow overflow-hidden"
          data-delay="0"
       >
          <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4 md:px-3 max-w-full">

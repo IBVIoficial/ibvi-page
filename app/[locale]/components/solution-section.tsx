@@ -25,7 +25,7 @@ const SolutionSection = () => {
             <div className="flex flex-col items-center mb-8 md:mb-10">
                <div className="inline-flex items-center gap-2 mb-6">
                   <div className="w-8 h-[1px] bg-gradient-to-r from-transparent to-[#005A6B]"></div>
-                  <span className="text-xs font-medium tracking-[0.2em] text-[#005A6B] dark:text-[#005A6B] uppercase">Tecnologia & Inovação</span>
+                  <span className="text-xs font-medium tracking-[0.2em] text-[#005A6B] dark:text-[#005A6B] uppercase">{t('technology_innovation_badge')}</span>
                   <div className="w-8 h-[1px] bg-gradient-to-l from-transparent to-[#005A6B]"></div>
                </div>
 
@@ -64,9 +64,9 @@ const SolutionSection = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                            </svg>
                         </div>
-                        <h3 className="text-base font-inter font-medium text-text-primary dark:text-white mb-2">Matching Inteligente</h3>
+                        <h3 className="text-base font-inter font-medium text-text-primary dark:text-white mb-2">{t('intelligent_matching.title')}</h3>
                         <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
-                           Conecta compradores e imóveis com 95% de compatibilidade
+                           {t('intelligent_matching.description')}
                         </p>
                      </div>
 
@@ -82,9 +82,9 @@ const SolutionSection = () => {
                               />
                            </svg>
                         </div>
-                        <h3 className="text-base font-inter font-medium text-text-primary dark:text-white mb-2">Eficiência Operacional</h3>
+                        <h3 className="text-base font-inter font-medium text-text-primary dark:text-white mb-2">{t('data_driven_valuations.title')}</h3>
                         <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
-                           Automatiza validação e precificação
+                           {t('data_driven_valuations.description')}
                         </p>
                      </div>
 
@@ -100,9 +100,9 @@ const SolutionSection = () => {
                               />
                            </svg>
                         </div>
-                        <h3 className="text-base font-inter font-medium text-text-primary dark:text-white mb-2">Índice Padronizado</h3>
+                        <h3 className="text-base font-inter font-medium text-text-primary dark:text-white mb-2">{t('intelligent_search.title')}</h3>
                         <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
-                           Primeiro índice de imóveis de luxo do Brasil
+                           {t('intelligent_search.description')}
                         </p>
                      </div>
 
@@ -110,17 +110,12 @@ const SolutionSection = () => {
                      <div className="bg-surface-primary dark:bg-gray-800 rounded-2xl p-6 border border-border-light dark:border-gray-700 hover:border-[#005A6B]/20 dark:hover:border-[#005A6B]/30 transition-all duration-300">
                         <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-xl mb-4">
                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path
-                                 strokeLinecap="round"
-                                 strokeLinejoin="round"
-                                 strokeWidth="2"
-                                 d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                              />
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                            </svg>
                         </div>
-                        <h3 className="text-base font-inter font-medium text-text-primary dark:text-white mb-2">Predição de Tendências</h3>
+                        <h3 className="text-base font-inter font-medium text-text-primary dark:text-white mb-2">{t('predictive_analytics.title')}</h3>
                         <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
-                           Antecipa movimentos de mercado com 87% de precisão
+                           {t('predictive_analytics.description')}
                         </p>
                      </div>
                   </div>
@@ -135,10 +130,10 @@ const SolutionSection = () => {
                         <div className="flex items-start justify-end gap-4">
                            <div className="flex-1">
                               <h3 className="text-lg font-inter font-medium text-text-primary dark:text-white mb-2 group-hover:text-[#005A6B] dark:group-hover:text-[#005A6B] transition-colors">
-                                 Matching Inteligente
+                                 {t('intelligent_matching.title')}
                               </h3>
                               <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
-                                 Conecta compradores e imóveis com 95% de compatibilidade
+                                 {t('intelligent_matching.description')}
                               </p>
                            </div>
                            <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-2xl shadow-lg shadow-[#005A6B]/20 dark:shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
@@ -154,10 +149,10 @@ const SolutionSection = () => {
                         <div className="flex items-start justify-end gap-4">
                            <div className="flex-1">
                               <h3 className="text-lg font-inter font-medium text-text-primary dark:text-white mb-2 group-hover:text-[#005A6B] dark:group-hover:text-[#005A6B] transition-colors">
-                                 Eficiência Operacional
+                                 {t('predictive_analytics.title')}
                               </h3>
                               <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
-                                 Automatiza validação e precificação
+                                 {t('predictive_analytics.description')}
                               </p>
                            </div>
                            <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-2xl shadow-lg shadow-[#005A6B]/20 dark:shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
@@ -176,11 +171,11 @@ const SolutionSection = () => {
                      <div className="group text-right">
                         <div className="flex items-start justify-end gap-4">
                            <div className="flex-1">
-                              <h3 className="text-lg font-inter font-medium text-text-primary dark:text-white mb-2 group-hover:text-[#005A6B] dark:group-hover:text-[#0098b4] transition-colors">
-                                 Redução de Prazo
+                              <h3 className="text-lg font-inter font-medium text-text-primary dark:text-white mb-2 group-hover:text-[#005A6B] dark:group-hover:text-[#005A6B] transition-colors">
+                                 {t('data_driven_valuations.title')}
                               </h3>
                               <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
-                                 Acelera transações em até 60% com IA própria
+                                 {t('data_driven_valuations.description')}
                               </p>
                            </div>
                            <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-2xl shadow-lg shadow-[#005A6B]/20 dark:shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
@@ -239,10 +234,10 @@ const SolutionSection = () => {
                            </div>
                            <div className="flex-1">
                               <h3 className="text-lg font-inter font-medium text-text-primary dark:text-white mb-2 group-hover:text-[#005A6B] dark:group-hover:text-[#005A6B] transition-colors">
-                                 Índice Padronizado
+                                 {t('intelligent_search.title')}
                               </h3>
                               <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
-                                 Primeiro índice de imóveis de luxo do Brasil
+                                 {t('intelligent_search.description')}
                               </p>
                            </div>
                         </div>
@@ -263,10 +258,10 @@ const SolutionSection = () => {
                            </div>
                            <div className="flex-1">
                               <h3 className="text-lg font-inter font-medium text-text-primary dark:text-white mb-2 group-hover:text-[#005A6B] dark:group-hover:text-[#005A6B] transition-colors">
-                                 Predição de Tendências
+                                 {t('standardized_index.title')}
                               </h3>
                               <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
-                                 Antecipa movimentos de mercado com 87% de precisão
+                                 {t('standardized_index.description')}
                               </p>
                            </div>
                         </div>
@@ -286,10 +281,10 @@ const SolutionSection = () => {
                            </div>
                            <div className="flex-1">
                               <h3 className="text-lg font-inter font-medium text-text-primary dark:text-white mb-2 group-hover:text-[#005A6B] dark:group-hover:text-[#005A6B] transition-colors">
-                                 Autoridade em Avaliações
+                                 {t('data_driven_valuations.title')}
                               </h3>
                               <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
-                                 Referência em avaliação com IA avançada
+                                 {t('data_driven_valuations.description')}
                               </p>
                            </div>
                         </div>

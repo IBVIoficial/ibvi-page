@@ -17,7 +17,7 @@
    },
    "overview": {
       "title": "Valoração atual do <primary>Mercado Imobiliário Brasileiro</primary>",
-      "main_paragraph": "O Mercado Imobiliário Brasileiro é da ordem de US$4 trilhões em valor total de estoque de ativos, cálculo que utiliza como base o valor do PIB (Produto Interno Bruto) nacional. Frente às transações anuais, o mercado nacional é de US$100 bilhões.",
+      "main_paragraph": "O mercado imobiliário brasileiro vale cerca de US$ 4 trilhões, com US$ 100 bilhões em transações anuais.",
       "market_value_stat_value": "US$ 4T",
       "market_value_stat_label": "Valor Total de Ativos no Mercado",
       "annual_transactions_stat_value": "US$ 100BI",
@@ -56,6 +56,7 @@
    "solution": {
       "title": " Plataforma IBVI <primary>Potencializada por IA</primary>",
       "description": "IBVI quer ser referência nacional em avaliação imobiliária, usando IA, expertise regulatória e dados exclusivos para garantir transparência e precisão.",
+      "technology_innovation_badge": "Tecnologia & Inovação",
       "data_driven_valuations": {
          "title": "Redução Inedita de Prazo",
          "description": "IBVI acelera transações em até 60% ao usar IA própria para gerar avaliações rápidas, precisas e rastreáveis, sempre em conformidade com os padrões exigidos."
@@ -64,13 +65,17 @@
          "title": "Maior Eficiência Operacional",
          "description": "IBVI automatiza validação e precificação, cortando processos manuais e agilizando o cumprimento da Resolução CMN nº 4.951/2021."
       },
+      "intelligent_matching": {
+         "title": "Matching Inteligente",
+         "description": "Conecta compradores e imóveis com 95% de compatibilidade"
+      },
       "intelligent_search": {
-         "title": "Índice Padronizado Próprio",
-         "description": "Inspirado no EPRA Index, o IBVI cria o primeiro índice de imóveis de luxo do Brasil com base em variáveis como área, localização, amenidades e histórico oficial de transações."
+         "title": "Índice Padronizado",
+         "description": "Primeiro índice de imóveis de luxo do Brasil"
       },
       "standardized_index": {
-         "title": "Autoridade em Avaliações",
-         "description": " Com IA avançada, inteligência de dados e expertise regulatória, o IBVI se posiciona como referência em avaliação de imóveis de alto padrão, promovendo confiança e transparência."
+         "title": "Predição de Tendências",
+         "description": "Antecipa movimentos de mercado com 87% de precisão"
       },
       "quote": "\"A plataforma de avaliação proprietária da IBVI representa uma mudança de paradigma na forma como os imóveis de luxo brasileiros são avaliados e transacionados.\""
    },
@@ -139,7 +144,7 @@
       },
       "expertise": {
          "title": "Nossa Expertise",
-         "description": "O IBVI é formado por especialistas em Engenharia, Ciência de Dados, Economia, Comunicação e Mercado Financeiro. Essa integração técnica garante avaliações precisas, seguras e compatíveis com os padrões exigidos por instituições e fundos.",
+         "description": "O IBVI integra especialistas de várias áreas para oferecer avaliações precisas e seguras, em conformidade com padrões institucionais e de fundos.",
          "experience_years": "15+",
          "experience_description": "Anos de Experiência Combinada em Imóveis",
          "data_points": "50M+",

@@ -331,6 +331,17 @@
 .dark .text-text-light {
    color: #94a3b8 !important;
 }
+
+/* Navbar specific dark mode overrides */
+.dark nav .text-text-primary {
+   color: #000000 !important;
+}
+.dark nav a {
+   color: #000000 !important;
+}
+.dark nav button {
+   color: #000000 !important;
+}
 .dark .bg-surface-primary {
    background-color: #1e293b !important;
 }
@@ -469,6 +480,11 @@
 }
 
 .dark #overview .rounded-2xl {
+   background-color: #111827 !important; /* This is equivalent to bg-gray-900 */
+}
+
+/* Custom override for the hero section header */
+.dark header.bg-surface-primary {
    background-color: #111827 !important; /* This is equivalent to bg-gray-900 */
 }
 

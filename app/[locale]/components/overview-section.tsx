@@ -34,7 +34,7 @@ const OverviewSection = () => {
          value: t('market_value_stat_value'),
          label: t('market_value_stat_label'),
          icon: (
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+            <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -43,13 +43,13 @@ const OverviewSection = () => {
             </svg>
          ),
          delay: 0,
-         accent: 'bg-[#005A6B]/5 dark:bg-[#005A6B]/20 text-[#005A6B] dark:text-[#0098b4]',
+         gradient: 'from-[#005A6B] to-[#007A8F]',
       },
       {
          value: t('annual_transactions_stat_value'),
          label: t('annual_transactions_stat_label'),
          icon: (
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+            <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -58,13 +58,13 @@ const OverviewSection = () => {
             </svg>
          ),
          delay: 100,
-         accent: 'bg-[#005A6B]/5 dark:bg-[#005A6B]/20 text-[#005A6B] dark:text-[#0098b4]',
+         gradient: 'from-[#007A8F] to-[#005A6B]',
       },
       {
          value: t('valuation_challenges_stat_value'),
          label: t('valuation_challenges_stat_label'),
          icon: (
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+            <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -73,78 +73,113 @@ const OverviewSection = () => {
             </svg>
          ),
          delay: 200,
-         accent: 'bg-[#005A6B]/5 dark:bg-[#005A6B]/20 text-[#005A6B] dark:text-[#0098b4]',
+         gradient: 'from-[#005A6B] to-[#00758F]',
       },
    ];
 
    return (
-      <section ref={sectionRef} id="overview" className="py-24 md:py-32 bg-gradient-to-b from-white to-gray-50/50 dark:from-gray-900 dark:to-gray-950">
-         <div className="container mx-auto px-8 lg:px-16 max-w-7xl">
-            {/* Section Header */}
-            <div className="flex flex-col items-center mb-16">
-               <div className="w-12 h-[1px] bg-text-primary/20 dark:bg-gray-700 mb-8"></div>
-               <h2 className="text-3xl md:text-4xl lg:text-5xl font-inter font-light text-text-primary dark:text-white text-center leading-tight">
-                  {t.rich('title', {
-                     primary: (chunks) => (
-                        <span className="font-normal bg-gradient-to-r from-[#005A6B] to-[#007A8F] dark:from-[#0098b4] dark:to-[#00c5e5] bg-clip-text text-transparent">
-                           {chunks}
-                        </span>
-                     ),
-                  })}
-               </h2>
-            </div>
+      <section ref={sectionRef} id="overview" className="py-12 md:py-16 bg-white dark:bg-gray-900 relative overflow-hidden">
+         {/* Background Elements */}
+         <div className="absolute inset-0 opacity-[0.02] dark:opacity-[0.03]">
+            <div
+               className="absolute inset-0"
+               style={{
+                  backgroundImage: `radial-gradient(circle at 2px 2px, #005A6B 1px, transparent 1px)`,
+                  backgroundSize: '40px 40px',
+               }}
+            ></div>
+         </div>
 
-            <div className="max-w-5xl mx-auto">
-               <p className="font-inter font-light text-text-secondary dark:text-gray-300 text-base md:text-lg leading-relaxed text-center mb-20 max-w-4xl mx-auto">
-                  {t('main_paragraph')}
-               </p>
+         <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-6xl mx-auto">
+               {/* Section Header */}
+               <div className="text-center mb-10">
+                  <div className="inline-flex items-center gap-2 mb-4 animate-fade-in" data-delay="0">
+                     <div className="w-8 h-[1px] bg-gradient-to-r from-transparent to-[#005A6B]"></div>
+                     <span className="text-xs font-medium tracking-[0.2em] text-[#005A6B] dark:text-[#005A6B] uppercase">Mercado Imobiliário</span>
+                     <div className="w-8 h-[1px] bg-gradient-to-l from-transparent to-[#005A6B]"></div>
+                  </div>
 
-               {/* Stats Cards */}
-               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-inter font-light mb-3 animate-fade-in" data-delay="100">
+                     {t.rich('title', {
+                        primary: (chunks) => (
+                           <span className="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F]">{chunks}</span>
+                        ),
+                     })}
+                  </h2>
+
+                  <p
+                     className="mt-10 font-inter font-light text-text-secondary dark:text-gray-300 text-base md:text-lg leading-relaxed max-w-4xl mx-auto text-center"
+                     data-delay="200"
+                  >
+                     {t('main_paragraph')}
+                  </p>
+               </div>
+
+               {/* Stats Cards Grid */}
+               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
                   {stats.map((stat, index) => (
                      <div
                         key={index}
-                        className={`
-                           group relative
-                           transform transition-all duration-700 ease-out
-                           hover:-translate-y-1
-                           ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
-                        `}
-                        style={{
-                           transitionDelay: `${stat.delay}ms`,
-                        }}
+                        className={`group animate-fade-in ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+                        data-delay={`${300 + stat.delay}`}
+                        style={{transitionDelay: `${stat.delay}ms`}}
                      >
-                        {/* Card */}
-                        <div className="relative h-full bg-white dark:bg-gray-900 rounded-xl border border-[#005A6B]/10 dark:border-[#005A6B]/30 hover:border-[#005A6B]/20 dark:hover:border-[#005A6B]/40 shadow-sm hover:shadow-xl dark:shadow-none dark:hover:shadow-2xl dark:hover:shadow-black/20 transition-all duration-300 overflow-hidden">
-                           {/* Subtle gradient overlay on hover */}
-                           <div className="absolute inset-0 bg-gradient-to-br from-[#005A6B]/5 to-transparent dark:from-[#005A6B]/10 dark:to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="bg-surface-primary dark:bg-gray-800 rounded-3xl overflow-hidden border border-border-light dark:border-gray-700 hover:border-[#005A6B]/20 dark:hover:border-[#005A6B]/30 transition-all duration-300 h-full transform hover:-translate-y-1">
+                           {/* Card Header with Gradient */}
+                           <div className={`bg-gradient-to-br ${stat.gradient} p-5 relative overflow-hidden`}>
+                              <div className="absolute top-0 right-0 w-24 h-24 bg-white/10 rounded-full -translate-y-12 translate-x-12"></div>
+                              <div className="absolute bottom-0 left-0 w-20 h-20 bg-white/10 rounded-full translate-y-10 -translate-x-10"></div>
 
-                           {/* Content */}
-                           <div className="relative p-8 lg:p-10">
-                              {/* Icon */}
-                              <div className="mb-6">
-                                 <div className={`inline-flex p-3 rounded-lg ${stat.accent} transition-transform duration-300 group-hover:scale-110`}>
+                              <div className="relative z-10">
+                                 <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center mb-2 group-hover:scale-110 transition-transform duration-300">
                                     {stat.icon}
                                  </div>
+                                 <div className="text-xl md:text-2xl font-inter font-bold text-white">{stat.value}</div>
                               </div>
-
-                              {/* Value */}
-                              <div className="mb-3">
-                                 <p className="text-2xl md:text-3xl font-inter font-semibold text-gray-900 dark:text-white tracking-tight">{stat.value}</p>
-                              </div>
-
-                              {/* Label */}
-                              <p className="font-inter text-sm text-gray-500 dark:text-gray-400">{stat.label}</p>
                            </div>
 
-                           {/* Decorative element */}
-                           <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#005A6B] dark:via-[#0098b4] to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                           {/* Card Content */}
+                           <div className="p-5">
+                              <p className="font-inter font-medium text-xs text-text-primary dark:text-gray-200">{stat.label}</p>
+                           </div>
                         </div>
                      </div>
                   ))}
                </div>
 
-               <div className="flex justify-center mt-20">
+               {/* Additional Market Stats */}
+               <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+                  <div className="text-center animate-fade-in" data-delay="600">
+                     <div className="text-2xl md:text-3xl font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F] mb-1">
+                        R$ 1,5T
+                     </div>
+                     <p className="text-xs font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">Tamanho do Mercado</p>
+                  </div>
+
+                  <div className="text-center animate-fade-in" data-delay="700">
+                     <div className="text-2xl md:text-3xl font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F] mb-1">
+                        500K+
+                     </div>
+                     <p className="text-xs font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">Propriedades de Luxo</p>
+                  </div>
+
+                  <div className="text-center animate-fade-in" data-delay="800">
+                     <div className="text-2xl md:text-3xl font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F] mb-1">
+                        2M+
+                     </div>
+                     <p className="text-xs font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">Transações Anuais</p>
+                  </div>
+
+                  <div className="text-center animate-fade-in" data-delay="900">
+                     <div className="text-2xl md:text-3xl font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F] mb-1">
+                        8,5%
+                     </div>
+                     <p className="text-xs font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">Crescimento Anual</p>
+                  </div>
+               </div>
+
+               <div className="flex justify-center mt-10">
                   <div className="w-12 h-[1px] bg-text-primary/20 dark:bg-gray-700"></div>
                </div>
             </div>

@@ -33,10 +33,10 @@ const InvestmentSection = () => {
 
    return (
       <section ref={sectionRef} id="investment" className="relative py-24 md:py-32 dark:from-gray-900 dark:to-gray-900 overflow-hidden">
-         {/* Background decoration */}
+         {/* Background decoration - removed blue glow in dark mode */}
          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 dark:bg-[#0098b4]/10 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/5 dark:bg-[#00c5e5]/10 rounded-full blur-3xl"></div>
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 dark:bg-transparent rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/5 dark:bg-transparent rounded-full blur-3xl"></div>
          </div>
 
          <div className="container mx-auto px-8 lg:px-16 relative z-10">
