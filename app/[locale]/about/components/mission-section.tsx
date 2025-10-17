@@ -23,11 +23,7 @@ const MissionSection = () => {
             <div className="max-w-7xl mx-auto">
                {/* Section Header */}
                <div className="text-center mb-16">
-                  <div className="inline-flex items-center gap-2 mb-6 animate-fade-in" data-delay="0">
-                     <div className="w-8 h-[1px] bg-gradient-to-r from-transparent to-[#005A6B]"></div>
-                     <span className="text-xs font-medium tracking-[0.2em] text-[#005A6B] dark:text-[#005A6B] uppercase">Nossa Missão</span>
-                     <div className="w-8 h-[1px] bg-gradient-to-l from-transparent to-[#005A6B]"></div>
-                  </div>
+                  
 
                   <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-semibold mb-6 animate-fade-in" data-delay="100">
                      <span className="text-[#1f2937] dark:text-white">{t('mission.title').split(' ').slice(0, -1).join(' ')} </span>
