@@ -165,5 +165,172 @@
       "subscribe_error": "Ocurrió un error. Inténtelo de nuevo más tarde.",
       "copyright": "© {currentYear} IBVI. Todos los derechos reservados.",
       "tagline": "IBVI: El futuro de la valuación inmobiliaria comienza aquí."
+   },
+   "privacyPolicy": {
+      "title": "Política de Privacidad - IBVI AI",
+      "lastUpdated": "Última actualización",
+      "updateDate": "30 de octubre de 2025",
+      "intro": {
+         "title": "Introducción",
+         "content": "MBRAS/IBVI (\"nosotros\", \"nuestro\" o \"nos\") opera la aplicación IBVI AI. Esta página le informa sobre nuestras políticas relacionadas con la recopilación, uso y divulgación de datos personales cuando utiliza nuestro servicio."
+      },
+      "dataCollected": {
+         "title": "Datos Recopilados",
+         "intro": "Recopilamos los siguientes tipos de información:",
+         "registration": {
+            "title": "Datos de Registro",
+            "content": "Nombre, correo electrónico, teléfono"
+         },
+         "location": {
+            "title": "Datos de Ubicación",
+            "content": "Usamos su ubicación para mostrar propiedades cercanas"
+         },
+         "usage": {
+            "title": "Datos de Uso",
+            "content": "Información sobre cómo utiliza la aplicación"
+         },
+         "technical": {
+            "title": "Datos Técnicos",
+            "content": "Tipo de dispositivo, sistema operativo, registros de errores"
+         }
+      },
+      "dataUsage": {
+         "title": "Cómo Usamos Sus Datos",
+         "intro": "Utilizamos los datos recopilados para:",
+         "items": {
+            "1": "Proporcionar y mantener nuestro servicio",
+            "2": "Personalizar su experiencia",
+            "3": "Mostrar propiedades relevantes según su ubicación",
+            "4": "Mejorar nuestra aplicación",
+            "5": "Enviar notificaciones importantes sobre el servicio",
+            "6": "Analizar patrones de uso y corregir errores"
+         }
+      },
+      "dataSharing": {
+         "title": "Compartir Datos",
+         "intro": "No vendemos, alquilamos ni compartimos sus datos personales con terceros, excepto:",
+         "items": {
+            "1": "Con su consentimiento explícito",
+            "2": "Para cumplir con obligaciones legales",
+            "3": "Con proveedores de servicios (ej.: Google Maps, Sentry) bajo acuerdo de confidencialidad"
+         }
+      },
+      "security": {
+         "title": "Almacenamiento y Seguridad",
+         "content": "Sus datos se almacenan en servidores seguros y protegidos por encriptación. Implementamos medidas de seguridad técnicas y organizativas para proteger sus datos contra acceso no autorizado, alteración o destrucción."
+      },
+      "rights": {
+         "title": "Sus Derechos (LGPD)",
+         "intro": "Según la Ley General de Protección de Datos (LGPD), usted tiene derecho a:",
+         "items": {
+            "1": "Acceder a sus datos personales",
+            "2": "Corregir datos incompletos o incorrectos",
+            "3": "Solicitar la eliminación de sus datos",
+            "4": "Revocar su consentimiento",
+            "5": "Portabilidad de datos"
+         }
+      },
+      "retention": {
+         "title": "Retención de Datos",
+         "content": "Conservamos sus datos durante el tiempo necesario para proporcionar nuestros servicios o según lo exija la ley. Puede solicitar la eliminación de su cuenta en cualquier momento a través de la página de eliminación de cuenta."
+      },
+      "thirdParty": {
+         "title": "Servicios de Terceros",
+         "intro": "Nuestra aplicación utiliza los siguientes servicios de terceros:",
+         "items": {
+            "1": "Google Maps: Para visualización de mapas y ubicación",
+            "2": "Sentry: Para monitoreo de errores",
+            "3": "Expo: Para actualizaciones y funcionalidades de la app"
+         }
+      },
+      "minors": {
+         "title": "Menores de Edad",
+         "content": "Nuestro servicio no está dirigido a menores de 18 años. No recopilamos intencionalmente información personal de menores."
+      },
+      "changes": {
+         "title": "Cambios en esta Política",
+         "content": "Podemos actualizar nuestra Política de Privacidad periódicamente. Le notificaremos sobre cualquier cambio publicando la nueva política en esta página y actualizando la fecha de \"Última actualización\"."
+      },
+      "contact": {
+         "title": "Contacto",
+         "intro": "Si tiene preguntas sobre esta Política de Privacidad, contáctenos:",
+         "email": "Correo electrónico",
+         "website": "Sitio web"
+      },
+      "footer": "Todos los derechos reservados."
+   },
+   "accountDeletion": {
+      "title": "Eliminación de Cuenta - IBVI AI",
+      "warning": "Atención: La eliminación de la cuenta es permanente e irreversible. Todos sus datos serán eliminados definitivamente.",
+      "whatDeleted": {
+         "title": "Qué Se Eliminará",
+         "intro": "Al eliminar su cuenta, la siguiente información se eliminará permanentemente:",
+         "items": {
+            "1": "Perfil y datos de registro",
+            "2": "Historial de búsquedas y visualizaciones",
+            "3": "Preferencias y configuraciones",
+            "4": "Todos los datos asociados a su cuenta"
+         }
+      },
+      "howToDelete": {
+         "title": "Cómo Eliminar Su Cuenta",
+         "method1": {
+            "title": "Método 1: Desde la Aplicación",
+            "steps": {
+               "1": "Abra la aplicación IBVI AI",
+               "2": "Acceda al menú lateral (☰)",
+               "3": "Vaya a Configuración",
+               "4": "Desplácese hasta el final y toque \"Eliminar Cuenta\"",
+               "5": "Confirme la eliminación"
+            }
+         },
+         "method2": {
+            "title": "Método 2: Por Correo Electrónico",
+            "step1": {
+               "text": "Envíe un correo electrónico a"
+            },
+            "step2": {
+               "text": "Asunto",
+               "subject": "Solicitud de Eliminación de Cuenta - IBVI AI"
+            },
+            "step3": {
+               "text": "En el cuerpo del correo, proporcione",
+               "items": {
+                  "1": "Su nombre completo",
+                  "2": "Correo electrónico registrado en la app",
+                  "3": "Confirmación: \"Solicito la eliminación permanente de mi cuenta\""
+               }
+            },
+            "step4": "Espere confirmación (hasta 48 horas hábiles)"
+         }
+      },
+      "timeline": {
+         "title": "Plazo de Eliminación",
+         "intro": "Su cuenta será eliminada en un plazo de 30 días después de la solicitud. Durante este período:",
+         "items": {
+            "1": "Su cuenta quedará desactivada",
+            "2": "Puede cancelar la solicitud contactándonos",
+            "3": "Después de 30 días, la eliminación será permanente"
+         }
+      },
+      "dataRetained": {
+         "title": "Datos que Permanecerán",
+         "intro": "Por obligaciones legales, algunos datos pueden conservarse por un período mínimo:",
+         "items": {
+            "1": "Datos necesarios para cumplir con obligaciones fiscales y legales",
+            "2": "Registros de acceso (formato anonimizado) con fines de seguridad",
+            "3": "Datos agregados y anonimizados para análisis estadísticos"
+         }
+      },
+      "help": {
+         "title": "¿Necesita Ayuda?",
+         "intro": "Si tiene preguntas sobre el proceso de eliminación de cuenta, contáctenos:",
+         "email": "Correo electrónico",
+         "website": "Sitio web"
+      },
+      "footer": {
+         "privacyPolicy": "Política de Privacidad",
+         "rights": "Todos los derechos reservados."
+      }
    }
 }
