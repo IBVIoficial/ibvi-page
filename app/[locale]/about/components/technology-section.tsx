@@ -20,7 +20,7 @@ const TechnologySection = () => {
                <div className="text-center mb-16">
                   <div className="inline-flex items-center gap-2 mb-6 animate-fade-in" data-delay="0">
                      <div className="w-8 h-[1px] bg-gradient-to-r from-transparent to-[#005A6B]"></div>
-                     <span className="text-xs font-medium tracking-[0.2em] text-[#005A6B] dark:text-[#005A6B] uppercase">Tecnologia Avançada</span>
+                     <span className="text-xs font-medium tracking-[0.2em] text-[#005A6B] dark:text-[#005A6B] uppercase">{t('technology_badge')}</span>
                      <div className="w-8 h-[1px] bg-gradient-to-l from-transparent to-[#005A6B]"></div>
                   </div>
 

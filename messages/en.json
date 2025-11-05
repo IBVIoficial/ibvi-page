@@ -17,6 +17,7 @@
       "cta_secondary": "Market Challenges"
    },
    "overview": {
+      "real_estate_market": "Real Estate Market",
       "title": "Brazilian Real Estate: <primary>Current Valuation</primary>",
       "main_paragraph": "The Brazilian real estate market is valued at approximately USD 4 trillion in total asset stock, based on the country's Gross Domestic Product (GDP). Annual transaction volume reaches USD 100 billion, reflecting the sector’s scale and relevance.",
       "market_value_stat_value": "$4T",
@@ -74,6 +75,10 @@
          "title": "Standardized Index",
          "description": "Brazil's first luxury real estate index"
       },
+      "data_driven_decisions": {
+         "title": "Data-Driven Decisions",
+         "description": "Recommendations based on over 50 market variables updated in real time"
+      },
       "standardized_index": {
          "title": "Trend Prediction",
          "description": "Anticipates market movements with 87% accuracy"
@@ -109,7 +114,10 @@
    "about": {
       "title": "Discover the IBVI Platform",
       "subtitle": "Revolutionizing Brazilian Real Estate with AI Intelligence",
-      "description": "The IBVI platform is at the forefront of transforming Brazil’s $4 trillion real estate market through cutting-edge Artificial Intelligence and data analysis, bringing unprecedented transparency and precision to property valuations.",
+      "description": "The IBVI platform is at the forefront of transforming Brazil's $4 trillion real estate market through cutting-edge Artificial Intelligence and data analysis, bringing unprecedented transparency and precision to property valuations.",
+      "about_badge": "About IBVI",
+      "expertise_badge": "Proven Expertise",
+      "technology_badge": "Advanced Technology",
       "mission": {
          "title": "Our Mission",
          "transparency": {

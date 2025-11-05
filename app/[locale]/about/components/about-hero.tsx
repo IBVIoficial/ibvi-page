@@ -29,7 +29,7 @@ const AboutHero = () => {
                {/* Badge */}
                <div className="inline-flex items-center gap-2 mb-8 animate-fade-in" data-delay="0">
                   <div className="w-8 h-[1px] bg-gradient-to-r from-transparent to-[#005A6B]"></div>
-                  <span className="text-xs font-medium tracking-[0.2em] text-[#005A6B] dark:text-[#005A6B] uppercase">Sobre a IBVI</span>
+                  <span className="text-xs font-medium tracking-[0.2em] text-[#005A6B] dark:text-[#005A6B] uppercase">{t('about_badge')}</span>
                   <div className="w-8 h-[1px] bg-gradient-to-l from-transparent to-[#005A6B]"></div>
                </div>
 
@@ -67,7 +67,7 @@ const AboutHero = () => {
                      href="#mission"
                      className="inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-wide text-white bg-gradient-to-r from-[#005A6B] to-[#007A8F] rounded-full hover:shadow-xl hover:scale-105 transform transition-all duration-300"
                   >
-                     Nossa Missão
+                     {t('mission.title')}
                      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                      </svg>
@@ -76,7 +76,7 @@ const AboutHero = () => {
                      href="#technology"
                      className="inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-wide text-[#005A6B] bg-white border-2 border-[#005A6B] rounded-full hover:bg-[#005A6B] hover:text-white transform transition-all duration-300"
                   >
-                     Nossa Tecnologia
+                     {t('technology.title')}
                   </a>
                </div>
             </div>

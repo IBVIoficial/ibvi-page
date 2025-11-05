@@ -208,9 +208,9 @@ const SolutionSection = () => {
                               </svg>
                            </div>
                            <div className="flex-1">
-                              <h4 className="font-inter font-medium text-text-primary dark:text-white text-lg mb-0.5">Decisões Data-Driven</h4>
+                              <h4 className="font-inter font-medium text-text-primary dark:text-white text-lg mb-0.5">{t('data_driven_decisions.title')}</h4>
                               <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
-                                 Recomendações baseadas em mais de 50 variáveis de mercado atualizadas em tempo real
+                                 {t('data_driven_decisions.description')}
                               </p>
                            </div>
                         </div>
@@ -248,12 +248,8 @@ const SolutionSection = () => {
                         <div className="flex items-start gap-4">
                            <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-2xl shadow-lg shadow-[#005A6B]/20 dark:shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
                               <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                 <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="1.5"
-                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                                 />
+                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
                               </svg>
                            </div>
                            <div className="flex-1">

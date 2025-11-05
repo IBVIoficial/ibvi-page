@@ -96,7 +96,7 @@ const OverviewSection = () => {
                <div className="text-center mb-10">
                   <div className="inline-flex items-center gap-2 mb-4 animate-fade-in" data-delay="0">
                      <div className="w-8 h-[1px] bg-gradient-to-r from-transparent to-[#005A6B]"></div>
-                     <span className="text-xs font-medium tracking-[0.2em] text-[#005A6B] dark:text-[#005A6B] uppercase">Mercado Imobiliário</span>
+                     <span className="text-xs font-medium tracking-[0.2em] text-[#005A6B] dark:text-[#005A6B] uppercase">{t('real_estate_market')}</span>
                      <div className="w-8 h-[1px] bg-gradient-to-l from-transparent to-[#005A6B]"></div>
                   </div>
 
@@ -152,30 +152,30 @@ const OverviewSection = () => {
                <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
                   <div className="text-center animate-fade-in" data-delay="600">
                      <div className="text-2xl md:text-3xl font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F] mb-1">
-                        R$ 1,5T
+                        {t('market_size_value')}
                      </div>
-                     <p className="text-xs font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">Tamanho do Mercado</p>
+                     <p className="text-xs font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">{t('market_size')}</p>
                   </div>
 
                   <div className="text-center animate-fade-in" data-delay="700">
                      <div className="text-2xl md:text-3xl font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F] mb-1">
-                        500K+
+                        {t('luxury_properties_value')}
                      </div>
-                     <p className="text-xs font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">Propriedades de Luxo</p>
+                     <p className="text-xs font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">{t('luxury_properties')}</p>
                   </div>
 
                   <div className="text-center animate-fade-in" data-delay="800">
                      <div className="text-2xl md:text-3xl font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F] mb-1">
-                        2M+
+                        {t('annual_transactions_value')}
                      </div>
-                     <p className="text-xs font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">Transações Anuais</p>
+                     <p className="text-xs font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">{t('annual_transactions')}</p>
                   </div>
 
                   <div className="text-center animate-fade-in" data-delay="900">
                      <div className="text-2xl md:text-3xl font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F] mb-1">
-                        8,5%
+                        {t('avg_price_growth_value')}
                      </div>
-                     <p className="text-xs font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">Crescimento Anual</p>
+                     <p className="text-xs font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">{t('avg_price_growth')}</p>
                   </div>
                </div>
 

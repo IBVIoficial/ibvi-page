@@ -9,14 +9,15 @@
       "ibviPresentation": "Apresentação IBVI"
    },
    "hero": {
-      "title": "Revolucionando",
-      "subtitle": "o Mercado Imobiliário Brasileiro",
+      "title": "Revolucionando o",
+      "subtitle": "Mercado Imobiliário Brasileiro",
       "description": "O IBVI busca revolucionar o Mercado Imobiliário Brasileiro com seu sistema próprio de avaliações, processos automatizados, resultados mais precisos e escaláveis por meio de Inteligência Artificial.",
       "tagline": " Uma plataforma única e estratégica para um mercado de US$ 4 trilhões",
       "cta_primary": "Conheça a pesquisa",
       "cta_secondary": "Desafios do Mercado"
    },
    "overview": {
+      "real_estate_market": "Mercado Imobiliário",
       "title": "Valoração atual do <primary>Mercado Imobiliário Brasileiro</primary>",
       "main_paragraph": "O mercado imobiliário brasileiro vale cerca de US$ 4 trilhões, com US$ 100 bilhões em transações anuais.",
       "market_value_stat_value": "US$ 4T",
@@ -74,6 +75,10 @@
          "title": "Índice Padronizado",
          "description": "Primeiro índice de imóveis de luxo do Brasil"
       },
+      "data_driven_decisions": {
+         "title": "Decisões Data-Driven",
+         "description": "Recomendações baseadas em mais de 50 variáveis de mercado atualizadas em tempo real"
+      },
       "standardized_index": {
          "title": "Predição de Tendências",
          "description": "Antecipa movimentos de mercado com 87% de precisão"
@@ -110,6 +115,9 @@
       "title": "Conheça a Plataforma IBVI",
       "subtitle": "Revolucionando o Mercado Imobiliário Brasileiro com Inteligência Artificial",
       "description": "A plataforma IBVI está na vanguarda da transformação do mercado imobiliário brasileiro de US$ 4 trilhões através de Inteligência Artificial de ponta e análise de dados, trazendo transparência e precisão sem precedentes às avaliações imobiliárias.",
+      "about_badge": "Sobre o IBVI",
+      "expertise_badge": "Experiência Comprovada",
+      "technology_badge": "Tecnologia Avançada",
       "mission": {
          "title": "Nossa Missão",
          "transparency": {
