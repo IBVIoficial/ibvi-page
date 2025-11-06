@@ -25,7 +25,7 @@ const Footer = () => {
          <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto mb-12">
                <div>
-                  <h3 className="text-2xl font-playfair font-semibold text-teal-800 dark:text-teal-900 mb-4">IBVI</h3>
+                  <h3 className="text-2xl font-inter font-semibold text-teal-800 dark:text-white mb-4">IBVI</h3>
                   <p className="font-inter leading-relaxed mb-6">{t('description')}</p>
                   <div className="flex space-x-4">
                      <a
@@ -48,7 +48,7 @@ const Footer = () => {
                </div>
 
                <div>
-                  <h3 className="text-xl font-playfair font-semibold text-teal-800 dark:text-teal-900 mb-4">{t('contact_title')}</h3>
+                  <h3 className="text-xl font-inter font-semibold text-teal-800 dark:text-white mb-4">{t('contact_title')}</h3>
                   <p className="font-inter mb-4 flex items-start">
                      <svg className="h-5 w-5 mr-2 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path
@@ -86,7 +86,7 @@ const Footer = () => {
                </div>
 
                <div>
-                  <h3 className="text-xl font-playfair font-semibold text-teal-800 dark:text-teal-900 mb-4">{t('subscribe_title')}</h3>
+                  <h3 className="text-xl font-semibold text-teal-800 dark:text-white mb-4 font-inter">{t('subscribe_title')}</h3>
                   <p className="font-inter mb-4">{t('subscribe_description')}</p>
                   {formState.succeeded ? (
                      <p className="font-inter text-green-600">{t('subscribe_success')}</p>

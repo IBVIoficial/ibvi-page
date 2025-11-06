@@ -5,19 +5,21 @@
       "solution": "Solução",
       "investment": "Investimento",
       "about": "Sobre",
-      "contact": "Contato"
+      "contact": "Contato",
+      "ibviPresentation": "Apresentação IBVI"
    },
    "hero": {
-      "title": "Revolucionando",
-      "subtitle": "o Mercado Imobiliário Brasileiro",
+      "title": "Revolucionando o",
+      "subtitle": "Mercado Imobiliário Brasileiro",
       "description": "O IBVI busca revolucionar o Mercado Imobiliário Brasileiro com seu sistema próprio de avaliações, processos automatizados, resultados mais precisos e escaláveis por meio de Inteligência Artificial.",
       "tagline": " Uma plataforma única e estratégica para um mercado de US$ 4 trilhões",
       "cta_primary": "Conheça a pesquisa",
       "cta_secondary": "Desafios do Mercado"
    },
    "overview": {
+      "real_estate_market": "Mercado Imobiliário",
       "title": "Valoração atual do <primary>Mercado Imobiliário Brasileiro</primary>",
-      "main_paragraph": "O Mercado Imobiliário Brasileiro é da ordem de US$4 trilhões em valor total de estoque de ativos, cálculo que utiliza como base o valor do PIB (Produto Interno Bruto) nacional. Frente às transações anuais, o mercado nacional é de US$100 bilhões.",
+      "main_paragraph": "O mercado imobiliário brasileiro vale cerca de US$ 4 trilhões, com US$ 100 bilhões em transações anuais.",
       "market_value_stat_value": "US$ 4T",
       "market_value_stat_label": "Valor Total de Ativos no Mercado",
       "annual_transactions_stat_value": "US$ 100BI",
@@ -35,7 +37,7 @@
    },
    "challenges": {
       "title": "Expertise da Plataforma e <primary>Desafios do Mercado</primary>",
-      "main_paragraph": "O IBVI nasce com uma proposta técnica clara: corrigir as distorções estruturais do setor de avaliação imobiliária no Brasil, por meio de um sistema robusto com automação de dados, promovendo uma eficiência inédita no mercado.",
+      "main_paragraph": "O IBVI propõe corrigir distorções na avaliação imobiliária no Brasil com um sistema robusto e automação de dados, elevando a eficiência do mercado.",
       "standardization_gaps": {
          "title": "Padronização com Inteligência Artificial",
          "description": "Mais de 70% dos avaliadores ainda utilizam planilhas manuais. O IBVI substitui esses métodos com modelos automatizados via IA, oferecendo laudos padronizados, auditáveis e atualizados em tempo real."
@@ -55,22 +57,31 @@
    },
    "solution": {
       "title": " Plataforma IBVI <primary>Potencializada por IA</primary>",
-      "description": "O IBVI tem como propósito se consolidar como a principal autoridade em avaliação imobiliária no Brasil. Combinando o uso de Inteligência Artificial de última geração, expertise regulatória e acesso a dados exclusivos, a plataforma promove um sistema pautado pela transparência, precisão e confiança.",
+      "description": "IBVI quer ser referência nacional em avaliação imobiliária, usando IA, expertise regulatória e dados exclusivos para garantir transparência e precisão.",
+      "technology_innovation_badge": "Tecnologia & Inovação",
       "data_driven_valuations": {
          "title": "Redução Inedita de Prazo",
-         "description": "A plataforma IBVI reduz em até 60% o tempo de transações, automatizando análises com IA própria e entregando avaliações precisas, rastreáveis e alinhadas ao padrão solicitado."
+         "description": "IBVI acelera transações em até 60% ao usar IA própria para gerar avaliações rápidas, precisas e rastreáveis, sempre em conformidade com os padrões exigidos."
       },
       "predictive_analytics": {
          "title": "Maior Eficiência Operacional",
-         "description": "O sistema automatiza etapas críticas como validação e precificação, reduzindo a dependência de fluxos manuais e acelerando o cumprimento das exigências da Resolução CMN nº 4.951/2021."
+         "description": "IBVI automatiza validação e precificação, cortando processos manuais e agilizando o cumprimento da Resolução CMN nº 4.951/2021."
+      },
+      "intelligent_matching": {
+         "title": "Matching Inteligente",
+         "description": "Conecta compradores e imóveis com 95% de compatibilidade"
       },
       "intelligent_search": {
-         "title": "Índice Padronizado Próprio",
-         "description": "Inspirado no EPRA Index, o IBVI cria o primeiro índice de imóveis de luxo do Brasil com base em variáveis como área, localização, amenidades e histórico oficial de transações."
+         "title": "Índice Padronizado",
+         "description": "Primeiro índice de imóveis de luxo do Brasil"
+      },
+      "data_driven_decisions": {
+         "title": "Decisões Data-Driven",
+         "description": "Recomendações baseadas em mais de 50 variáveis de mercado atualizadas em tempo real"
       },
       "standardized_index": {
-         "title": "Autoridade em Avaliações",
-         "description": " Com IA avançada, inteligência de dados e expertise regulatória, o IBVI se posiciona como referência em avaliação de imóveis de alto padrão, promovendo confiança e transparência."
+         "title": "Predição de Tendências",
+         "description": "Antecipa movimentos de mercado com 87% de precisão"
       },
       "quote": "\"A plataforma de avaliação proprietária da IBVI representa uma mudança de paradigma na forma como os imóveis de luxo brasileiros são avaliados e transacionados.\""
    },
@@ -104,6 +115,9 @@
       "title": "Conheça a Plataforma IBVI",
       "subtitle": "Revolucionando o Mercado Imobiliário Brasileiro com Inteligência Artificial",
       "description": "A plataforma IBVI está na vanguarda da transformação do mercado imobiliário brasileiro de US$ 4 trilhões através de Inteligência Artificial de ponta e análise de dados, trazendo transparência e precisão sem precedentes às avaliações imobiliárias.",
+      "about_badge": "Sobre o IBVI",
+      "expertise_badge": "Experiência Comprovada",
+      "technology_badge": "Tecnologia Avançada",
       "mission": {
          "title": "Nossa Missão",
          "transparency": {
@@ -139,7 +153,7 @@
       },
       "expertise": {
          "title": "Nossa Expertise",
-         "description": "O IBVI é formado por especialistas em Engenharia, Ciência de Dados, Economia, Comunicação e Mercado Financeiro. Essa integração técnica garante avaliações precisas, seguras e compatíveis com os padrões exigidos por instituições e fundos.",
+         "description": "O IBVI integra especialistas de várias áreas para oferecer avaliações precisas e seguras, em conformidade com padrões institucionais e de fundos.",
          "experience_years": "15+",
          "experience_description": "Anos de Experiência Combinada em Imóveis",
          "data_points": "50M+",
@@ -170,171 +184,30 @@
       "copyright": "© {currentYear} IBVI. Todos os direitos reservados.",
       "tagline": "IBVI: O futuro da avaliação imobiliária começa aqui."
    },
-   "privacyPolicy": {
-      "title": "Política de Privacidade - IBVI AI",
-      "lastUpdated": "Última atualização",
-      "updateDate": "30 de outubro de 2025",
-      "intro": {
-         "title": "Introdução",
-         "content": "A MBRAS/IBVI (\"nós\", \"nosso\" ou \"nos\") opera o aplicativo IBVI AI. Esta página informa sobre nossas políticas relacionadas à coleta, uso e divulgação de dados pessoais quando você usa nosso serviço."
-      },
-      "dataCollected": {
-         "title": "Dados Coletados",
-         "intro": "Coletamos os seguintes tipos de informações:",
-         "registration": {
-            "title": "Dados de Cadastro",
-            "content": "Nome, e-mail, telefone"
-         },
-         "location": {
-            "title": "Dados de Localização",
-            "content": "Usamos sua localização para mostrar imóveis próximos"
-         },
-         "usage": {
-            "title": "Dados de Uso",
-            "content": "Informações sobre como você usa o aplicativo"
-         },
-         "technical": {
-            "title": "Dados Técnicos",
-            "content": "Tipo de dispositivo, sistema operacional, logs de erro"
-         }
-      },
-      "dataUsage": {
-         "title": "Como Usamos Seus Dados",
-         "intro": "Utilizamos os dados coletados para:",
-         "items": {
-            "1": "Fornecer e manter nosso serviço",
-            "2": "Personalizar sua experiência",
-            "3": "Mostrar imóveis relevantes baseados em sua localização",
-            "4": "Melhorar nosso aplicativo",
-            "5": "Enviar notificações importantes sobre o serviço",
-            "6": "Analisar padrões de uso e corrigir erros"
-         }
-      },
-      "dataSharing": {
-         "title": "Compartilhamento de Dados",
-         "intro": "Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros, exceto:",
-         "items": {
-            "1": "Com seu consentimento explícito",
-            "2": "Para cumprir obrigações legais",
-            "3": "Com prestadores de serviços (ex: Google Maps, Sentry) sob acordo de confidencialidade"
-         }
-      },
-      "security": {
-         "title": "Armazenamento e Segurança",
-         "content": "Seus dados são armazenados em servidores seguros e protegidos por criptografia. Implementamos medidas de segurança técnicas e organizacionais para proteger seus dados contra acesso não autorizado, alteração ou destruição."
-      },
-      "rights": {
-         "title": "Seus Direitos (LGPD)",
-         "intro": "Conforme a Lei Geral de Proteção de Dados (LGPD), você tem direito a:",
-         "items": {
-            "1": "Acessar seus dados pessoais",
-            "2": "Corrigir dados incompletos ou incorretos",
-            "3": "Solicitar a exclusão de seus dados",
-            "4": "Revogar seu consentimento",
-            "5": "Portabilidade dos dados"
-         }
-      },
-      "retention": {
-         "title": "Retenção de Dados",
-         "content": "Mantemos seus dados pelo tempo necessário para fornecer nossos serviços ou conforme exigido por lei. Você pode solicitar a exclusão de sua conta a qualquer momento através da página de exclusão de conta."
-      },
-      "thirdParty": {
-         "title": "Serviços de Terceiros",
-         "intro": "Nosso aplicativo utiliza os seguintes serviços de terceiros:",
-         "items": {
-            "1": "Google Maps: Para exibição de mapas e localização",
-            "2": "Sentry: Para monitoramento de erros",
-            "3": "Expo: Para atualizações e funcionalidades do app"
-         }
-      },
-      "minors": {
-         "title": "Menores de Idade",
-         "content": "Nosso serviço não é direcionado a menores de 18 anos. Não coletamos intencionalmente informações pessoais de menores."
-      },
-      "changes": {
-         "title": "Alterações nesta Política",
-         "content": "Podemos atualizar nossa Política de Privacidade periodicamente. Notificaremos você sobre quaisquer alterações publicando a nova política nesta página e atualizando a data de \"Última atualização\"."
-      },
-      "contact": {
-         "title": "Contato",
-         "intro": "Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato:",
-         "email": "E-mail",
-         "website": "Website"
-      },
-      "footer": "Todos os direitos reservados."
+   "market_recognition": {
+      "title": "Reconhecimento do Mercado",
+      "description": "Referência em avaliação imobiliária com IA, reconhecida por instituições financeiras e gestores com mais de R$1,2 trilhão sob gestão."
    },
-   "accountDeletion": {
-      "title": "Exclusão de Conta - IBVI AI",
-      "warning": "Atenção: A exclusão da conta é permanente e irreversível. Todos os seus dados serão removidos definitivamente.",
-      "whatDeleted": {
-         "title": "O Que Será Excluído",
-         "intro": "Ao excluir sua conta, as seguintes informações serão permanentemente removidas:",
-         "items": {
-            "1": "Perfil e dados cadastrais",
-            "2": "Histórico de buscas e visualizações",
-            "3": "Preferências e configurações",
-            "4": "Todos os dados associados à sua conta"
-         }
-      },
-      "howToDelete": {
-         "title": "Como Excluir Sua Conta",
-         "method1": {
-            "title": "Método 1: Pelo Aplicativo",
-            "steps": {
-               "1": "Abra o aplicativo IBVI AI",
-               "2": "Acesse o menu lateral (☰)",
-               "3": "Vá em Configurações",
-               "4": "Role até o final e toque em \"Excluir Conta\"",
-               "5": "Confirme a exclusão"
-            }
-         },
-         "method2": {
-            "title": "Método 2: Por E-mail",
-            "step1": {
-               "text": "Envie um e-mail para"
-            },
-            "step2": {
-               "text": "Assunto",
-               "subject": "Solicitação de Exclusão de Conta - IBVI AI"
-            },
-            "step3": {
-               "text": "No corpo do e-mail, informe",
-               "items": {
-                  "1": "Seu nome completo",
-                  "2": "E-mail cadastrado no app",
-                  "3": "Confirmação: \"Solicito a exclusão permanente da minha conta\""
-               }
-            },
-            "step4": "Aguarde confirmação (até 48h úteis)"
-         }
-      },
-      "timeline": {
-         "title": "Prazo de Exclusão",
-         "intro": "Sua conta será excluída em até 30 dias após a solicitação. Durante este período:",
-         "items": {
-            "1": "Sua conta ficará desativada",
-            "2": "Você pode cancelar a solicitação entrando em contato conosco",
-            "3": "Após 30 dias, a exclusão será permanente"
-         }
-      },
-      "dataRetained": {
-         "title": "Dados que Permanecerão",
-         "intro": "Por obrigações legais, alguns dados podem ser mantidos por um período mínimo:",
-         "items": {
-            "1": "Dados necessários para cumprimento de obrigações fiscais e legais",
-            "2": "Logs de acesso (formato anonimizado) para fins de segurança",
-            "3": "Dados agregados e anonimizados para análises estatísticas"
-         }
-      },
-      "help": {
-         "title": "Precisa de Ajuda?",
-         "intro": "Se você tiver dúvidas sobre o processo de exclusão de conta, entre em contato:",
-         "email": "E-mail",
-         "website": "Website"
-      },
-      "footer": {
-         "privacyPolicy": "Política de Privacidade",
-         "rights": "Todos os direitos reservados."
-      }
+   "next_steps": {
+      "title": "Próximos Passos",
+      "precision": "Precisão",
+      "faster": "Mais Rápido",
+      "market": "Mercado"
+   },
+   "mission_stats": {
+      "valuation_accuracy": "PRECISÃO NAS AVALIAÇÕES",
+      "valuations_per_day": "AVALIAÇÕES POR DIA",
+      "time_reduction": "REDUÇÃO DE TEMPO"
+   },
+   "team": {
+      "title": "Equipe Multidisciplinar",
+      "engineering": "Engenharia",
+      "engineering_description": "Arquitetura de sistemas",
+      "data_science": "Ciência de Dados",
+      "data_science_description": "Machine Learning & IA",
+      "economics": "Economia",
+      "economics_description": "Análise de mercado",
+      "financial_market": "Mercado Financeiro",
+      "financial_market_description": "Gestão de investimentos"
    }
 }

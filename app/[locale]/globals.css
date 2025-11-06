@@ -152,10 +152,18 @@
 @layer base {
    * {
       @apply border-border outline-ring/50;
+      box-sizing: border-box;
+   }
+
+   *,
+   *::before,
+   *::after {
+      max-width: 100%;
    }
 
    html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
    }
 
    body {
@@ -168,6 +176,8 @@
       transition:
          background-color 0.3s ease-in-out,
          color 0.3s ease-in-out;
+      overflow-x: hidden;
+      max-width: 100vw;
    }
 
    html.dark {
@@ -321,11 +331,22 @@
 .dark .text-text-light {
    color: #94a3b8 !important;
 }
+
+/* Navbar specific dark mode overrides */
+.dark nav .text-text-primary {
+   color: #000000 !important;
+}
+.dark nav a {
+   color: #000000 !important;
+}
+.dark nav button {
+   color: #000000 !important;
+}
 .dark .bg-surface-primary {
    background-color: #1e293b !important;
 }
 .dark .bg-surface-secondary {
-   background-color: #1e293b !important;
+   background-color: #111827 !important;
 } /* Remapping from gray-100 */
 .dark .bg-surface-tertiary {
    background-color: #111827 !important;
@@ -342,6 +363,11 @@
 .dark .border-border-dark {
    border-color: #64748b !important;
 }
+.dark .border-border-dark {
+   border-color: #64748b !important;
+}
+
+/* --- Original Button & Component Styles --- */
 
 /* --- Original Button & Component Styles --- */
 
@@ -451,6 +477,20 @@
    box-shadow:
       6px 20px 24px 2px rgba(0, 0, 0, 0.05),
       0 8px 10px -6px rgba(0, 0, 0, 0.12);
+}
+
+/* Custom override for the overview section */
+.dark #overview {
+   background-color: #111827 !important; /* This is equivalent to bg-gray-900 */
+}
+
+.dark #overview .rounded-2xl {
+   background-color: #111827 !important; /* This is equivalent to bg-gray-900 */
+}
+
+/* Custom override for the hero section header */
+.dark header.bg-surface-primary {
+   background-color: #111827 !important; /* This is equivalent to bg-gray-900 */
 }
 
 @keyframes fadeInDocument {

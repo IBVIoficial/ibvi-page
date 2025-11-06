@@ -5,7 +5,8 @@
       "solution": "Solution",
       "investment": "Investment",
       "about": "About",
-      "contact": "Contact"
+      "contact": "Contact",
+      "ibviPresentation": "IBVI Presentation"
    },
    "hero": {
       "title": "Revolutionizing",
@@ -16,6 +17,7 @@
       "cta_secondary": "Market Challenges"
    },
    "overview": {
+      "real_estate_market": "Real Estate Market",
       "title": "Brazilian Real Estate: <primary>Current Valuation</primary>",
       "main_paragraph": "The Brazilian real estate market is valued at approximately USD 4 trillion in total asset stock, based on the country's Gross Domestic Product (GDP). Annual transaction volume reaches USD 100 billion, reflecting the sector’s scale and relevance.",
       "market_value_stat_value": "$4T",
@@ -56,6 +58,7 @@
    "solution": {
       "title": "IBVI Platform <primary>Powered by AI</primary>",
       "description": "IBVI aims to become the leading authority in real estate valuation in Brazil. By combining cutting-edge Artificial Intelligence, regulatory expertise, and access to data, the platform delivers a system built on transparency, precision, and trust.",
+      "technology_innovation_badge": "Technology & Innovation",
       "data_driven_valuations": {
          "title": "Unprecedented Time Reduction",
          "description": " The IBVI platform reduces transaction times by up to 60%, automating analyses with proprietary AI and delivering accurate, traceable valuations aligned with predefined standards."
@@ -64,13 +67,21 @@
          "title": "Greater Operational Efficiency",
          "description": " The system automates critical stages such as validation and pricing, reducing reliance on manual processes and speeding up compliance with CMN Resolution No. 4,951/2021."
       },
+      "intelligent_matching": {
+         "title": "Intelligent Matching",
+         "description": "Connects buyers and properties with 95% compatibility"
+      },
       "intelligent_search": {
-         "title": "Proprietary Standardized Index",
-         "description": "Inspired by the EPRA Index, IBVI introduces Brazil’s first luxury real estate index based on key variables such as area, location, amenities, and official transaction history."
+         "title": "Standardized Index",
+         "description": "Brazil's first luxury real estate index"
+      },
+      "data_driven_decisions": {
+         "title": "Data-Driven Decisions",
+         "description": "Recommendations based on over 50 market variables updated in real time"
       },
       "standardized_index": {
-         "title": "Authority in Property Valuation",
-         "description": " With advanced AI, robust data intelligence, and deep regulatory knowledge, IBVI positions itself as the reference in high-end property valuation, driving trust and market transparency."
+         "title": "Trend Prediction",
+         "description": "Anticipates market movements with 87% accuracy"
       },
       "quote": "\"IBVI's proprietary valuation platform represents a paradigm shift in how Brazilian luxury real estate is evaluated and transacted.\""
    },
@@ -103,7 +114,10 @@
    "about": {
       "title": "Discover the IBVI Platform",
       "subtitle": "Revolutionizing Brazilian Real Estate with AI Intelligence",
-      "description": "The IBVI platform is at the forefront of transforming Brazil’s $4 trillion real estate market through cutting-edge Artificial Intelligence and data analysis, bringing unprecedented transparency and precision to property valuations.",
+      "description": "The IBVI platform is at the forefront of transforming Brazil's $4 trillion real estate market through cutting-edge Artificial Intelligence and data analysis, bringing unprecedented transparency and precision to property valuations.",
+      "about_badge": "About IBVI",
+      "expertise_badge": "Proven Expertise",
+      "technology_badge": "Advanced Technology",
       "mission": {
          "title": "Our Mission",
          "transparency": {
@@ -166,171 +180,30 @@
       "copyright": "© {currentYear} IBVI. All rights reserved.",
       "tagline": "IBVI: The future of Real Estate Valuation starts here."
    },
-   "privacyPolicy": {
-      "title": "Privacy Policy - IBVI AI",
-      "lastUpdated": "Last updated",
-      "updateDate": "October 30, 2025",
-      "intro": {
-         "title": "Introduction",
-         "content": "MBRAS/IBVI (\"we\", \"our\" or \"us\") operates the IBVI AI application. This page informs you of our policies regarding the collection, use and disclosure of personal data when you use our service."
-      },
-      "dataCollected": {
-         "title": "Data Collected",
-         "intro": "We collect the following types of information:",
-         "registration": {
-            "title": "Registration Data",
-            "content": "Name, email, phone number"
-         },
-         "location": {
-            "title": "Location Data",
-            "content": "We use your location to show nearby properties"
-         },
-         "usage": {
-            "title": "Usage Data",
-            "content": "Information about how you use the application"
-         },
-         "technical": {
-            "title": "Technical Data",
-            "content": "Device type, operating system, error logs"
-         }
-      },
-      "dataUsage": {
-         "title": "How We Use Your Data",
-         "intro": "We use the collected data to:",
-         "items": {
-            "1": "Provide and maintain our service",
-            "2": "Personalize your experience",
-            "3": "Show relevant properties based on your location",
-            "4": "Improve our application",
-            "5": "Send important notifications about the service",
-            "6": "Analyze usage patterns and fix errors"
-         }
-      },
-      "dataSharing": {
-         "title": "Data Sharing",
-         "intro": "We do not sell, rent or share your personal data with third parties, except:",
-         "items": {
-            "1": "With your explicit consent",
-            "2": "To comply with legal obligations",
-            "3": "With service providers (e.g., Google Maps, Sentry) under confidentiality agreement"
-         }
-      },
-      "security": {
-         "title": "Storage and Security",
-         "content": "Your data is stored on secure servers and protected by encryption. We implement technical and organizational security measures to protect your data against unauthorized access, alteration or destruction."
-      },
-      "rights": {
-         "title": "Your Rights (LGPD)",
-         "intro": "According to the General Data Protection Law (LGPD), you have the right to:",
-         "items": {
-            "1": "Access your personal data",
-            "2": "Correct incomplete or incorrect data",
-            "3": "Request deletion of your data",
-            "4": "Revoke your consent",
-            "5": "Data portability"
-         }
-      },
-      "retention": {
-         "title": "Data Retention",
-         "content": "We retain your data for as long as necessary to provide our services or as required by law. You can request deletion of your account at any time through the account deletion page."
-      },
-      "thirdParty": {
-         "title": "Third-Party Services",
-         "intro": "Our application uses the following third-party services:",
-         "items": {
-            "1": "Google Maps: For map display and location",
-            "2": "Sentry: For error monitoring",
-            "3": "Expo: For app updates and functionality"
-         }
-      },
-      "minors": {
-         "title": "Minors",
-         "content": "Our service is not directed to individuals under 18 years of age. We do not knowingly collect personal information from minors."
-      },
-      "changes": {
-         "title": "Changes to This Policy",
-         "content": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the \"Last updated\" date."
-      },
-      "contact": {
-         "title": "Contact",
-         "intro": "If you have any questions about this Privacy Policy, please contact us:",
-         "email": "Email",
-         "website": "Website"
-      },
-      "footer": "All rights reserved."
+   "market_recognition": {
+      "title": "Market Recognition",
+      "description": "Reference in real estate valuation with AI, recognized by financial institutions and asset managers with over R$1.2 trillion under management."
    },
-   "accountDeletion": {
-      "title": "Account Deletion - IBVI AI",
-      "warning": "Warning: Account deletion is permanent and irreversible. All your data will be permanently removed.",
-      "whatDeleted": {
-         "title": "What Will Be Deleted",
-         "intro": "When you delete your account, the following information will be permanently removed:",
-         "items": {
-            "1": "Profile and registration data",
-            "2": "Search and viewing history",
-            "3": "Preferences and settings",
-            "4": "All data associated with your account"
-         }
-      },
-      "howToDelete": {
-         "title": "How to Delete Your Account",
-         "method1": {
-            "title": "Method 1: Through the App",
-            "steps": {
-               "1": "Open the IBVI AI app",
-               "2": "Access the side menu (☰)",
-               "3": "Go to Settings",
-               "4": "Scroll to the bottom and tap \"Delete Account\"",
-               "5": "Confirm deletion"
-            }
-         },
-         "method2": {
-            "title": "Method 2: By Email",
-            "step1": {
-               "text": "Send an email to"
-            },
-            "step2": {
-               "text": "Subject",
-               "subject": "Account Deletion Request - IBVI AI"
-            },
-            "step3": {
-               "text": "In the email body, provide",
-               "items": {
-                  "1": "Your full name",
-                  "2": "Email registered in the app",
-                  "3": "Confirmation: \"I request permanent deletion of my account\""
-               }
-            },
-            "step4": "Wait for confirmation (up to 48 business hours)"
-         }
-      },
-      "timeline": {
-         "title": "Deletion Timeline",
-         "intro": "Your account will be deleted within 30 days of the request. During this period:",
-         "items": {
-            "1": "Your account will be deactivated",
-            "2": "You can cancel the request by contacting us",
-            "3": "After 30 days, deletion will be permanent"
-         }
-      },
-      "dataRetained": {
-         "title": "Data That Will Remain",
-         "intro": "For legal obligations, some data may be retained for a minimum period:",
-         "items": {
-            "1": "Data necessary to comply with tax and legal obligations",
-            "2": "Access logs (anonymized format) for security purposes",
-            "3": "Aggregated and anonymized data for statistical analysis"
-         }
-      },
-      "help": {
-         "title": "Need Help?",
-         "intro": "If you have questions about the account deletion process, please contact us:",
-         "email": "Email",
-         "website": "Website"
-      },
-      "footer": {
-         "privacyPolicy": "Privacy Policy",
-         "rights": "All rights reserved."
-      }
+   "next_steps": {
+      "title": "Next Steps",
+      "precision": "Precision",
+      "faster": "Faster",
+      "market": "Market"
+   },
+   "team": {
+      "title": "Multidisciplinary Team",
+      "engineering": "Engineering",
+      "engineering_description": "Systems Architecture",
+      "data_science": "Data Science",
+      "data_science_description": "Machine Learning & AI",
+      "economics": "Economics",
+      "economics_description": "Market Analysis",
+      "financial_market": "Financial Market",
+      "financial_market_description": "Investment Management"
+   },
+   "mission_stats": {
+      "valuation_accuracy": "VALUATION ACCURACY",
+      "valuations_per_day": "VALUATIONS PER DAY",
+      "time_reduction": "TIME REDUCTION"
    }
 }
