@@ -5,7 +5,11 @@ import './globals.css';
 import ClientLayout from './components/client-layout';
 import Navigation from './components/navigation';
 import Footer from './components/footer';
+import GoogleAnalytics from './components/google-analytics';
 import {routing} from '@/i18n/routing';
+import {ChatStateProvider} from '@/contexts/ChatStateContext';
+
+import {Montserrat, Quicksand, Anek_Bangla} from 'next/font/google';
 
 export function generateStaticParams() {
    return routing.locales.map((locale) => ({locale}));
@@ -21,7 +25,7 @@ export const metadata: Metadata = {
       description: 'Transforming Brazilian Real Estate through AI and Data Intelligence.',
       images: [
          {
-            url: '/images/ibvi-logo.png',
+            url: '/images/icon.png',
             width: 800,
             height: 600,
             alt: 'IBVI Logo',
