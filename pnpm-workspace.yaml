@@ -1,0 +1,5 @@
+onlyBuiltDependencies:
+  - '@tailwindcss/oxide'
+  - sharp
+ignoredBuiltDependencies:
+  - core-js

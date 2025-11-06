@@ -9,16 +9,17 @@
       "ibviPresentation": "Apresentação IBVI"
    },
    "hero": {
-      "title": "Revolucionando",
-      "subtitle": "o Mercado Imobiliário Brasileiro",
+      "title": "Revolucionando o",
+      "subtitle": "Mercado Imobiliário Brasileiro",
       "description": "O IBVI busca revolucionar o Mercado Imobiliário Brasileiro com seu sistema próprio de avaliações, processos automatizados, resultados mais precisos e escaláveis por meio de Inteligência Artificial.",
       "tagline": " Uma plataforma única e estratégica para um mercado de US$ 4 trilhões",
       "cta_primary": "Conheça a pesquisa",
       "cta_secondary": "Desafios do Mercado"
    },
    "overview": {
+      "real_estate_market": "Mercado Imobiliário",
       "title": "Valoração atual do <primary>Mercado Imobiliário Brasileiro</primary>",
-      "main_paragraph": "O Mercado Imobiliário Brasileiro é da ordem de US$4 trilhões em valor total de estoque de ativos, cálculo que utiliza como base o valor do PIB (Produto Interno Bruto) nacional. Frente às transações anuais, o mercado nacional é de US$100 bilhões.",
+      "main_paragraph": "O mercado imobiliário brasileiro vale cerca de US$ 4 trilhões, com US$ 100 bilhões em transações anuais.",
       "market_value_stat_value": "US$ 4T",
       "market_value_stat_label": "Valor Total de Ativos no Mercado",
       "annual_transactions_stat_value": "US$ 100BI",
@@ -36,7 +37,7 @@
    },
    "challenges": {
       "title": "Expertise da Plataforma e <primary>Desafios do Mercado</primary>",
-      "main_paragraph": "O IBVI nasce com uma proposta técnica clara: corrigir as distorções estruturais do setor de avaliação imobiliária no Brasil, por meio de um sistema robusto com automação de dados, promovendo uma eficiência inédita no mercado.",
+      "main_paragraph": "O IBVI propõe corrigir distorções na avaliação imobiliária no Brasil com um sistema robusto e automação de dados, elevando a eficiência do mercado.",
       "standardization_gaps": {
          "title": "Padronização com Inteligência Artificial",
          "description": "Mais de 70% dos avaliadores ainda utilizam planilhas manuais. O IBVI substitui esses métodos com modelos automatizados via IA, oferecendo laudos padronizados, auditáveis e atualizados em tempo real."
@@ -56,22 +57,31 @@
    },
    "solution": {
       "title": " Plataforma IBVI <primary>Potencializada por IA</primary>",
-      "description": "O IBVI tem como propósito se consolidar como a principal autoridade em avaliação imobiliária no Brasil. Combinando o uso de Inteligência Artificial de última geração, expertise regulatória e acesso a dados exclusivos, a plataforma promove um sistema pautado pela transparência, precisão e confiança.",
+      "description": "IBVI quer ser referência nacional em avaliação imobiliária, usando IA, expertise regulatória e dados exclusivos para garantir transparência e precisão.",
+      "technology_innovation_badge": "Tecnologia & Inovação",
       "data_driven_valuations": {
          "title": "Redução Inedita de Prazo",
-         "description": "A plataforma IBVI reduz em até 60% o tempo de transações, automatizando análises com IA própria e entregando avaliações precisas, rastreáveis e alinhadas ao padrão solicitado."
+         "description": "IBVI acelera transações em até 60% ao usar IA própria para gerar avaliações rápidas, precisas e rastreáveis, sempre em conformidade com os padrões exigidos."
       },
       "predictive_analytics": {
          "title": "Maior Eficiência Operacional",
-         "description": "O sistema automatiza etapas críticas como validação e precificação, reduzindo a dependência de fluxos manuais e acelerando o cumprimento das exigências da Resolução CMN nº 4.951/2021."
+         "description": "IBVI automatiza validação e precificação, cortando processos manuais e agilizando o cumprimento da Resolução CMN nº 4.951/2021."
+      },
+      "intelligent_matching": {
+         "title": "Matching Inteligente",
+         "description": "Conecta compradores e imóveis com 95% de compatibilidade"
       },
       "intelligent_search": {
-         "title": "Índice Padronizado Próprio",
-         "description": "Inspirado no EPRA Index, o IBVI cria o primeiro índice de imóveis de luxo do Brasil com base em variáveis como área, localização, amenidades e histórico oficial de transações."
+         "title": "Índice Padronizado",
+         "description": "Primeiro índice de imóveis de luxo do Brasil"
+      },
+      "data_driven_decisions": {
+         "title": "Decisões Data-Driven",
+         "description": "Recomendações baseadas em mais de 50 variáveis de mercado atualizadas em tempo real"
       },
       "standardized_index": {
-         "title": "Autoridade em Avaliações",
-         "description": " Com IA avançada, inteligência de dados e expertise regulatória, o IBVI se posiciona como referência em avaliação de imóveis de alto padrão, promovendo confiança e transparência."
+         "title": "Predição de Tendências",
+         "description": "Antecipa movimentos de mercado com 87% de precisão"
       },
       "quote": "\"A plataforma de avaliação proprietária da IBVI representa uma mudança de paradigma na forma como os imóveis de luxo brasileiros são avaliados e transacionados.\""
    },
@@ -105,6 +115,9 @@
       "title": "Conheça a Plataforma IBVI",
       "subtitle": "Revolucionando o Mercado Imobiliário Brasileiro com Inteligência Artificial",
       "description": "A plataforma IBVI está na vanguarda da transformação do mercado imobiliário brasileiro de US$ 4 trilhões através de Inteligência Artificial de ponta e análise de dados, trazendo transparência e precisão sem precedentes às avaliações imobiliárias.",
+      "about_badge": "Sobre o IBVI",
+      "expertise_badge": "Experiência Comprovada",
+      "technology_badge": "Tecnologia Avançada",
       "mission": {
          "title": "Nossa Missão",
          "transparency": {
@@ -140,7 +153,7 @@
       },
       "expertise": {
          "title": "Nossa Expertise",
-         "description": "O IBVI é formado por especialistas em Engenharia, Ciência de Dados, Economia, Comunicação e Mercado Financeiro. Essa integração técnica garante avaliações precisas, seguras e compatíveis com os padrões exigidos por instituições e fundos.",
+         "description": "O IBVI integra especialistas de várias áreas para oferecer avaliações precisas e seguras, em conformidade com padrões institucionais e de fundos.",
          "experience_years": "15+",
          "experience_description": "Anos de Experiência Combinada em Imóveis",
          "data_points": "50M+",
@@ -166,7 +179,35 @@
       "subscribe_title": "Receba atualizações",
       "subscribe_description": "Conheça nossa pesquisa, últimos desenvolvimentos e oportunidades de investimento.",
       "email_placeholder": "Seu e-mail",
+      "subscribe_success": "Obrigado! Verifique sua caixa de entrada para confirmar a inscrição.",
+      "subscribe_error": "Ocorreu um erro. Por favor, tente novamente mais tarde.",
       "copyright": "© {currentYear} IBVI. Todos os direitos reservados.",
       "tagline": "IBVI: O futuro da avaliação imobiliária começa aqui."
+   },
+   "market_recognition": {
+      "title": "Reconhecimento do Mercado",
+      "description": "Referência em avaliação imobiliária com IA, reconhecida por instituições financeiras e gestores com mais de R$1,2 trilhão sob gestão."
+   },
+   "next_steps": {
+      "title": "Próximos Passos",
+      "precision": "Precisão",
+      "faster": "Mais Rápido",
+      "market": "Mercado"
+   },
+   "mission_stats": {
+      "valuation_accuracy": "PRECISÃO NAS AVALIAÇÕES",
+      "valuations_per_day": "AVALIAÇÕES POR DIA",
+      "time_reduction": "REDUÇÃO DE TEMPO"
+   },
+   "team": {
+      "title": "Equipe Multidisciplinar",
+      "engineering": "Engenharia",
+      "engineering_description": "Arquitetura de sistemas",
+      "data_science": "Ciência de Dados",
+      "data_science_description": "Machine Learning & IA",
+      "economics": "Economia",
+      "economics_description": "Análise de mercado",
+      "financial_market": "Mercado Financeiro",
+      "financial_market_description": "Gestão de investimentos"
    }
 }

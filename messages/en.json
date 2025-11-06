@@ -17,6 +17,7 @@
       "cta_secondary": "Market Challenges"
    },
    "overview": {
+      "real_estate_market": "Real Estate Market",
       "title": "Brazilian Real Estate: <primary>Current Valuation</primary>",
       "main_paragraph": "The Brazilian real estate market is valued at approximately USD 4 trillion in total asset stock, based on the country's Gross Domestic Product (GDP). Annual transaction volume reaches USD 100 billion, reflecting the sector’s scale and relevance.",
       "market_value_stat_value": "$4T",
@@ -57,6 +58,7 @@
    "solution": {
       "title": "IBVI Platform <primary>Powered by AI</primary>",
       "description": "IBVI aims to become the leading authority in real estate valuation in Brazil. By combining cutting-edge Artificial Intelligence, regulatory expertise, and access to data, the platform delivers a system built on transparency, precision, and trust.",
+      "technology_innovation_badge": "Technology & Innovation",
       "data_driven_valuations": {
          "title": "Unprecedented Time Reduction",
          "description": " The IBVI platform reduces transaction times by up to 60%, automating analyses with proprietary AI and delivering accurate, traceable valuations aligned with predefined standards."
@@ -65,13 +67,21 @@
          "title": "Greater Operational Efficiency",
          "description": " The system automates critical stages such as validation and pricing, reducing reliance on manual processes and speeding up compliance with CMN Resolution No. 4,951/2021."
       },
+      "intelligent_matching": {
+         "title": "Intelligent Matching",
+         "description": "Connects buyers and properties with 95% compatibility"
+      },
       "intelligent_search": {
-         "title": "Proprietary Standardized Index",
-         "description": "Inspired by the EPRA Index, IBVI introduces Brazil’s first luxury real estate index based on key variables such as area, location, amenities, and official transaction history."
+         "title": "Standardized Index",
+         "description": "Brazil's first luxury real estate index"
+      },
+      "data_driven_decisions": {
+         "title": "Data-Driven Decisions",
+         "description": "Recommendations based on over 50 market variables updated in real time"
       },
       "standardized_index": {
-         "title": "Authority in Property Valuation",
-         "description": " With advanced AI, robust data intelligence, and deep regulatory knowledge, IBVI positions itself as the reference in high-end property valuation, driving trust and market transparency."
+         "title": "Trend Prediction",
+         "description": "Anticipates market movements with 87% accuracy"
       },
       "quote": "\"IBVI's proprietary valuation platform represents a paradigm shift in how Brazilian luxury real estate is evaluated and transacted.\""
    },
@@ -104,7 +114,10 @@
    "about": {
       "title": "Discover the IBVI Platform",
       "subtitle": "Revolutionizing Brazilian Real Estate with AI Intelligence",
-      "description": "The IBVI platform is at the forefront of transforming Brazil’s $4 trillion real estate market through cutting-edge Artificial Intelligence and data analysis, bringing unprecedented transparency and precision to property valuations.",
+      "description": "The IBVI platform is at the forefront of transforming Brazil's $4 trillion real estate market through cutting-edge Artificial Intelligence and data analysis, bringing unprecedented transparency and precision to property valuations.",
+      "about_badge": "About IBVI",
+      "expertise_badge": "Proven Expertise",
+      "technology_badge": "Advanced Technology",
       "mission": {
          "title": "Our Mission",
          "transparency": {
@@ -162,7 +175,35 @@
       "subscribe_title": "Subscribe for Updates",
       "subscribe_description": "Explore our research, latest developments, and investment opportunities.",
       "email_placeholder": "Your email",
+      "subscribe_success": "Thank you! Please check your inbox to confirm your subscription.",
+      "subscribe_error": "An error occurred. Please try again later.",
       "copyright": "© {currentYear} IBVI. All rights reserved.",
       "tagline": "IBVI: The future of Real Estate Valuation starts here."
+   },
+   "market_recognition": {
+      "title": "Market Recognition",
+      "description": "Reference in real estate valuation with AI, recognized by financial institutions and asset managers with over R$1.2 trillion under management."
+   },
+   "next_steps": {
+      "title": "Next Steps",
+      "precision": "Precision",
+      "faster": "Faster",
+      "market": "Market"
+   },
+   "team": {
+      "title": "Multidisciplinary Team",
+      "engineering": "Engineering",
+      "engineering_description": "Systems Architecture",
+      "data_science": "Data Science",
+      "data_science_description": "Machine Learning & AI",
+      "economics": "Economics",
+      "economics_description": "Market Analysis",
+      "financial_market": "Financial Market",
+      "financial_market_description": "Investment Management"
+   },
+   "mission_stats": {
+      "valuation_accuracy": "VALUATION ACCURACY",
+      "valuations_per_day": "VALUATIONS PER DAY",
+      "time_reduction": "TIME REDUCTION"
    }
 }

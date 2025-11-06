@@ -97,6 +97,9 @@ module.exports = {
                dark: '#374151', // gray-700
             },
 
+            // Secondary colors for gradients
+            secondary: '#007A8B',
+
             // Override default Tailwind emerald with IBVI teal shades
             emerald: {
                300: '#4d8590',
@@ -109,6 +112,32 @@ module.exports = {
          fontFamily: {
             sans: ['Inter', 'sans-serif'],
             heading: ['Inter', 'sans-serif'],
+         },
+         borderWidth: {
+            3: '3px',
+         },
+         animation: {
+            'fade-in': 'fadeIn 0.5s ease-in-out',
+            'fade-in-up': 'fadeInUp 0.8s ease-out',
+            'slide-in': 'slideIn 0.5s ease-out',
+         },
+         keyframes: {
+            fadeIn: {
+               '0%': {opacity: '0'},
+               '100%': {opacity: '1'},
+            },
+            fadeInUp: {
+               '0%': {opacity: '0', transform: 'translateY(30px)'},
+               '100%': {opacity: '1', transform: 'translateY(0)'},
+            },
+            slideIn: {
+               '0%': {transform: 'translateX(-100%)'},
+               '100%': {transform: 'translateX(0)'},
+            },
+         },
+         boxShadow: {
+            xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+            '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
          },
       },
    },

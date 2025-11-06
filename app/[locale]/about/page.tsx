@@ -22,7 +22,7 @@ export default function About() {
    }, []);
 
    return (
-      <div className="bg-surface-primary">
+      <div className="min-h-screen bg-white dark:bg-gray-900">
          <AboutHero />
          <MissionSection />
          <TechnologySection />

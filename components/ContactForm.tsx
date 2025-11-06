@@ -2,7 +2,11 @@
 
 import React, {useState} from 'react';
 import * as fbq from '@/lib/meta-pixel/meta-pixel';
-import {getFbpCookie, getFbcFromUrl, generateEventId, formatPhoneForMeta} from '@/lib/meta-pixel/meta-utils';
+import {
+   getFbpCookie,
+   getFbcFromUrl,
+   // generateEventId, formatPhoneForMeta
+} from '@/lib/meta-pixel/meta-utils';
 
 interface ContactFormData {
    name: string;
@@ -34,56 +38,53 @@ export default function ContactForm() {
       setSubmitStatus('idle');
 
       try {
-         const eventId = generateEventId('contact');
-
-         // Track contact event client-side
-         fbq.contact({
-            content_name: 'Contact Form Submission',
-            content_category: 'Contact',
-            value: 0,
-            currency: 'BRL',
-            form_name: 'Main Contact Form',
-            page_url: window.location.href,
-            page_title: document.title,
-         });
-
-         // Send to server-side API
-         const response = await fetch('/api/event', {
-            method: 'POST',
-            headers: {
-               'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-               event_name: 'Contact',
-               event_time: Math.floor(Date.now() / 1000),
-               action_source: 'website',
-               event_source_url: window.location.href,
-               user_data: {
-                  em: formData.email.toLowerCase().trim(),
-                  ph: formatPhoneForMeta(formData.phone, '+55'),
-                  fn: formData.name.split(' ')[0].toLowerCase().trim(),
-                  ln: formData.name.split(' ').slice(1).join(' ').toLowerCase().trim(),
-                  country: 'br',
-                  client_user_agent: navigator.userAgent,
-                  fbp: getFbpCookie(),
-                  fbc: getFbcFromUrl(),
-               },
-               custom_data: {
-                  content_name: 'Contact Form Submission',
-                  content_category: 'Contact',
-                  form_name: 'Main Contact Form',
-                  message_preview: formData.message.substring(0, 50),
-               },
-               event_id: eventId,
-            }),
-         });
-
-         if (response.ok) {
-            setSubmitStatus('success');
-            setFormData({name: '', email: '', phone: '', message: ''});
-         } else {
-            setSubmitStatus('error');
-         }
+         // const eventId = generateEventId('contact');
+         // // Track contact event client-side
+         // fbq.contact({
+         //    content_name: 'Contact Form Submission',
+         //    content_category: 'Contact',
+         //    value: 0,
+         //    currency: 'BRL',
+         //    form_name: 'Main Contact Form',
+         //    page_url: window.location.href,
+         //    page_title: document.title,
+         // });
+         // // Send to server-side API
+         // const response = await fetch('/api/event', {
+         //    method: 'POST',
+         //    headers: {
+         //       'Content-Type': 'application/json',
+         //    },
+         //    body: JSON.stringify({
+         //       event_name: 'Contact',
+         //       event_time: Math.floor(Date.now() / 1000),
+         //       action_source: 'website',
+         //       event_source_url: window.location.href,
+         //       user_data: {
+         //          em: formData.email.toLowerCase().trim(),
+         //          ph: formatPhoneForMeta(formData.phone, '+55'),
+         //          fn: formData.name.split(' ')[0].toLowerCase().trim(),
+         //          ln: formData.name.split(' ').slice(1).join(' ').toLowerCase().trim(),
+         //          country: 'br',
+         //          client_user_agent: navigator.userAgent,
+         //          fbp: getFbpCookie(),
+         //          fbc: getFbcFromUrl(),
+         //       },
+         //       custom_data: {
+         //          content_name: 'Contact Form Submission',
+         //          content_category: 'Contact',
+         //          form_name: 'Main Contact Form',
+         //          message_preview: formData.message.substring(0, 50),
+         //       },
+         //       event_id: eventId,
+         //    }),
+         // });
+         // if (response.ok) {
+         //    setSubmitStatus('success');
+         //    setFormData({name: '', email: '', phone: '', message: ''});
+         // } else {
+         //    setSubmitStatus('error');
+         // }
       } catch (error) {
          console.error('Error submitting form:', error);
          setSubmitStatus('error');

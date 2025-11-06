@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       siteName: 'IBVI',
       images: [
          {
-            url: 'https://img.mbras.com.br/ibvi/ibvi.png',
+            url: '/images/icon.png',
             alt: 'IBVI Logo',
          },
       ],
