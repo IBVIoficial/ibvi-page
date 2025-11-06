@@ -5,6 +5,7 @@ import {useTranslations} from 'next-intl';
 
 const MissionSection = () => {
    const t = useTranslations('about');
+   const missionStatsT = useTranslations('mission_stats');
 
    return (
       <section id="mission" className="py-20 md:py-28 bg-white dark:bg-gray-900 relative overflow-hidden">
@@ -23,8 +24,6 @@ const MissionSection = () => {
             <div className="max-w-7xl mx-auto">
                {/* Section Header */}
                <div className="text-center mb-16">
-                  
-
                   <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-semibold mb-6 animate-fade-in" data-delay="100">
                      <span className="text-[#1f2937] dark:text-white">{t('mission.title').split(' ').slice(0, -1).join(' ')} </span>
                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F]">
@@ -112,21 +111,27 @@ const MissionSection = () => {
                      <div className="text-4xl md:text-5xl font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F] mb-4">
                         90%+
                      </div>
-                     <p className="text-sm font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">Precisão nas Avaliações</p>
+                     <p className="text-sm font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">
+                        {missionStatsT('valuation_accuracy')}
+                     </p>
                   </div>
 
                   <div className="text-center animate-fade-in" data-delay="600">
                      <div className="text-4xl md:text-5xl font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F] mb-4">
                         1M+
                      </div>
-                     <p className="text-sm font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">Avaliações por Dia</p>
+                     <p className="text-sm font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">
+                        {missionStatsT('valuations_per_day')}
+                     </p>
                   </div>
 
                   <div className="text-center animate-fade-in" data-delay="700">
                      <div className="text-4xl md:text-5xl font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F] mb-4">
                         60%
                      </div>
-                     <p className="text-sm font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">Redução de Tempo</p>
+                     <p className="text-sm font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider">
+                        {missionStatsT('time_reduction')}
+                     </p>
                   </div>
                </div>
             </div>

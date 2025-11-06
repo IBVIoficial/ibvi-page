@@ -183,5 +183,31 @@
       "subscribe_error": "Ocorreu um erro. Por favor, tente novamente mais tarde.",
       "copyright": "© {currentYear} IBVI. Todos os direitos reservados.",
       "tagline": "IBVI: O futuro da avaliação imobiliária começa aqui."
+   },
+   "market_recognition": {
+      "title": "Reconhecimento do Mercado",
+      "description": "Referência em avaliação imobiliária com IA, reconhecida por instituições financeiras e gestores com mais de R$1,2 trilhão sob gestão."
+   },
+   "next_steps": {
+      "title": "Próximos Passos",
+      "precision": "Precisão",
+      "faster": "Mais Rápido",
+      "market": "Mercado"
+   },
+   "mission_stats": {
+      "valuation_accuracy": "PRECISÃO NAS AVALIAÇÕES",
+      "valuations_per_day": "AVALIAÇÕES POR DIA",
+      "time_reduction": "REDUÇÃO DE TEMPO"
+   },
+   "team": {
+      "title": "Equipe Multidisciplinar",
+      "engineering": "Engenharia",
+      "engineering_description": "Arquitetura de sistemas",
+      "data_science": "Ciência de Dados",
+      "data_science_description": "Machine Learning & IA",
+      "economics": "Economia",
+      "economics_description": "Análise de mercado",
+      "financial_market": "Mercado Financeiro",
+      "financial_market_description": "Gestão de investimentos"
    }
 }

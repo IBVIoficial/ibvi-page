@@ -118,6 +118,19 @@ const SolutionSection = () => {
                            {t('predictive_analytics.description')}
                         </p>
                      </div>
+
+                     {/* Feature 5 - Data-Driven Decisions */}
+                     <div className="bg-surface-primary dark:bg-gray-800 rounded-2xl p-6 border border-border-light dark:border-gray-700 hover:border-[#005A6B]/20 dark:hover:border-[#005A6B]/30 transition-all duration-300">
+                        <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-xl mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                           </svg>
+                        </div>
+                        <h3 className="text-base font-inter font-medium text-text-primary dark:text-white mb-2">{t('data_driven_decisions.title')}</h3>
+                        <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
+                           {t('data_driven_decisions.description')}
+                        </p>
+                     </div>
                   </div>
                </div>
 

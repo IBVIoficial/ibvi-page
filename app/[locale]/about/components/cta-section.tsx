@@ -4,7 +4,8 @@ import React from 'react';
 import {useTranslations} from 'next-intl';
 
 const CTASection = () => {
-   const t = useTranslations('about');
+   const aboutT = useTranslations('about');
+   const nextT = useTranslations('next_steps');
 
    return (
       <section className="py-20 md:py-28 bg-gradient-to-br from-[#005A6B] via-[#006B7D] to-[#007A8F] relative overflow-hidden">
@@ -26,18 +27,18 @@ const CTASection = () => {
                {/* Badge */}
                <div className="inline-flex items-center gap-2 mb-8 animate-fade-in" data-delay="0">
                   <div className="w-8 h-[1px] bg-gradient-to-r from-transparent to-white/50"></div>
-                  <span className="text-xs font-medium tracking-[0.2em] text-white/80 uppercase">Próximos Passos</span>
+                  <span className="text-xs font-medium tracking-[0.2em] text-white/80 uppercase">{nextT('title')}</span>
                   <div className="w-8 h-[1px] bg-gradient-to-l from-transparent to-white/50"></div>
                </div>
 
                {/* Main Title */}
                <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-semibold text-white mb-6 animate-fade-in" data-delay="100">
-                  {t('cta.title')}
+                  {aboutT('cta.title')}
                </h2>
 
                {/* Description */}
                <p className="text-lg md:text-xl font-inter font-light text-white/90 mb-12 leading-relaxed max-w-3xl mx-auto animate-fade-in" data-delay="200">
-                  {t('cta.description')}
+                  {aboutT('cta.description')}
                </p>
 
                {/* CTA Buttons */}
@@ -54,7 +55,7 @@ const CTASection = () => {
                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                         />
                      </svg>
-                     {t('cta.get_in_touch')}
+                     {aboutT('cta.get_in_touch')}
                   </a>
                </div>
 
@@ -67,7 +68,7 @@ const CTASection = () => {
                         </svg>
                      </div>
                      <div className="text-3xl font-inter font-bold text-white mb-1">95%</div>
-                     <p className="text-xs text-white/70 uppercase tracking-wider">Precisão</p>
+                     <p className="text-xs text-white/70 uppercase tracking-wider">{nextT('precision')}</p>
                   </div>
 
                   <div className="text-center">
@@ -77,7 +78,7 @@ const CTASection = () => {
                         </svg>
                      </div>
                      <div className="text-3xl font-inter font-bold text-white mb-1">60%</div>
-                     <p className="text-xs text-white/70 uppercase tracking-wider">Mais Rápido</p>
+                     <p className="text-xs text-white/70 uppercase tracking-wider">{nextT('faster')}</p>
                   </div>
 
                   <div className="text-center">
@@ -92,7 +93,7 @@ const CTASection = () => {
                         </svg>
                      </div>
                      <div className="text-3xl font-inter font-bold text-white mb-1">$4T</div>
-                     <p className="text-xs text-white/70 uppercase tracking-wider">Mercado</p>
+                     <p className="text-xs text-white/70 uppercase tracking-wider">{nextT('market')}</p>
                   </div>
                </div>
             </div>

@@ -39,8 +39,8 @@
       "title": "Capacidades de la Plataforma y <primary>Desafíos del Sector</primary>",
       "main_paragraph": "El IBVI surge con una propuesta técnica bien definida: corregir las distorsiones estructurales del sector de valuación inmobiliaria en Brasil mediante un sistema sólido con automatización de datos, impulsando una eficiencia inédita en el mercado.",
       "standardization_gaps": {
-         "title": "Padronización con Inteligencia Artificial",
-         "description": "Más del 70% de los profesionales de valuación aún recurren a planillas manuales. El IBVI moderniza este processo mediante modelos automatizados basados en Inteligencia Artificial, entregando informes estandarizados, auditables y con actualización en tiempo real."
+         "title": "Estandarización con Inteligencia Artificial",
+         "description": "Más del 70% de los profesionales de valuación aún recurren a planillas manuales. El IBVI moderniza este proceso mediante modelos automatizados basados en Inteligencia Artificial, entregando informes estandarizados, auditables y con actualización en tiempo real."
       },
       "buyer_hurdles": {
          "title": "Valuación Técnica y Estructurada",
@@ -164,7 +164,7 @@
       "cta": {
          "title": "¿Listo para Transformar tu Experiencia Inmobiliaria?",
          "description": "Únete a nosotros en la revolución del mercado inmobiliario brasileño con tecnología de IA de vanguardia y precisión incomparable.",
-         "explore_solution": "Descubra nuestra pesquisa",
+         "explore_solution": "Descubra nuestra investigación",
          "get_in_touch": "Contáctanos"
       }
    },
@@ -179,5 +179,31 @@
       "subscribe_error": "Ocurrió un error. Inténtelo de nuevo más tarde.",
       "copyright": "© {currentYear} IBVI. Todos los derechos reservados.",
       "tagline": "IBVI: El futuro de la valuación inmobiliaria comienza aquí."
+   },
+   "market_recognition": {
+      "title": "Reconocimiento del Mercado",
+      "description": "Referencia en valuación inmobiliaria con IA, reconocida por instituciones financieras y gestores con más de R$1,2 billones bajo gestión."
+   },
+   "next_steps": {
+      "title": "Próximos Pasos",
+      "precision": "Precisión",
+      "faster": "Más Rápido",
+      "market": "Mercado"
+   },
+   "mission_stats": {
+      "valuation_accuracy": "PRECISIÓN EN VALUACIONES",
+      "valuations_per_day": "VALUACIONES POR DÍA",
+      "time_reduction": "REDUCCIÓN DE TIEMPO"
+   },
+   "team": {
+      "title": "Equipo Multidisciplinario",
+      "engineering": "Ingeniería",
+      "engineering_description": "Arquitectura de sistemas",
+      "data_science": "Ciencia de Datos",
+      "data_science_description": "Machine Learning e IA",
+      "economics": "Economía",
+      "economics_description": "Análisis de mercado",
+      "financial_market": "Mercado Financiero",
+      "financial_market_description": "Gestión de inversiones"
    }
 }

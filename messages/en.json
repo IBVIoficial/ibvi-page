@@ -179,5 +179,31 @@
       "subscribe_error": "An error occurred. Please try again later.",
       "copyright": "© {currentYear} IBVI. All rights reserved.",
       "tagline": "IBVI: The future of Real Estate Valuation starts here."
+   },
+   "market_recognition": {
+      "title": "Market Recognition",
+      "description": "Reference in real estate valuation with AI, recognized by financial institutions and asset managers with over R$1.2 trillion under management."
+   },
+   "next_steps": {
+      "title": "Next Steps",
+      "precision": "Precision",
+      "faster": "Faster",
+      "market": "Market"
+   },
+   "team": {
+      "title": "Multidisciplinary Team",
+      "engineering": "Engineering",
+      "engineering_description": "Systems Architecture",
+      "data_science": "Data Science",
+      "data_science_description": "Machine Learning & AI",
+      "economics": "Economics",
+      "economics_description": "Market Analysis",
+      "financial_market": "Financial Market",
+      "financial_market_description": "Investment Management"
+   },
+   "mission_stats": {
+      "valuation_accuracy": "VALUATION ACCURACY",
+      "valuations_per_day": "VALUATIONS PER DAY",
+      "time_reduction": "TIME REDUCTION"
    }
 }

@@ -4,7 +4,10 @@ import React from 'react';
 import {useTranslations} from 'next-intl';
 
 const ExpertiseSection = () => {
-   const t = useTranslations('about');
+   const t = useTranslations();
+   const aboutT = useTranslations('about');
+   const teamT = useTranslations('team');
+   const marketT = useTranslations('market_recognition');
 
    return (
       <section className="py-20 md:py-28 bg-white dark:bg-gray-900 relative overflow-hidden">
@@ -25,14 +28,14 @@ const ExpertiseSection = () => {
                <div className="text-center mb-16">
                   <div className="inline-flex items-center gap-2 mb-6 animate-fade-in" data-delay="0">
                      <div className="w-8 h-[1px] bg-gradient-to-r from-transparent to-[#005A6B]"></div>
-                     <span className="text-xs font-medium tracking-[0.2em] text-[#005A6B] dark:text-[#005A6B] uppercase">{t('expertise_badge')}</span>
+                     <span className="text-xs font-medium tracking-[0.2em] text-[#005A6B] dark:text-[#005A6B] uppercase">{aboutT('expertise_badge')}</span>
                      <div className="w-8 h-[1px] bg-gradient-to-l from-transparent to-[#005A6B]"></div>
                   </div>
 
                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-inter font-semibold mb-6 animate-fade-in" data-delay="100">
-                     <span className="text-[#1f2937] dark:text-white">{t('expertise.title').split(' ').slice(0, -1).join(' ')} </span>
+                     <span className="text-[#1f2937] dark:text-white">{aboutT('expertise.title').split(' ').slice(0, -1).join(' ')} </span>
                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F]">
-                        {t('expertise.title').split(' ').slice(-1).join(' ')}
+                        {aboutT('expertise.title').split(' ').slice(-1).join(' ')}
                      </span>
                   </h2>
 
@@ -40,7 +43,7 @@ const ExpertiseSection = () => {
                      className="text-base md:text-md lg:text-lg font-inter font-light text-text-tertiary dark:text-gray-400 max-w-3xl mx-auto leading-relaxed animate-fade-in"
                      data-delay="200"
                   >
-                     {t('expertise.description')}
+                     {aboutT('expertise.description')}
                   </p>
                </div>
 
@@ -54,10 +57,10 @@ const ExpertiseSection = () => {
                            <div className="flex items-center justify-between">
                               <div>
                                  <div className="text-4xl md:text-5xl font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F] mb-1 group-hover:from-[#005A6B] group-hover:to-[#009AAF]">
-                                    {t('expertise.experience_years')}
+                                    {aboutT('expertise.experience_years')}
                                  </div>
                                  <p className="text-xs font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider group-hover:text-[#005A6B]/80 dark:group-hover:text-[#005A6B]/90 transition-colors duration-300">
-                                    {t('expertise.experience_description')}
+                                    {aboutT('expertise.experience_description')}
                                  </p>
                               </div>
                               <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B]/10 to-[#007A8F]/10 rounded-xl group-hover:scale-110 group-hover:from-[#005A6B]/20 group-hover:to-[#007A8F]/20 group-hover:rotate-6 transition-all duration-300">
@@ -82,10 +85,10 @@ const ExpertiseSection = () => {
                            <div className="flex items-center justify-between">
                               <div>
                                  <div className="text-4xl md:text-5xl font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F] mb-1 group-hover:from-[#005A6B] group-hover:to-[#009AAF]">
-                                    {t('expertise.data_points')}
+                                    {aboutT('expertise.data_points')}
                                  </div>
                                  <p className="text-xs font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider group-hover:text-[#005A6B]/80 dark:group-hover:text-[#005A6B]/90 transition-colors duration-300">
-                                    {t('expertise.data_points_description')}
+                                    {aboutT('expertise.data_points_description')}
                                  </p>
                               </div>
                               <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B]/10 to-[#007A8F]/10 rounded-xl group-hover:scale-110 group-hover:from-[#005A6B]/20 group-hover:to-[#007A8F]/20 group-hover:rotate-6 transition-all duration-300">
@@ -115,10 +118,10 @@ const ExpertiseSection = () => {
                            <div className="flex items-center justify-between">
                               <div>
                                  <div className="text-4xl md:text-5xl font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#005A6B] to-[#007A8F] mb-1 group-hover:from-[#005A6B] group-hover:to-[#009AAF]">
-                                    {t('expertise.accuracy_rate')}
+                                    {aboutT('expertise.accuracy_rate')}
                                  </div>
                                  <p className="text-xs font-inter font-medium text-text-tertiary dark:text-gray-400 uppercase tracking-wider group-hover:text-[#005A6B]/80 dark:group-hover:text-[#005A6B]/90 transition-colors duration-300">
-                                    {t('expertise.accuracy_description')}
+                                    {aboutT('expertise.accuracy_description')}
                                  </p>
                               </div>
                               <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B]/10 to-[#007A8F]/10 rounded-xl group-hover:scale-110 group-hover:from-[#005A6B]/20 group-hover:to-[#007A8F]/20 group-hover:rotate-6 transition-all duration-300">
@@ -144,25 +147,25 @@ const ExpertiseSection = () => {
                      <div className="group relative">
                         <div className="bg-surface-primary dark:bg-gray-800 rounded-3xl p-8 border border-border-light dark:border-gray-700 hover:border-[#005A6B]/50 dark:hover:border-[#005A6B]/60 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-[#005A6B]/10 group-hover:-translate-y-1">
                            <h3 className="text-2xl font-inter font-semibold text-text-primary dark:text-white mb-6 group-hover:text-[#005A6B] transition-colors duration-300">
-                              Equipe Multidisciplinar
+                              {teamT('title')}
                            </h3>
 
                            <div className="grid grid-cols-2 gap-4">
                               <div className="bg-gradient-to-br from-[#005A6B]/5 to-[#007A8F]/5 rounded-xl p-4 hover:from-[#005A6B]/10 hover:to-[#007A8F]/10 transition-all duration-300 transform hover:scale-105">
-                                 <div className="text-[#005A6B] font-semibold mb-1">Engenharia</div>
-                                 <p className="text-xs text-text-tertiary dark:text-gray-400">Arquitetura de sistemas</p>
+                                 <div className="text-[#005A6B] font-semibold mb-1">{teamT('engineering')}</div>
+                                 <p className="text-xs text-text-tertiary dark:text-gray-400">{teamT('engineering_description')}</p>
                               </div>
                               <div className="bg-gradient-to-br from-[#005A6B]/5 to-[#007A8F]/5 rounded-xl p-4 hover:from-[#005A6B]/10 hover:to-[#007A8F]/10 transition-all duration-300 transform hover:scale-105">
-                                 <div className="text-[#005A6B] font-semibold mb-1">Ciência de Dados</div>
-                                 <p className="text-xs text-text-tertiary dark:text-gray-400">Machine Learning & IA</p>
+                                 <div className="text-[#005A6B] font-semibold mb-1">{teamT('data_science')}</div>
+                                 <p className="text-xs text-text-tertiary dark:text-gray-400">{teamT('data_science_description')}</p>
                               </div>
                               <div className="bg-gradient-to-br from-[#005A6B]/5 to-[#007A8F]/5 rounded-xl p-4 hover:from-[#005A6B]/10 hover:to-[#007A8F]/10 transition-all duration-300 transform hover:scale-105">
-                                 <div className="text-[#005A6B] font-semibold mb-1">Economia</div>
-                                 <p className="text-xs text-text-tertiary dark:text-gray-400">Análise de mercado</p>
+                                 <div className="text-[#005A6B] font-semibold mb-1">{teamT('economics')}</div>
+                                 <p className="text-xs text-text-tertiary dark:text-gray-400">{teamT('economics_description')}</p>
                               </div>
                               <div className="bg-gradient-to-br from-[#005A6B]/5 to-[#007A8F]/5 rounded-xl p-4 hover:from-[#005A6B]/10 hover:to-[#007A8F]/10 transition-all duration-300 transform hover:scale-105">
-                                 <div className="text-[#005A6B] font-semibold mb-1">Mercado Financeiro</div>
-                                 <p className="text-xs text-text-tertiary dark:text-gray-400">Gestão de investimentos</p>
+                                 <div className="text-[#005A6B] font-semibold mb-1">{teamT('financial_market')}</div>
+                                 <p className="text-xs text-text-tertiary dark:text-gray-400">{teamT('financial_market_description')}</p>
                               </div>
                            </div>
                         </div>
@@ -192,12 +195,11 @@ const ExpertiseSection = () => {
                                     />
                                  </svg>
                                  <h3 className="text-xl font-inter text-white font-semibold group-hover:scale-105 transition-all duration-300">
-                                    Reconhecimento do Mercado
+                                    {marketT('title')}
                                  </h3>
                               </div>
                               <p className="text-white/90 font-light leading-relaxed group-hover:text-white transition-colors duration-300">
-                                 Referência em avaliação imobiliária com IA, reconhecida por instituições financeiras e gestores com mais de R$1,2 trilhão sob
-                                 gestão.
+                                 {marketT('description')}
                               </p>
                            </div>
                         </div>
