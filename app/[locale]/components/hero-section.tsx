@@ -87,19 +87,13 @@ const HeroSection = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 lg:gap-24 items-center w-full max-w-full">
                {/* Left Content - Text */}
                <div className="order-2 lg:order-1 text-center lg:text-left">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-inter font-light leading-[1.1] text-text-primary mb-6 sm:mb-8">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-inter font-light leading-[1.1] text-text-primary mb-12 sm:mb-16 md:mb-20">
                      {t('title')}
                      <br />
-                     <span className="font-normal text-[#005A6B]">{t('subtitle')}</span>
+                     <span className="font-normal text-text-secondary">{t('subtitle')}</span>
                   </h1>
 
-                  <p className="text-base sm:text-lg md:text-xl font-inter font-light text-text-secondary mb-4 sm:mb-6 leading-relaxed">{t('tagline')}</p>
-
-                  <p className="text-sm sm:text-base font-inter font-light text-text-tertiary mb-8 sm:mb-12 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                     {t('description')}
-                  </p>
-
-                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+                  <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start mt-16 sm:mt-20">
                      <a
                         href="#solution"
                         className="bg-[#005A6B] rounded-full inline-block text-white text-surface-primary font-inter font-normal text-sm sm:text-sm tracking-wide px-6 sm:px-8 py-3 sm:py-4 hover:bg-text-secondary transition-colors duration-200 text-center"
