@@ -178,7 +178,101 @@
       "subscribe_success": "¡Gracias! Por favor, revise su bandeja de entrada para confirmar su suscripción.",
       "subscribe_error": "Ocurrió un error. Inténtelo de nuevo más tarde.",
       "copyright": "© {currentYear} IBVI. Todos los derechos reservados.",
+      "privacyPolicy": "Política de Privacidad",
       "tagline": "IBVI: El futuro de la valuación inmobiliaria comienza aquí."
+   },
+   "privacyPolicy": {
+      "title": "Política de Privacidad",
+      "lastUpdated": "Última actualización",
+      "updateDate": "18/06/2026",
+      "intro": {
+         "title": "Introducción",
+         "content": "Esta Política de Privacidad describe cómo Instituto Brasileiro de Valores Imobiliários Ltda. EPP, inscrito en el CNPJ con el nº 47.041.817/0001-71, trata los datos personales de los usuarios de la aplicación IBVI.AI. Al acceder o utilizar IBVI.AI, usted declara conocer las prácticas descritas en esta Política. A efectos de la Ley General de Protección de Datos de Brasil (LGPD), Instituto Brasileiro de Valores Imobiliários Ltda. EPP actúa como controlador de los datos personales tratados en el ámbito de la Aplicación, salvo que se indique de otra manera."
+      },
+      "dataCollected": {
+         "title": "Datos que Recopilamos",
+         "intro": "Podemos recopilar diferentes tipos de datos personales, según la forma de uso de la Aplicación:",
+         "registration": {
+            "title": "Datos de registro y autenticación",
+            "content": "Nombre completo, dirección de correo electrónico, contraseña (almacenada de forma protegida mediante hash y cifrado, cuando corresponda), información de perfil y datos de inicio de sesión mediante Google o Apple, como nombre, correo electrónico e identificador único de la cuenta."
+         },
+         "location": {
+            "title": "Información proporcionada voluntariamente",
+            "content": "Datos, textos, consultas, prompts, documentos, imágenes, valuaciones, información sobre inmuebles u otra información introducida por usted al usar las funcionalidades de la Aplicación."
+         },
+         "usage": {
+            "title": "Datos de uso",
+            "content": "Registros de acceso, eventos de uso, logs, fecha, hora y duración del acceso, además de información de diagnóstico, rendimiento y fallos de la Aplicación."
+         },
+         "technical": {
+            "title": "Datos técnicos",
+            "content": "Dirección IP, tipo y modelo del dispositivo, sistema operativo e identificadores técnicos del dispositivo, de la cuenta o de la sesión, utilizados para seguridad, prevención de fraudes y mejora de la experiencia."
+         }
+      },
+      "dataUsage": {
+         "title": "Cómo Utilizamos los Datos",
+         "intro": "Utilizamos los datos personales para las siguientes finalidades:",
+         "items": {
+            "1": "Crear, autenticar y gestionar cuentas de usuario, permitiendo el acceso seguro a la Aplicación.",
+            "2": "Operar, mantener y mejorar las funcionalidades de la Aplicación.",
+            "3": "Procesar la información que usted introduce y generar respuestas, análisis, estimaciones, clasificaciones, resúmenes y recomendaciones, incluso mediante tecnologías de inteligencia artificial, cuando corresponda.",
+            "4": "Prestar soporte y enviar comunicaciones relacionadas con la cuenta, la seguridad, el funcionamiento o cambios relevantes en la Aplicación.",
+            "5": "Monitorear la estabilidad, seguridad y rendimiento de la plataforma y prevenir fraudes, abusos y accesos no autorizados.",
+            "6": "Cumplir obligaciones legales, regulatorias o determinaciones de autoridades competentes y proteger los derechos e intereses de la Aplicación, de la empresa y de los usuarios."
+         }
+      },
+      "dataSharing": {
+         "title": "Compartición de Datos",
+         "intro": "No vendemos los datos personales de los usuarios. Los datos podrán compartirse solo cuando sea necesario, en los siguientes casos:",
+         "items": {
+            "1": "Con proveedores de autenticación (Google y Apple) y proveedores de infraestructura, alojamiento, base de datos, seguridad, soporte técnico, análisis de rendimiento y operación de la Aplicación.",
+            "2": "Con proveedores de inteligencia artificial, modelos de lenguaje y automatización necesarios para ejecutar las funcionalidades, que actúan como operadores y tratan los datos únicamente conforme a nuestras instrucciones y a la legislación aplicable.",
+            "3": "Con autoridades públicas, organismos reguladores o terceros, cuando lo exija la ley, una decisión judicial o en caso de reorganización societaria, fusión o adquisición."
+         }
+      },
+      "security": {
+         "title": "Almacenamiento y Seguridad",
+         "content": "Adoptamos medidas técnicas y organizativas razonables para proteger los datos personales contra el acceso no autorizado, la pérdida, la alteración, el uso indebido o la divulgación indebida, incluyendo control de acceso, autenticación, cifrado cuando corresponda, segregación de entornos, monitoreo, copias de seguridad y registro de logs. A pesar de nuestros esfuerzos, ningún sistema es totalmente seguro y no es posible garantizar una seguridad absoluta frente a todos los riesgos."
+      },
+      "rights": {
+         "title": "Sus Derechos (LGPD)",
+         "intro": "En los términos de la LGPD, usted podrá solicitar en cualquier momento:",
+         "items": {
+            "1": "Confirmación de la existencia de tratamiento y acceso a sus datos personales.",
+            "2": "Corrección de datos incompletos, inexactos o desactualizados.",
+            "3": "Anonimización, bloqueo o eliminación de datos innecesarios, excesivos o tratados en disconformidad con la LGPD.",
+            "4": "Portabilidad de los datos e información sobre las entidades con las que se compartieron, cuando corresponda.",
+            "5": "Revocación del consentimiento, revisión de decisiones automatizadas y presentación de peticiones ante la Autoridad Nacional de Protección de Datos de Brasil (ANPD)."
+         }
+      },
+      "retention": {
+         "title": "Retención de los Datos",
+         "content": "Los datos personales se conservarán durante el tiempo necesario para cumplir las finalidades descritas en esta Política, mientras la cuenta permanezca activa o durante el período necesario para cumplir obligaciones legales, regulatorias y contractuales, prevenir fraudes, garantizar la seguridad de la plataforma o ejercer derechos. Tras la eliminación de la cuenta o el fin de la finalidad del tratamiento, los datos podrán eliminarse, anonimizarse o conservarse únicamente cuando exista un fundamento legal para su retención."
+      },
+      "thirdParty": {
+         "title": "Inteligencia Artificial y Servicios de Terceros",
+         "intro": "IBVI.AI puede utilizar tecnologías de inteligencia artificial, modelos de lenguaje y proveedores tecnológicos para procesar información y generar resultados relacionados con las funcionalidades de la Aplicación:",
+         "items": {
+            "1": "Los datos introducidos en la Aplicación no se utilizan para entrenar modelos públicos de terceros, y adoptamos medidas razonables para limitar el uso de los datos a las finalidades necesarias para la prestación del servicio.",
+            "2": "Las respuestas y análisis generados por inteligencia artificial pueden contener imprecisiones o limitaciones y deben revisarse críticamente antes de usarse para decisiones comerciales, jurídicas, financieras, inmobiliarias o estratégicas.",
+            "3": "Algunos proveedores pueden estar ubicados fuera de Brasil o almacenar datos en servidores internacionales; en esos casos, adoptamos medidas compatibles con la LGPD para proteger los datos transferidos internacionalmente."
+         }
+      },
+      "minors": {
+         "title": "Niños y Adolescentes",
+         "content": "La Aplicación no está destinada a menores de 18 años y no recopilamos intencionalmente sus datos personales. Si identificamos que se han recopilado indebidamente datos de menores, adoptaremos medidas razonables para eliminar esa información. Si cree que un menor ha proporcionado datos a la Aplicación, contáctenos a través de los canales indicados en esta Política."
+      },
+      "changes": {
+         "title": "Cambios en esta Política",
+         "content": "Esta Política podrá actualizarse periódicamente para reflejar cambios legales, regulatorios, técnicos u operativos. Cuando haya cambios relevantes, podremos notificar a los usuarios a través de la Aplicación, correo electrónico u otros medios apropiados. La versión más reciente estará siempre disponible en la Aplicación o en una página indicada por la empresa."
+      },
+      "contact": {
+         "title": "Contacto y Encargado",
+         "intro": "En caso de dudas, solicitudes, reclamaciones o ejercicio de derechos relacionados con sus datos personales, contáctenos. Controlador: Instituto Brasileiro de Valores Imobiliários Ltda. EPP — CNPJ 47.041.817/0001-71 — Av. Magalhães de Castro, 4800, Park Tower, 23º piso, São Paulo, SP, Brasil.",
+         "email": "Correo de privacidad",
+         "website": "Sitio web"
+      },
+      "footer": "Todos los derechos reservados."
    },
    "market_recognition": {
       "title": "Reconocimiento del Mercado",

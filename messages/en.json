@@ -178,7 +178,101 @@
       "subscribe_success": "Thank you! Please check your inbox to confirm your subscription.",
       "subscribe_error": "An error occurred. Please try again later.",
       "copyright": "© {currentYear} IBVI. All rights reserved.",
+      "privacyPolicy": "Privacy Policy",
       "tagline": "IBVI: The future of Real Estate Valuation starts here."
+   },
+   "privacyPolicy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated",
+      "updateDate": "06/18/2026",
+      "intro": {
+         "title": "Introduction",
+         "content": "This Privacy Policy describes how Instituto Brasileiro de Valores Imobiliários Ltda. EPP, registered under CNPJ No. 47.041.817/0001-71, processes the personal data of users of the IBVI.AI application. By accessing or using IBVI.AI, you acknowledge that you are aware of the practices described in this Policy. For the purposes of the Brazilian General Data Protection Law (LGPD), Instituto Brasileiro de Valores Imobiliários Ltda. EPP acts as the controller of the personal data processed within the Application, unless otherwise indicated."
+      },
+      "dataCollected": {
+         "title": "Data We Collect",
+         "intro": "We may collect different types of personal data, depending on how the Application is used:",
+         "registration": {
+            "title": "Registration and authentication data",
+            "content": "Full name, email address, password (stored securely using hashing and encryption where applicable), profile information, and login data via Google or Apple, such as name, email, and unique account identifier."
+         },
+         "location": {
+            "title": "Information provided voluntarily",
+            "content": "Data, texts, queries, prompts, documents, images, valuations, property information, or other information entered by you while using the Application's features."
+         },
+         "usage": {
+            "title": "Usage data",
+            "content": "Access records, usage events, logs, date, time, and duration of access, as well as diagnostic, performance, and Application failure information."
+         },
+         "technical": {
+            "title": "Technical data",
+            "content": "IP address, device type and model, operating system, and technical identifiers of the device, account, or session, used for security, fraud prevention, and improving the experience."
+         }
+      },
+      "dataUsage": {
+         "title": "How We Use Data",
+         "intro": "We use personal data for the following purposes:",
+         "items": {
+            "1": "Create, authenticate, and manage user accounts, enabling secure access to the Application.",
+            "2": "Operate, maintain, and improve the Application's features.",
+            "3": "Process information you enter and generate responses, analyses, estimates, classifications, summaries, and recommendations, including through artificial intelligence technologies where applicable.",
+            "4": "Provide support and send communications related to your account, security, operation, or relevant changes to the Application.",
+            "5": "Monitor the stability, security, and performance of the platform and prevent fraud, abuse, and unauthorized access.",
+            "6": "Comply with legal and regulatory obligations or determinations of competent authorities and protect the rights and interests of the Application, the company, and users."
+         }
+      },
+      "dataSharing": {
+         "title": "Data Sharing",
+         "intro": "We do not sell users' personal data. Data may be shared only when necessary, in the following cases:",
+         "items": {
+            "1": "With authentication providers (Google and Apple) and providers of infrastructure, hosting, database, security, technical support, performance analysis, and Application operation.",
+            "2": "With artificial intelligence, language model, and automation providers necessary to deliver the features, which act as processors and handle the data only according to our instructions and applicable law.",
+            "3": "With public authorities, regulatory bodies, or third parties, when required by law, court order, or in the event of corporate reorganization, merger, or acquisition."
+         }
+      },
+      "security": {
+         "title": "Storage and Security",
+         "content": "We adopt reasonable technical and organizational measures to protect personal data against unauthorized access, loss, alteration, misuse, or improper disclosure, including access control, authentication, encryption where applicable, environment segregation, monitoring, backups, and log records. Despite our efforts, no system is completely secure, and absolute security against all risks cannot be guaranteed."
+      },
+      "rights": {
+         "title": "Your Rights (LGPD)",
+         "intro": "Under the LGPD, you may request at any time:",
+         "items": {
+            "1": "Confirmation of the existence of processing and access to your personal data.",
+            "2": "Correction of incomplete, inaccurate, or outdated data.",
+            "3": "Anonymization, blocking, or deletion of unnecessary or excessive data or data processed in non-compliance with the LGPD.",
+            "4": "Data portability and information about the entities with which the data was shared, where applicable.",
+            "5": "Withdrawal of consent, review of automated decisions, and filing a complaint with the Brazilian National Data Protection Authority (ANPD)."
+         }
+      },
+      "retention": {
+         "title": "Data Retention",
+         "content": "Personal data will be retained for as long as necessary to fulfill the purposes described in this Policy, while the account remains active, or for the period necessary to comply with legal, regulatory, and contractual obligations, prevent fraud, ensure platform security, or exercise rights. After account deletion or the end of the processing purpose, data may be deleted, anonymized, or retained only when there is a legal basis for retention."
+      },
+      "thirdParty": {
+         "title": "Artificial Intelligence and Third-Party Services",
+         "intro": "IBVI.AI may use artificial intelligence technologies, language models, and technology providers to process information and generate results related to the Application's features:",
+         "items": {
+            "1": "Data entered in the Application is not used to train public third-party models, and we adopt reasonable measures to limit the use of data to the purposes necessary to provide the service.",
+            "2": "Responses and analyses generated by artificial intelligence may contain inaccuracies or limitations and should be critically reviewed before being used for commercial, legal, financial, real estate, or strategic decisions.",
+            "3": "Some providers may be located outside Brazil or store data on international servers; in such cases, we adopt measures consistent with the LGPD to protect data transferred internationally."
+         }
+      },
+      "minors": {
+         "title": "Children and Adolescents",
+         "content": "The Application is not intended for minors under 18 years of age, and we do not intentionally collect their personal data. If we identify that minors' data has been collected improperly, we will take reasonable measures to delete such information. If you believe a minor has provided data to the Application, please contact us through the channels indicated in this Policy."
+      },
+      "changes": {
+         "title": "Changes to This Policy",
+         "content": "This Policy may be updated periodically to reflect legal, regulatory, technical, or operational changes. When there are relevant changes, we may notify users through the Application, email, or other appropriate means. The most recent version will always be available in the Application or on a page indicated by the company."
+      },
+      "contact": {
+         "title": "Contact and Data Protection Officer",
+         "intro": "If you have questions, requests, complaints, or wish to exercise rights related to your personal data, please contact us. Controller: Instituto Brasileiro de Valores Imobiliários Ltda. EPP — CNPJ 47.041.817/0001-71 — Av. Magalhães de Castro, 4800, Park Tower, 23rd floor, São Paulo, SP, Brazil.",
+         "email": "Privacy email",
+         "website": "Website"
+      },
+      "footer": "All rights reserved."
    },
    "market_recognition": {
       "title": "Market Recognition",
