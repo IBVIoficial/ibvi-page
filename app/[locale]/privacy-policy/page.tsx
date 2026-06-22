@@ -163,7 +163,7 @@ export default function PrivacyPolicy() {
 
                {/* Footer */}
                <div className="text-center pt-8 border-t border-border-default">
-                  <p className="text-text-muted text-sm">© 2025 MBRAS/IBVI. {t('footer')}</p>
+                  <p className="text-text-muted text-sm">© 2026 MBRAS/IBVI. {t('footer')}</p>
                </div>
             </div>
          </section>
