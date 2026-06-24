@@ -4,6 +4,7 @@ import React from 'react';
 import {useTranslations} from 'next-intl';
 import {useForm} from '@formspree/react';
 import {usePathname} from 'next/navigation';
+import {Link} from '@/i18n/navigation';
 
 const Footer = () => {
    const t = useTranslations('footer');
@@ -117,7 +118,15 @@ const Footer = () => {
             <div className="border-t border-border-default pt-8">
                <div className="flex flex-col md:flex-row justify-between items-center">
                   <p className="font-inter text-text-tertiary text-sm">{t('copyright', {currentYear})}</p>
-                  <p className="font-inter text-text-tertiary text-sm mt-2 md:mt-0">{t('tagline')}</p>
+                  <div className="flex items-center gap-4 mt-2 md:mt-0">
+                     <Link
+                        href="/privacy-policy"
+                        className="font-inter text-text-tertiary text-sm hover:text-primary transition-colors"
+                     >
+                        {t('privacyPolicy')}
+                     </Link>
+                     <p className="font-inter text-text-tertiary text-sm">{t('tagline')}</p>
+                  </div>
                </div>
             </div>
          </div>
