@@ -177,7 +177,7 @@ export default function AccountDeletion() {
                   <a href="/privacy-policy" className="text-ibvi-teal-700 hover:underline">
                      {t('footer.privacyPolicy')}
                   </a>{' '}
-                  | © 2025 MBRAS/IBVI. {t('footer.rights')}
+                  | © 2026 MBRAS/IBVI. {t('footer.rights')}
                </p>
             </div>
          </section>
