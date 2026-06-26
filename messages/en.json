@@ -9,12 +9,12 @@
       "ibviPresentation": "IBVI Presentation"
    },
    "hero": {
-      "title": "Revolutionizing",
-      "subtitle": "Brazil’s Real Estate Market",
-      "description": "IBVI introduces Brazil’s first artificial intelligence–powered valuation platform, leveraging advanced analytics to deliver precise, standardized results and establish a benchmark index for real estate market.",
-      "tagline": "AI & Data Intelligence for a US$4 Trillion Market",
+      "title": "Intelligence to operate",
+      "subtitle": "the Real Estate Market with greater precision.",
+      "description": "Valuation, data and automation to transform market insights into decisions.",
+      "tagline": "Learn about our research",
       "cta_primary": "Learn About Our Research",
-      "cta_secondary": "Market Challenges"
+      "cta_secondary": "See Methodology"
    },
    "overview": {
       "real_estate_market": "Real Estate Market",
@@ -171,7 +171,7 @@
    "footer": {
       "description": "IBVI is transforming the Brazilian real estate market with automated, accurate, and scalable valuations powered by Artificial Intelligence.",
       "contact_title": "Contact Us",
-      "address": "Address: Corporate Center, Park Tower – Av. Magalhães de Castro, 4800 – 23rd Floor – Cidade Jardim, São Paulo – SP, 05676-120 – Brazil",
+      "address": "Cidade Jardim Corporate Center <br></br>Park Tower 23rd Floor <br></br>São Paulo, SP",
       "subscribe_title": "Subscribe for Updates",
       "subscribe_description": "Explore our research, latest developments, and investment opportunities.",
       "email_placeholder": "Your email",

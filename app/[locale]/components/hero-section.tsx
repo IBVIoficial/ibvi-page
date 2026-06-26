@@ -87,30 +87,27 @@ const HeroSection = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 lg:gap-24 items-center w-full max-w-full">
                {/* Left Content - Text */}
                <div className="order-2 lg:order-1 text-center lg:text-left">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-inter font-light leading-[1.1] text-text-primary mb-6 sm:mb-8">
-                     {t('title')}
-                     <br />
-                     <span className="font-normal text-[#005A6B]">{t('subtitle')}</span>
+                  <h1 className="text-4xl sm:text-5xl md:text-[3.5rem] lg:text-[4rem] font-inter font-semibold leading-[1.15] tracking-[-0.02em] text-text-primary">
+                     {t('title')}{' '}
+                     <span className="text-[#005A6B] dark:text-[#4da8b8]">{t('subtitle')}</span>
                   </h1>
 
-                  <p className="text-base sm:text-lg md:text-xl font-inter font-light text-text-secondary mb-4 sm:mb-6 leading-relaxed">{t('tagline')}</p>
-
-                  <p className="text-sm sm:text-base font-inter font-light text-text-tertiary mb-8 sm:mb-12 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                  <p className="mt-6 sm:mt-8 text-base sm:text-lg font-inter font-light text-text-tertiary leading-relaxed max-w-md mx-auto lg:mx-0">
                      {t('description')}
                   </p>
 
-                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+                  <div className="mt-10 sm:mt-14 flex items-center gap-6 sm:gap-8 justify-center lg:justify-start">
                      <a
                         href="#solution"
-                        className="bg-[#005A6B] rounded-full inline-block text-white text-surface-primary font-inter font-normal text-sm sm:text-sm tracking-wide px-6 sm:px-8 py-3 sm:py-4 hover:bg-text-secondary transition-colors duration-200 text-center"
+                        className="bg-[#005A6B] rounded-full inline-block text-white font-inter font-medium text-sm tracking-wide px-7 sm:px-9 py-3.5 sm:py-4 hover:bg-[#004a58] transition-colors duration-200 text-center"
                      >
                         {t('cta_primary')}
                      </a>
                      <a
                         href="#challenges"
-                        className="inline-block rounded-full border border-text-primary text-black bg-gray-100 dark:text-black font-inter font-normal text-sm sm:text-sm tracking-wide px-6 sm:px-8 py-3 sm:py-4 hover:bg-text-primary hover:text-surface-primary transition-colors duration-200 dark:bg-white text-center"
+                        className="font-inter text-sm tracking-wide text-text-tertiary hover:text-[#005A6B] transition-colors duration-200"
                      >
-                        {t('cta_secondary')}
+                        {t('cta_secondary')} →
                      </a>
                   </div>
                </div>
