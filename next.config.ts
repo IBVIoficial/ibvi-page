@@ -5,9 +5,12 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 const nextConfig: NextConfig = {
    images: {
-      domains: ['placehold.co', 'images.unsplash.com'],
+      remotePatterns: [
+         {protocol: 'https', hostname: 'placehold.co'},
+         {protocol: 'https', hostname: 'images.unsplash.com'},
+      ],
    },
-   experimental: {typedRoutes: true},
+   typedRoutes: true,
 };
 
 export default withNextIntl(nextConfig);
