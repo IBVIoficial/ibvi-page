@@ -8,7 +8,7 @@ const SolutionSection = () => {
    const t = useTranslations('solution');
 
    return (
-      <section id="solution" className="py-20 md:py-28 bg-white dark:bg-gray-900 relative overflow-hidden">
+      <section id="solution" className="pt-20 md:pt-28 pb-8 md:pb-10 bg-white dark:bg-gray-900 relative overflow-hidden">
          {/* Subtle background pattern */}
          <div className="absolute inset-0 opacity-[0.02] dark:opacity-[0.03]">
             <div
@@ -131,6 +131,20 @@ const SolutionSection = () => {
                            {t('data_driven_decisions.description')}
                         </p>
                      </div>
+
+                     {/* Feature 6 - Predição de Tendências */}
+                     <div className="bg-surface-primary dark:bg-gray-800 rounded-2xl p-6 border border-border-light dark:border-gray-700 hover:border-[#005A6B]/20 dark:hover:border-[#005A6B]/30 transition-all duration-300">
+                        <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-xl mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                           </svg>
+                        </div>
+                        <h3 className="text-base font-inter font-medium text-text-primary dark:text-white mb-2">{t('standardized_index.title')}</h3>
+                        <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
+                           {t('standardized_index.description')}
+                        </p>
+                     </div>
                   </div>
                </div>
 
@@ -211,23 +225,6 @@ const SolutionSection = () => {
                            <Image src="/images/MockupIphone.png" alt="IBVI App" fill className="object-contain drop-shadow-2xl" priority />
                         </div>
                      </div>
-
-                     {/* Single Additional Feature Directly Below iPhone */}
-                     <div className="mt-6 group bg-surface-primary/80 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl p-5 hover:border-[#005A6B]/20 dark:hover:border-[#005A6B]/30 transition-all duration-300 max-w-sm">
-                        <div className="flex items-center gap-4">
-                           <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-xl">
-                              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                              </svg>
-                           </div>
-                           <div className="flex-1">
-                              <h4 className="font-inter font-medium text-text-primary dark:text-white text-lg mb-0.5">{t('data_driven_decisions.title')}</h4>
-                              <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
-                                 {t('data_driven_decisions.description')}
-                              </p>
-                           </div>
-                        </div>
-                     </div>
                   </div>
 
                   {/* Right Features */}
@@ -256,8 +253,8 @@ const SolutionSection = () => {
                         </div>
                      </div>
 
-                     {/* Feature 4 - Right Bottom */}
-                     <div className="group mt-20">
+                     {/* Feature 4 - Right Middle */}
+                     <div className="group">
                         <div className="flex items-start gap-4">
                            <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-2xl shadow-lg shadow-[#005A6B]/20 dark:shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
                               <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -275,25 +272,21 @@ const SolutionSection = () => {
                            </div>
                         </div>
                      </div>
-                     {/* Feature 4 - Right Bottom */}
+
+                     {/* Feature 5 - Right Bottom */}
                      <div className="group">
                         <div className="flex items-start gap-4">
                            <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#005A6B] to-[#007A8F] dark:from-[#005A6B] dark:to-[#005A6B] rounded-2xl shadow-lg shadow-[#005A6B]/20 dark:shadow-[#005A6B]/20 group-hover:scale-110 transition-transform duration-300">
                               <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                 <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="1.5"
-                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                                 />
+                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                               </svg>
                            </div>
                            <div className="flex-1">
                               <h3 className="text-lg font-inter font-medium text-text-primary dark:text-white mb-2 group-hover:text-[#005A6B] dark:group-hover:text-[#005A6B] transition-colors">
-                                 {t('data_driven_valuations.title')}
+                                 {t('data_driven_decisions.title')}
                               </h3>
                               <p className="font-inter font-light text-text-tertiary dark:text-gray-400 text-sm leading-relaxed">
-                                 {t('data_driven_valuations.description')}
+                                 {t('data_driven_decisions.description')}
                               </p>
                            </div>
                         </div>

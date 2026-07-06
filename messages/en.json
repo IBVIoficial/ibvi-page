@@ -299,5 +299,21 @@
       "valuation_accuracy": "VALUATION ACCURACY",
       "valuations_per_day": "VALUATIONS PER DAY",
       "time_reduction": "TIME REDUCTION"
+   },
+   "appShowcase": {
+      "badge": "IBVI App",
+      "title": "Everything you need, <primary>in the palm of your hand</primary>",
+      "subtitle": "Meet the IBVI app, now available on the App Store, and see how analyzing the real estate market became simple, fast and intelligent.",
+      "cta": "Download on the App Store",
+      "cta_link": "https://apps.apple.com/br/app/ibvi-ai/id6738286474",
+      "busca_title": "Quick searches",
+      "busca_desc": "Quickly search for information about properties, addresses and more.",
+      "busca_alt": "IBVI app search screen",
+      "mapa_title": "Interactive map",
+      "mapa_desc": "Find information about properties by area, values and regions.",
+      "mapa_alt": "IBVI app interactive map screen",
+      "resumo_title": "Accurate valuations",
+      "resumo_desc": "With advanced AI-powered analysis, IBVI helps investors make better decisions.",
+      "resumo_alt": "IBVI app transaction summary screen"
    }
 }
