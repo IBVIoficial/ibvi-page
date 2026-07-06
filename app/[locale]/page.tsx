@@ -5,6 +5,7 @@ import HeroSection from './components/hero-section';
 import OverviewSection from './components/overview-section';
 import ChallengesSection from './components/challenges-section';
 import SolutionSection from './components/solution-section';
+import AppShowcaseSection from './components/app-showcase-section';
 
 import InvestmentSection from './components/investment-section';
 
@@ -26,8 +27,9 @@ const IBVILandingPage = () => {
       <>
          <HeroSection />
          <OverviewSection />
-         <SolutionSection />
          <ChallengesSection />
+         <SolutionSection />
+         <AppShowcaseSection />
 
          <InvestmentSection />
 

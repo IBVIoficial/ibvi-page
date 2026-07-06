@@ -119,10 +119,7 @@ const Footer = () => {
                <div className="flex flex-col md:flex-row justify-between items-center">
                   <p className="font-inter text-text-tertiary text-sm">{t('copyright', {currentYear})}</p>
                   <div className="flex items-center gap-4 mt-2 md:mt-0">
-                     <Link
-                        href="/privacy-policy"
-                        className="font-inter text-text-tertiary text-sm hover:text-primary transition-colors"
-                     >
+                     <Link href="/privacy-policy" className="font-inter text-text-tertiary text-sm hover:text-primary transition-colors">
                         {t('privacyPolicy')}
                      </Link>
                      <p className="font-inter text-text-tertiary text-sm">{t('tagline')}</p>
