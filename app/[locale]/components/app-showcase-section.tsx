@@ -39,14 +39,14 @@ const AppShowcaseSection = () => {
          delay: 0,
       },
       {
-         src: '/fotos-app/3.png',
+         src: '/fotos-app/2.png',
          title: t('mapa_title'),
          desc: t('mapa_desc'),
          alt: t('mapa_alt'),
          delay: 100,
       },
       {
-         src: '/fotos-app/2.png',
+         src: '/fotos-app/3.png',
          title: t('resumo_title'),
          desc: t('resumo_desc'),
          alt: t('resumo_alt'),
