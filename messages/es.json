@@ -299,5 +299,21 @@
       "economics_description": "Análisis de mercado",
       "financial_market": "Mercado Financiero",
       "financial_market_description": "Gestión de inversiones"
+   },
+   "appShowcase": {
+      "badge": "Aplicación IBVI",
+      "title": "Todo lo que necesitas, <primary>en la palma de tu mano</primary>",
+      "subtitle": "Conoce la app de IBVI, ya disponible en la App Store, y descubre cómo analizar el mercado inmobiliario se volvió simple, rápido e inteligente.",
+      "cta": "Descargar en la App Store",
+      "cta_link": "https://apps.apple.com/app/ibvi",
+      "busca_title": "Búsquedas rápidas",
+      "busca_desc": "Realiza búsquedas rápidas de información sobre inmuebles, direcciones y más.",
+      "busca_alt": "Pantalla de búsqueda de la aplicación IBVI",
+      "mapa_title": "Mapa interactivo",
+      "mapa_desc": "Encuentra información sobre inmuebles por área, valores y regiones.",
+      "mapa_alt": "Pantalla de mapa interactivo de la aplicación IBVI",
+      "resumo_title": "Valoraciones precisas",
+      "resumo_desc": "Con análisis avanzados mediante IA, IBVI ayuda a los inversores en la toma de decisiones.",
+      "resumo_alt": "Pantalla de resumen de transacciones de la aplicación IBVI"
    }
 }
